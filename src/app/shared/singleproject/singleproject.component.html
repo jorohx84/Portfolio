@@ -1,0 +1,19 @@
+<section [ngClass]="imagePath">
+    <div>
+        <img [src]="imagePath" alt="" [ngClass]="className">
+        <div class="imageCover" (mouseover)="toggleHover()" (mouseout)="toggleHover()" [ngClass]="{'cover': isHover()}">
+           <div>
+            <app-buttons
+            [text]="'Project details'"
+            [color]="'white'"
+         
+            ></app-buttons>
+           </div>
+    
+        </div>
+    </div>
+
+
+    <h2 [ngClass]="title">{{title}}</h2>
+    <p [ngClass]="text">{{text}}</p>
+</section>

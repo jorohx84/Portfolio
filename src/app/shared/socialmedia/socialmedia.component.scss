@@ -1,0 +1,37 @@
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 40px;
+    height: 136px;
+
+
+
+
+    >a {
+        position: relative;
+ 
+        >img {
+            width: 40px;
+            height: 40px;
+     
+         &:active{
+            transform: scale(0.95);
+         }
+        }
+
+
+    }
+}
+
+.column {
+    flex-direction: row;
+}
+
+a:hover img{
+   
+    content: url(/img/Property.svg);
+}
+

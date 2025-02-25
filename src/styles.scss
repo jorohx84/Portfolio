@@ -1,0 +1,31 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Bricolage Grotesque';
+    src: url('/fonts/Bricolage_Grotesque,Nunito/Bricolage_Grotesque/BricolageGrotesque-VariableFont_opsz,wdth,wght.ttf');
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Bricolage Grotesque';
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.d_none {
+    display: none;
+}
+
+:root {
+
+    --main-color: #F7C518;
+    --white-font: #F8F9FA;
+}

@@ -1,0 +1,47 @@
+<section id="aboutme" (mouseover)="toogleHover()" (mouseout)="toogleHover()">
+    <div class="contentLeft">
+
+        <div class="rippedPaper base">
+            <div class="baseContent">
+                <img src="/img/location.svg" alt="">
+                <span>Based in Karlsruhe</span>
+            </div>
+        </div>
+        <div class="rippedPaper free">
+            <div class="workContent">
+                <img src="/img/remote.svg" alt="">
+                <span>Placeholder</span>
+            </div>
+
+        </div>
+
+        <div class="rippedPaper work">
+            <div class="workContent">
+                <img src="/img/remote.svg" alt="">
+                <span>Open to work remote</span>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="contentRight">
+        <div class="headline">
+            <span>WHO'S Johannes?</span>
+            <div>
+                <h1>About me</h1>
+                <img [ngClass]="{'linewidth': isHover()}" src="/img/Blueline.svg" alt="">
+            </div>
+          
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam natus fuga, perferendis impedit dolorum,
+            neque quam temporibus dolores rerum quaerat molestiae laudantium ullam! Rem quia, similique tenetur magnam
+            quibusdam accusantium!</p>
+            <div class="buttonContainer">
+                <app-buttons 
+                [text]="'Let`s Talk'"
+                [color]="'black'"
+                ></app-buttons>
+            </div>
+           
+    </div>
+</section>

@@ -1,0 +1,56 @@
+<section class="english">
+    <div class="menubar">
+        <p class="logo">JR</p>
+        <a href="#aboutme" class="aboutme">About me <img src="/img/aboutme.png" alt=""></a>
+        <a>Skills <img src="/img/skills.png" alt=""></a>
+        <a>Projects <img src="/img/projects.png" alt=""></a>
+        <a>Contact <img src="/img/contact.png" alt=""></a>
+        <div class="toogleLanguage">
+            <button (click)="changeLanguage('en')" [ngClass]="{'active': isActive('en')}">EN <img
+                    src="/img/Toggle 1.png" alt=""></button>
+            <div class="line">
+                <div class="dot" [ngClass]="dotClass"></div>
+            </div>
+            <button (click)="changeLanguage('de')" [ngClass]="{'active': isActive('de')}">DE<img src="/img/Toggle 1.png"
+                    alt=""></button>
+        </div>
+        <div class="burgerButton" (click)="toggleRespMenu()">
+            <img src="/img/menu.svg" alt="">
+        </div>
+    </div>
+
+</section>
+
+
+
+<div class="menu-resp" [ngClass]="{'showRespMenu': showRespMenu()}">
+    <div class="menu-resp-content">
+        <div class="menubar-resp">
+            <p class="logo">JR</p>
+            <div class="closeButtonContainer" (click)="toggleRespMenu()">
+                <img class="closeRespMenu" src="/img/menuclose.svg" alt="">
+            </div>
+        </div>
+
+        <div class="menu-resp-buttons">
+            <a class="aboutme">About me <img src="/img/aboutme.png" alt=""></a>
+            <a>Skills <img src="/img/skills.png" alt=""></a>
+            <a>Projects <img src="/img/projects.png" alt=""></a>
+            <button>Contact <img src="/img/contact.png" alt=""></button>
+            <div class="toogleLanguage">
+                <button (click)="changeLanguage('en')" [ngClass]="{'active': isActive('en')}">EN <img
+                        src="/img/Toggle 1.png" alt=""></button>
+                <div class="line">
+                    <div class="dot" [ngClass]="dotClass"></div>
+                </div>
+                <button (click)="changeLanguage('de')" [ngClass]="{'active': isActive('de')}">DE<img
+                        src="/img/Toggle 1.png" alt=""></button>
+            </div>
+        </div>
+        <div class="socialmedia-resp">
+            <app-socialmedia [className]="'column'"></app-socialmedia>
+        </div>
+
+
+    </div>
+

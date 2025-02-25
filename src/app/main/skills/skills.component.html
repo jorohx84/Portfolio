@@ -1,0 +1,33 @@
+<section (mouseover)="changeHover()" (mouseout)="changeHover()">
+    <div class="content">
+        <div class="headline">
+            <div class="title">
+                <div>
+                    <span>MY STACK</span>
+                </div>
+
+                <h1>Skill set</h1>
+                <img src="/img/skill_line.svg" alt="" [ngClass]="{'d_none': isHover()}">
+
+            </div>
+            <div class="text">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore quaerat odit dignissimos, fuga
+                    excepturi ipsam, quis sunt ducimus rerum vel natus distinctio ex a obcaecati. Sunt, laboriosam.
+                    Facere, accusamus neque.</p>
+            </div>
+        </div>
+
+        <div class="skill-logos">
+            <div *ngFor="let item of names; let i=index">
+                <img src="{{item.img}}" alt="">
+                <span>{{item.name}}</span>
+            </div>
+
+        </div>
+        <div class="sticker" id="sticker" (click)="changeSticker()"
+            [ngStyle]="{'background-image': 'url(' + currentStickerImage + ')'}">
+        </div>
+
+
+    </div>
+</section>

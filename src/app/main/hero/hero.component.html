@@ -1,0 +1,50 @@
+<section>
+    <app-header></app-header>
+    <div class="title">
+        <div class="titleAbove">
+            <div class="titelAboveLeft">
+                <div class="helloWorld" [ngClass]="{'moveHand': ishover()}">
+                    <img [ngClass]="{'rotateHand': ishover()}" src="/img/waving_hand.svg" alt="">
+                    <button (mouseover)="changeHover()" (mouseout)="changeHover()"
+                        [ngClass]="{'stretchButton': ishover()}">
+                        <span class="respHide" [ngClass]="{'hideButton': ishover()}">Hallo World</span>
+                        <span class="hide" [ngClass]="{'showButton': ishover()}">I'm Johannes Roth</span>
+
+                    </button>
+
+                </div>
+                <div class="titleAboveText">
+                    <span *ngFor="let letter of frontend; let i = index"
+                        (mouseover)="toggleCase(frontend, hasChangedFrontend, i)"
+                        (mouseout)="resetCase(frontend, hasChangedFrontend, i, originalFrontend)">
+                        {{letter}}
+                    </span>
+                </div>
+            </div>
+
+            <img class="polaroid" src="/img/Polaroid-Frame.svg" alt="">
+        </div>
+        <div class="titleBelow">
+            <div class="titleBelowText">
+                <span *ngFor="let letter of developer; let i =index"
+                    (mouseover)="toggleCase(developer, hasChangedDeveloper, i)"
+                    (mouseout)="resetCase(developer, hasChangedDeveloper, i, originalDeveloper)">
+                    {{letter}}
+                </span>
+            </div>
+
+            <app-buttons
+            [text]="'Get in Touch'"
+            [color]="'getinTouchButton'"
+      
+            ></app-buttons>
+        </div>
+
+    </div>
+
+    <img class="polaroid-resp" src="/img/Polaroid-Frame.svg" alt="">
+
+    <div class="socialmedia">
+      <app-socialmedia></app-socialmedia>
+    </div>
+</section>

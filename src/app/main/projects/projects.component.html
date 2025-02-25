@@ -1,0 +1,44 @@
+<section (mouseover)="toggleHover()" (mouseout)="toggleHover()">
+    <div class="content">
+        <div>
+            <div class="title">
+                <span>MY CRAFT</span>
+                <div>
+                    <h1>Projects</h1>
+                    <img src="/img/project-line.svg" alt="">
+                    <div class="lineCover" [ngClass]="{'linewidth': isHover()}"></div>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, amet eligendi, ut quod quasi
+                    soluta,
+                    quidem incidunt dolorem delectus qui odit. Quasi nobis eius ullam, repellendus quam eos ipsa sed.
+                </p>
+            </div>
+
+        </div>
+        <div>
+            <app-singleproject 
+            [imagePath]="'/img/Laptop.svg'" 
+            [title]="'Join'"
+            [className]="'swing'"
+            [text]="'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sit alias blanditiis eos harum ab animi architecto ipsa illo officiis, eius ipsum temporibus quos commodi nemo ea consectetur voluptatum voluptates!'"></app-singleproject>
+        </div>
+
+    </div>
+    <div class="content">
+        <div>
+            <app-singleproject 
+            [imagePath]="'/img/Pollo.png'" 
+            [title]="'El Pollo Loco'"                 
+            [text]="'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sit alias blanditiis eos harum ab animi architecto ipsa illo officiis, eius ipsum temporibus quos commodi nemo ea consectetur voluptatum voluptates!'"></app-singleproject>
+        </div>
+        <div>
+            <app-singleproject 
+            [imagePath]="'/img/DABubble.png'" 
+            [title]="'DABubble'"                 
+            [text]="'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sit alias blanditiis eos harum ab animi architecto ipsa illo officiis, eius ipsum temporibus quos commodi nemo ea consectetur voluptatum voluptates!'"></app-singleproject>
+        </div>
+
+    </div>
+</section>
+

@@ -1,0 +1,230 @@
+section {
+    width: 100vw;
+    max-width: 1440px;
+    min-height: 800px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/img/skill-background.png);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    height: 512px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.headline {
+    width: 100%;
+    height: 144px;
+    display: flex;
+    gap: 48px;
+
+}
+
+.title {
+    position: relative;
+    width: 100%;
+    max-width: 261px;
+    height: 108px;
+    color: var(--white-font);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+
+    >div {
+        width: 100%;
+        height: 20px;
+        display: flex;
+        justify-content: flex-end;
+
+        >span {
+            font-size: 20px;
+            font-weight: 500;
+        }
+    }
+
+    >h1 {
+        margin: 0;
+        font-size: 64px;
+    }
+
+    >img {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+
+    }
+
+}
+
+
+
+.text {
+    width: 100%;
+    max-width: 656px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/img/bg-skilltext.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    >p {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 300;
+        width: 100%;
+        max-width: 592px;
+        height: 66px;
+
+
+    }
+}
+
+
+.skill-logos {
+    width: 100%;
+    max-width: 640px;
+    height: 266px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+
+    >div {
+        width: 90px;
+        height: 98px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 4px;
+
+        >img {
+            transition: transform 0.5s ease-in-out;
+            &:hover {
+                transform: scale(0.8);
+            }
+        }
+
+
+        >span {
+            text-align: center;
+            color: var(--white-font);
+        }
+    }
+}
+
+.sticker {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: 12px;
+    bottom: 50px;
+    transform: rotate(12deg);
+    background-image: url(/img/sticker1.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+@media(max-width:1000px) {
+
+    section {
+
+        height: 1160px;
+        align-items: flex-start;
+        background-size: cover;
+    }
+
+    .content {
+        height: 853.62px;
+        justify-content: flex-start;
+    }
+
+    .headline {
+        margin-top: 88px;
+        flex-direction: column;
+        width: 640px;
+        height: fit-content;
+        margin-bottom: 80px;
+    }
+
+    .text {
+        height: 180px;
+    }
+
+    .sticker {
+        bottom: -230px;
+        right: 20px;
+    }
+}
+
+@media(max-width:650px) {
+    section {
+        height: 1250px;
+    }
+
+    .headline {
+        flex-direction: column;
+        align-items: flex-end;
+        width: 343px;
+        height: fit-content;
+    }
+
+    .title {
+        width: 261px;
+        height: 83.62px;
+        align-items: flex-end;
+
+        >h1 {
+            font-size: 48px;
+        }
+
+        >img {
+            width: 188px;
+            height: 57.62px;
+            left: unset;
+        }
+    }
+
+    .text {
+        width: 343px;
+        height: 212px;
+
+        >p {
+            width: 311px;
+            height: 132px;
+        }
+    }
+
+    .skill-logos {
+        width: 343px;
+        height: 486px;
+        justify-content: flex-start;
+        gap: 30px;
+
+        >div {
+            width: 80px;
+
+            >img {
+                width: 56px;
+            }
+        }
+    }
+}

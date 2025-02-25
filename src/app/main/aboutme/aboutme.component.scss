@@ -1,0 +1,194 @@
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    max-width: 1440px;
+    min-height: 432px;
+    height: fit-content;
+    gap: 80px;
+    margin-block: 144px;
+}
+
+.contentLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 560px;
+    height: 400px;
+
+}
+
+.rippedPaper {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 560px;
+    min-height: 152px;
+    max-height: 152px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: -50px;
+
+
+}
+
+.base {
+    top: 0;
+    transform: rotate(0deg);
+    background-image: url(/img/rippedpaperyellow.svg);
+    z-index: 2;
+}
+
+.free {
+    background-image: url(/img/rippedpaperblue.svg);
+    z-index: 1;
+}
+
+.baseContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    transform: rotate(-4deg);
+    padding-bottom: 20px;
+}
+
+.work {
+    background-image: url(/img/rippedpaperorange.svg);
+}
+
+.workContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(4deg);
+    gap: 16px;
+
+}
+
+.contentRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 560px;
+    height: 400px;
+    gap: 48px;
+
+    >p {
+        font-size: 20px;
+        font-weight: 200;
+    }
+}
+
+.headline {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+    width: 100%;
+    height: 124px;
+
+    >div {
+
+        >h1 {
+            font-size: 64px;
+            font-weight: 700;
+        }
+
+        >img {
+
+            transition: width 0.3s ease-in-out;
+            width: 0px;
+            height: 20px;
+        }
+    }
+
+    >span {
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+
+}
+
+
+h1,
+p {
+    margin: 0;
+}
+
+.buttonContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.linewidth {
+
+    width: 303px !important;
+}
+
+@media(max-width: 1230px) {
+    section {
+
+
+        flex-direction: column-reverse;
+    }
+}
+
+@media(max-width: 630px) {
+    section {
+        margin-block: 88px;
+        width: 320px;
+    }
+
+    .contentLeft {
+        width: 300px;
+        height: 200px;
+    }
+
+    .rippedPaper {
+        margin-top: -45px;
+        max-width: 343px !important;
+        background-size: contain;
+    }
+
+    .contentRight {
+        width: 300px;
+        gap: 32px;
+    }
+
+    .headline {
+        >span {
+            font-size: 18px !important;
+        }
+
+        >div {
+            h1 {
+                font-size: 48px;
+            }
+
+
+        }
+    }
+}
+
+@media(pointer:coarse) {
+    .headline {
+        >div {
+            >img {
+                width: 303px;
+            }
+        }
+    }
+}
