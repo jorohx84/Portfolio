@@ -15,8 +15,7 @@ section {
 
             &:hover {
                 animation-play-state: paused;
-                transform: translateY(0) !important;
-                transform: scale(1.1) !important;
+               
             }
         }
     }
@@ -30,21 +29,21 @@ section {
     width: 100%;
     height: 100%;
     border-radius: 20px;
-    transition: opacity  0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
 
     opacity: 0;
-   
-    >div{
+
+    >div {
         position: absolute;
         bottom: 40px;
         right: 40px;
     }
-   
+
 }
 
 .cover {
     opacity: 1;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.6) , rgba(0, 0, 0, 0)50%);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)50%);
 }
 
 .swing {
@@ -52,12 +51,21 @@ section {
     animation-play-state: running;
 }
 
-.overlay{
+.overlay {
     position: absolute;
     width: 100vw;
     height: 100vh;
     background-color: #000000;
-  color: white;
+    color: white;
+}
+
+.respbutton {
+    margin-top: 32px;
+    width: 100%;
+    height: 40px !important;
+    display: flex;
+    justify-content: flex-end;
+
 }
 
 
@@ -73,4 +81,35 @@ section {
     100% {
         transform: translateY(0);
     }
+}
+
+@media(min-width:650px) {
+    .respbutton {
+        display: none;
+    }
+
+}
+
+@media(max-width:650px) {
+    .imageCover {
+        display: none;
+    }
+section{
+    width: 320px;
+    >div{
+        width: 320px;
+        height: fit-content;
+        >img{
+            width:320px;
+           height: 320px;
+        }
+
+        >h2{
+            width: 100%!important;
+        }
+        >p{
+            width: 100% !important;
+        }
+    }
+}
 }

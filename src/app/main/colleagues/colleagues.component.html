@@ -1,0 +1,35 @@
+<section  (mouseover)="changeArrow()" (mouseout)="changeArrow()">
+    <div class="content">
+        <div class="headline">
+            <div>
+                <div class="arrow">
+                    <div class="arrowCover" [ngClass]="{'cover':isArrow()}"></div>
+                    <img src="/img/bluearrow.svg" alt="">
+                </div>
+
+                <span>IN THEIR WORDS</span>
+            </div>
+            <h1>Colleagues' Thoughts</h1>
+        </div>
+
+        <div class="thoughts">
+            <div class="thoughtsContent" *ngFor="let item of thoughts let index = index" [ngClass]="'card' + index">
+                <div>
+                    <div>
+                        <div>
+                            <p>{{item.comment}}</p>
+                            <div>
+                                <div>
+                                    <b class="white">{{item.name}}</b>
+                                    <span class="white">{{item.job}}</span>
+                                </div>
+                                <a href=""><img src="/img/linkedin-black.svg" alt=""> Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>

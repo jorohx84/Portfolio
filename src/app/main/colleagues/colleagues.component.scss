@@ -1,0 +1,284 @@
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    max-width: 1440px;
+    height: 838.82px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(100% - 240px);
+    height: calc(100% - 288px);
+}
+
+.headline {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    >div {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+
+        >span {
+            width: 164px;
+            height: 20px;
+            text-align: end;
+            font-size: 20px;
+            font-weight: 500;
+        }
+    }
+
+    >h1 {
+        margin: 0;
+        font-size: 64px;
+    }
+}
+
+.arrow {
+    position: relative;
+    width: 100px;
+    height: 36px;
+}
+
+.arrowCover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transition: width 0.15s ease-in-out;
+
+}
+
+.cover {
+    width: 0% !important;
+}
+
+
+.thoughts {
+    position: relative;
+    width: 100%;
+    height: 402.82px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.thoughtsContent {
+    position: absolute;
+    min-width: 512px;
+    height: 368px;
+
+    &:hover {
+        .white {
+            color: white;
+        }
+
+        z-index: 5;
+    }
+
+    >div {
+        width: 100%;
+        height: 320px;
+        border-radius: 20px;
+        transition: background-image 1s ease-in-out;
+
+        >div {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:hover {
+                background-image: url(/img/rectangle-sticker.svg);
+            }
+
+            >div {
+                width: calc(100% - 80px);
+                height: calc(100% - 96px);
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+
+                >p {
+                    width: 432px;
+                    height: fit-content;
+                }
+
+                >div {
+                    width: 432px;
+                    height: 47px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-end;
+
+                    >div {
+                        width: fit-content;
+                        height: 47px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 4px;
+
+                        >span {
+                            font-size: 16px;
+                        }
+
+                        >b {
+                            font-size: 20px;
+                            font-weight: 500;
+                        }
+                    }
+
+                    >a {
+                        width: 84px;
+                        height: 24px;
+                        gap: 4px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        >img {
+                            width: 18px;
+                            height: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.bg-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+
+.card0 {
+    top: 20px;
+    left: 0;
+    transform: rotate(-4deg);
+    z-index: 3;
+
+    >div {
+        background-image: url(/img/thoughts-bg-a.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+}
+
+.card1 {
+    top: 50px;
+    z-index: 2;
+
+    >div {
+        background-image: url(/img/thoughts-bg-b.png);
+        background-size: cover;
+        background-position: center;
+
+    }
+
+}
+
+.card2 {
+    top: 20px;
+    right: 0;
+    transform: rotate(4deg);
+    z-index: 1;
+
+    >div {
+        background-image: url(/img/thoughts-bg-a.png);
+        background-size: cover;
+        background-position: center;
+
+    }
+
+}
+
+
+.whitefont {
+    color: white;
+
+}
+@media(max-width:1280px) {
+    section{
+        height: fit-content;
+    }
+    .thoughts {
+        flex-direction: column ;
+        height: 1500px;
+    }
+
+    .thoughtsContent {
+        position: static;
+    }
+}
+
+@media(max-width:650px) {
+    section {
+        width: 375px !important;
+        margin-top: 100px;
+        height: fit-content;
+    }
+
+    .content {
+        width: 320px;
+        height: fit-content;
+    }
+
+    .headline {
+        width: 320px;
+        
+    }
+
+    .thoughts {
+       
+        width: 320px;
+        flex-direction: column;
+        height: 1500px;
+    }
+
+    .thoughtsContent {
+        margin-top: -30px;
+        position: static;
+        min-width: 327px !important;
+
+        >div {
+            width: 327px;
+            height: 343px;
+
+            >div {
+                >div {
+                    >p {
+                        width: unset
+                    }
+                
+                    >div {
+                        width: unset !important;
+                        
+                    }
+                }
+            }
+        }
+
+
+    }
+
+}

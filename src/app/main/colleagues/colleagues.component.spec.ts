@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ProjectoverlayComponent } from './projectoverlay.component';
+import { ColleaguesComponent } from './colleagues.component';
 
-describe('ProjectoverlayComponent', () => {
-  let component: ProjectoverlayComponent;
-  let fixture: ComponentFixture<ProjectoverlayComponent>;
+describe('ColleaguesComponent', () => {
+  let component: ColleaguesComponent;
+  let fixture: ComponentFixture<ColleaguesComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ProjectoverlayComponent]
+      imports: [ColleaguesComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ProjectoverlayComponent);
+    fixture = TestBed.createComponent(ColleaguesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

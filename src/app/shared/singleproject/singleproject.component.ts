@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { ButtonsComponent } from '../buttons/buttons.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-singleproject',
@@ -15,6 +16,8 @@ export class SingleprojectComponent {
   @Input() className: string = '';
   @Input() param: string = '';
 
+  constructor(private router: Router) {}
+
   hover = false;
   isVisable = false;
   toggleHover() {
@@ -25,8 +28,11 @@ export class SingleprojectComponent {
     return this.hover === true;
   }
 
-  openOverlay(param: string) {
-    console.log(param);
+  openOverlay(route:string) {
+
+      this.router.navigate([route]);
+
+    console.log(route);
     this.isVisable = true;
     console.log(this.isVisable);
 
