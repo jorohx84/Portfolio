@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { SingleprojectComponent } from '../../shared/singleproject/singleproject.component';
 
 @Component({
@@ -9,6 +9,7 @@ import { SingleprojectComponent } from '../../shared/singleproject/singleproject
   styleUrl: './projects.component.scss'
 })
 export class ProjectsComponent {
+ 
   hover = false;
 
   toggleHover() {

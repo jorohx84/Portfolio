@@ -1,0 +1,22 @@
+<section *ngIf="isVisible" (click)="close()">
+    <div class="overlay-content" (click)="$event.stopPropagation()">
+        <ng-container [ngSwitch]="currentContent">
+          <div *ngSwitchCase="'content1'">
+            <h2>Inhalt 1</h2>
+            <p>Dies ist der Inhalt für Button 1</p>
+          </div>
+          <div *ngSwitchCase="'content2'">
+            <h2>Inhalt 2</h2>
+            <p>Dies ist der Inhalt für Button 2</p>
+          </div>
+          <div *ngSwitchCase="'content3'">
+            <h2>Inhalt 3</h2>
+            <p>Dies ist der Inhalt für Button 3</p>
+          </div>
+          <div *ngSwitchDefault>
+            <p>Wählen Sie einen Button, um den Inhalt anzuzeigen.</p>
+          </div>
+        </ng-container>
+        <button (click)="close()">Schließen</button>
+      </div>
+</section>

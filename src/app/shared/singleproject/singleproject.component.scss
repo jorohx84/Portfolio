@@ -52,6 +52,15 @@ section {
     animation-play-state: running;
 }
 
+.overlay{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+  color: white;
+}
+
+
 @keyframes swing {
     0% {
         transform: translateY(0);

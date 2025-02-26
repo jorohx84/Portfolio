@@ -12,7 +12,7 @@ export class ButtonsComponent {
   @Input() color: string = '';
   @Input() resp: string = '';
   @Input() hoverClass: string = '';
-
+  
  
 
   secondhover: boolean = false;

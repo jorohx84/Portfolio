@@ -5,6 +5,7 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ProjectsComponent } from './projects/projects.component';
 
+
 @Component({
   selector: 'app-main',
   imports: [
@@ -12,7 +13,7 @@ import { ProjectsComponent } from './projects/projects.component';
     HeroComponent,
     AboutmeComponent,
     SkillsComponent,
-    ProjectsComponent
+    ProjectsComponent,
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss'
