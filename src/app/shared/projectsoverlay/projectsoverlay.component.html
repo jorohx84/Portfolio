@@ -1,6 +1,64 @@
+<section>
 
-<section >
-    
-    <p [ngClass]="title">{{title}}</p>
+
+    <div class="content">
+        <app-header [color]="'black'" [logo]="'blue'"></app-header>
+        <div class="goBackContaienr">
+            <a href="#projects"><img src="/img/goBack.svg" alt=""></a>
+        </div>
+        <div class="description">
+            <div>
+                <div class="contentLeft">
+                    <div class="headline">
+                        <h1 [ngClass]="title">{{title}}</h1>
+                        <div>
+                            <img [src]="line" alt="">
+                        </div>
+                    </div>
+                    <div class="textContainer">
+                        <div>
+                            <h2>Description</h2>
+                            <p>{{descript}}</p>
+                        </div>
+                        <div>
+                            <h2>Details</h2>
+                            <p>{{details}}</p>
+                        </div>
+                        <div class="durationContainer">
+                            <h3>Duration:</h3>
+                            <span>{{duration}}</span>
+                        </div>
+                    </div>
+                    <div class="skillOverview">
+                        <div *ngFor="let item of skills">
+
+                            <img [src]="item.imgPath" alt="">
+                            <span>{{item.name}}</span>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="contentRight">
+                    <img [src]="image" alt="">
+                    <div>
+                        <app-buttons  [text]="'GitHub'" [color]="'getinTouchButton'"></app-buttons>
+                        <app-buttons  [text]="'Live Test'" [color]="'getinTouchButton'"></app-buttons>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="goNextContainer">
+            <a href="#projects"><img src="/img/goBack.svg" alt=""></a>
+            <div (click)="openOverlay(path)" href=""><img src="/img/next.svg" alt=""></div>
+        </div>
+
+
+    </div>
+
+
+
+  
 
 </section>

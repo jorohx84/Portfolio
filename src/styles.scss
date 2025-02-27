@@ -3,9 +3,7 @@
     font-family: 'Bricolage Grotesque';
     src: url('/fonts/Bricolage_Grotesque,Nunito/Bricolage_Grotesque/BricolageGrotesque-VariableFont_opsz,wdth,wght.ttf');
 }
-html{
-    scroll-behavior: smooth;
-}
+
 
 body {
     font-family: 'Bricolage Grotesque';
@@ -16,7 +14,13 @@ body {
 
 }
 
-a{
+h1,
+h2,
+h3, p {
+    margin: 0;
+}
+
+a {
     text-decoration: none;
     color: black;
 }

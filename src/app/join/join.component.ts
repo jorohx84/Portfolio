@@ -9,5 +9,23 @@ import { ProjectsoverlayComponent } from '../shared/projectsoverlay/projectsover
   styleUrl: './join.component.scss'
 })
 export class JoinComponent {
+  joinSkills = [
+    {
+      imgPath: '/img/css.svg',
+      name: 'CSS'
+    },
+    {
+      imgPath: '/img/html.svg',
+      name: 'HTML'
+    },
+    {
+      imgPath: '/img/javascript.svg',
+      name: 'JavaScript'
+    },
+    {
+      imgPath: '/img/firebase.svg',
+      name: 'Firebase'
+    },
 
+  ];
 }

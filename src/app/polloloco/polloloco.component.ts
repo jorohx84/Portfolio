@@ -9,5 +9,21 @@ import { ProjectsoverlayComponent } from '../shared/projectsoverlay/projectsover
   styleUrl: './polloloco.component.scss'
 })
 export class PollolocoComponent {
-
+  polloLocoSkills = [
+    {
+      imgPath: '/img/css.svg',
+      name: 'CSS'
+    },
+    {
+      imgPath: '/img/html.svg',
+      name: 'HTML'
+    },
+    {
+      imgPath: '/img/javascript.svg',
+      name: 'JavaScript'
+    },
+ 
+  ];
 }
+
+

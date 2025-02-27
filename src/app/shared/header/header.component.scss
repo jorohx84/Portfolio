@@ -24,7 +24,8 @@ section {
         width: 38px;
         height: 40px;
         font-size: 48px;
-        color: var(--main-color)
+        color: var(--main-color);
+        letter-spacing: -6px;
     }
 
 }
@@ -263,6 +264,14 @@ a:hover img {
     content: url(/img/closeHover.svg);
     width: 32px;
     height: 32px;
+}
+
+.black{
+    color: black !important;
+}
+
+.blue{
+    color:#3355FF !important;
 }
 
 @media(max-width: 900px) {

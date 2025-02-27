@@ -1,5 +1,5 @@
 import { CommonModule, NgClass } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { SocialmediaComponent } from '../socialmedia/socialmedia.component';
 
 @Component({
@@ -9,23 +9,25 @@ import { SocialmediaComponent } from '../socialmedia/socialmedia.component';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
+  @Input() color: string = '';
+  @Input() logo: string = '';
   dotClass: string = 'to-the-left';
   activeLanguage: string = 'en';
   burger: boolean = false;
 
   changeLanguage(language: string): void {
-    
+
 
     if (language === 'en') {
       this.dotClass = 'to-the-left';
       this.activeLanguage = 'en';
-   
+
 
     } else {
       this.dotClass = 'to-the-right'
       this.activeLanguage = 'de';
 
-      
+
     }
   }
 
@@ -37,7 +39,7 @@ export class HeaderComponent {
 
     this.burger = !this.burger
     console.log(this.burger);
-    
+
   }
 
   showRespMenu() {

@@ -19,7 +19,6 @@ export class SingleprojectComponent {
   constructor(private router: Router) {}
 
   hover = false;
-  isVisable = false;
   toggleHover() {
     this.hover = !this.hover;
   }
@@ -32,14 +31,7 @@ export class SingleprojectComponent {
 
       this.router.navigate([route]);
 
-    console.log(route);
-    this.isVisable = true;
-    console.log(this.isVisable);
-
-  }
-  closeOverlay() {
-    this.isVisable = false;
-    console.log(this.isVisable);
+   
 
   }
 

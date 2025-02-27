@@ -1,3 +1,4 @@
+
 button {
     position: relative;
     width: 145px;
@@ -28,6 +29,7 @@ button {
 
 .buttonBack {
     position: relative;
+
     width: 145px;
     height: 40px;
     border-radius: 100px;
@@ -99,4 +101,21 @@ button {
     .getinTouchButton button {
         background-color: #F87A55 !important;
     }
+}
+
+@media(max-width:650px){
+    button{
+        width: 110px;
+        >span{
+            font-size: 14px !important;
+        }
+     
+        
+    }
+    .buttonBack{
+        width:110px;
+        
+    }
+  
+
 }
