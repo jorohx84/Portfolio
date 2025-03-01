@@ -75,9 +75,6 @@ button {
     background: transparent;
     box-shadow: 5px 5px 0px 0px gray;
 
-    &:active {
-        transform: scale(0.95);
-    }
 
     >button {
         background-color: #0000003c;

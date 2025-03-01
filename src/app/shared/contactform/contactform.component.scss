@@ -11,7 +11,7 @@ form {
             border-bottom: solid;
             border-top-color: transparent !important;
             border-top: solid;
-
+            border-width: 0.7px;
             border-color: var(--main-color);
             padding: 16px 24px;
             gap: 8px;
@@ -25,7 +25,8 @@ form {
 
                 border-top-color: var(--logo-color) !important;
                 border-color: var(--logo-color);
-                >label{
+
+                >label {
                     color: var(--orange);
                 }
             }
@@ -49,9 +50,35 @@ textarea {
 
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     outline: none;
-    box-shadow: none; 
+    box-shadow: none;
+}
+
+
+input:-webkit-autofill {
+    background-color: transparent !important;
+    color: white !important;
+    transition: background-color 5000s ease-in-out 0s, color 5000s ease-in-out 0s;
+}
+
+/* Für Textarea-Felder */
+textarea:-webkit-autofill {
+    background-color: transparent !important;
+    color: white !important;
+    transition: background-color 5000s ease-in-out 0s, color 5000s ease-in-out 0s;
+}
+
+
+input:-webkit-autofill:focus {
+    background-color: transparent !important;
+    color: white !important;
+}
+
+textarea:-webkit-autofill:focus {
+    background-color: transparent !important;
+    color: white !important;
 }
 
 input::placeholder {
@@ -90,7 +117,7 @@ textarea::placeholder {
                 }
             }
         }
-      
+
     }
 
 
