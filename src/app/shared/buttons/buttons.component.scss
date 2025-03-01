@@ -64,9 +64,32 @@ button {
     background-color: #000000;
 
     >button {
-        background-color: #F8F9FA;
+        background-color:#F8F9FA;
         color: #000000;
         border-color: #000000;
+    }
+}
+
+.grey{
+    background-color:transparent;
+
+    >button {
+        background-color:transparent;
+        color: grey;
+        border-color: gray;
+       box-shadow: 2px 2px 0px 0px gray;
+    
+      &:hover{
+        color: gray;
+        top: -5px !important;;
+        left: -2px !important;;
+        background-color: transparent !important;
+
+      }
+      &:active{
+        transform: scale(1) !important;
+      }
+   
     }
 }
 

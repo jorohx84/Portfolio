@@ -1,0 +1,134 @@
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    >div {
+        >div {
+            display: flex;
+            flex-direction: column;
+            border-bottom: solid;
+            border-color: var(--main-color);
+            padding: 16px 24px;
+            gap: 8px;
+            >span{
+                font-size: 14px;
+                color: var(--orange);
+            }
+        }
+    }
+
+}
+
+label {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+input,
+textarea {
+    border: none;
+    background-color: transparent;
+    font-family: 'Bricolage Grotesque';
+    height: 20px;
+    color: var(--white-font);
+
+}
+
+input::placeholder {
+    color: var(--white-font) !important;
+}
+
+textarea::placeholder {
+    color: var(--white-font) !important;
+}
+
+.privacy {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+
+    >div {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: center !important;
+        border: none !important;
+        padding: 0 !important;
+        gap: 8px;
+
+        >p {
+            font-size: 16px;
+            font-weight: 300;
+
+            >a {
+                color: var(--logo-color);
+            }
+        }
+    }
+
+
+}
+
+.privacyError {
+    height: 18px;
+
+    >p {
+        min-height: 18px;
+        display: none;
+        padding-left: 24px;
+        color: var(--orange);
+    }
+}
+
+.checkbox-default {
+    width: 24px;
+    height: 24px;
+    background-image: url(/img/box_empty.svg);
+    background-size: cover;
+    background-position: center;
+
+    &:hover {
+        background-image: url(/img/box_empty_hover.svg);
+    }
+
+    &:active {
+        transform: scale(0.9);
+    }
+}
+
+
+.checkbox-checked {
+    width: 24px;
+    height: 24px;
+    background-image: url(/img/box_checked.svg);
+    background-size: cover;
+    background-position: center;
+    display: none;
+
+    &:hover {
+        background-image: url(/img/box_checked_hover.svg);
+    }
+
+    &:active {
+        transform: scale(0.9);
+    }
+
+
+}
+
+.none {
+    display: none;
+}
+
+.block {
+    display: block !important;
+}
+
+.sendButtonContainer {
+    display: flex;
+    justify-content: flex-end;
+}

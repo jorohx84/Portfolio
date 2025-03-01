@@ -1,0 +1,49 @@
+<form  (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+    <div>
+        <div>
+            <label for="name"> Waht's your name?</label>
+            <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name"
+                placeholder="Your name goes here" required>
+            @if(!name.valid && contactForm.submitted){
+            <span>Please enter Name</span>
+            }
+        </div>
+        <div>
+            <label for="email">What's your email?</label>
+            <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email"
+                placeholder="youremail@email.com" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                @if(!email.valid && contactForm.submitted && name.valid){
+                    <span>Please enter email</span>
+                    }
+        </div>
+        <div>
+            <label for="message">How can I help you?</label>
+            <textarea #message="ngModel" [(ngModel)]="contactData.message" name="message" id="message" placeholder="your message"
+                required></textarea>
+                @if(!message.valid && contactForm.submitted && name.valid && email.valid){
+                    <span>Please enter Message</span>
+                    }
+        </div>
+
+
+    </div>
+
+    <div class="privacy">
+        <div>
+            <div>
+                <div (click)="toggleChecked()" [ngClass]="{'none': isChecked() }" class="checkbox-default"></div>
+                <div (click)="toggleChecked()" [ngClass]="{'block': isChecked() }" class="checkbox-checked"></div>
+            </div>
+            <p>I've read the <a href="">privacy policy</a> and agree to the processing of my data as outlined</p>
+        </div>
+        <div class="privacyError">
+            <p [ngClass]="{'block': isError}">Please accept the privacy policy</p>
+        </div>
+
+    </div>
+    <div class="sendButtonContainer">
+        <app-buttons id="sendButton" [text]="'Send'"
+            [color]="privacy ? 'getinTouchButton' : 'grey'"></app-buttons>
+    </div>
+
+</form>

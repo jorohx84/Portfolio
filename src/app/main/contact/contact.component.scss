@@ -1,0 +1,92 @@
+div,
+h1,
+h2,
+h3,
+p,
+span {
+    border: solid;
+    border-width: 1px;
+    border-color: gray;
+}
+
+section {
+    background-image: url(/img/contact-background.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 100vw;
+    max-width: 1440px;
+    min-height: 1000px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    color: var(--white-font);
+}
+
+.content {
+    width: calc(100% - 240px);
+    min-height: 560px;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contentLeft {
+    width: 100%;
+    max-width: 560px;
+    min-height: 458px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+
+    >div {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        >span{
+            font-size: 20px;
+            font-weight: 500;
+        }
+        >h1{
+            font-weight: 700;
+            font-size: 64px;
+        }
+      
+    }
+    p{
+        font-size: 18px;
+        font-weight: 300;
+    }
+}
+
+.line{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    flex-direction: unset !important;
+    >img{
+        width: 100%;
+        max-width: 280px;
+        
+    }
+}
+
+.contentRight{
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+}
+
+.footerContainer{
+    width: calc(100% - 240px);
+    height: fit-content;
+ 
+}
