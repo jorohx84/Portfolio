@@ -38,29 +38,32 @@ export class ContactformComponent {
   };
 
   onSubmit(ngForm: any) {
-    if (this.privacy === true) {
-      this.isError = false;
-      if (ngForm.valid && ngForm.submitted && !this.mailTest) {
+  console.log(this.isError);
+  
+      if (ngForm.valid && ngForm.submitted) {
+        if (this.privacy === true) {
+          this.isError = false;
+          console.log(this.contactData);
         this.http.post(this.post.endPoint, this.post.body(this.contactData))
           .subscribe({
             next: (response) => {
 
-              //ngForm.resetForm();
+              ngForm.resetForm();
             },
             error: (error) => {
               console.error(error);
             },
-            complete: () => console.info('send post complete'),
+            complete: () => console.log('send post complete'),
           });
-
+        }  else{
+          this.isError = true;
+        }
       } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-        console.log(this.contactData);
-        //ngForm.resetForm();
+        
+        ngForm.resetForm();
 
       }
-    }  else{
-      this.isError = true;
-    }
+  
 
   }
 

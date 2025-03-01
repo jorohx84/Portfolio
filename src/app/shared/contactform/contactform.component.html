@@ -4,24 +4,24 @@
             <label for="name"> Waht's your name?</label>
             <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name"
                 placeholder="Your name goes here" required>
-            @if(!name.valid && contactForm.submitted){
-            <span>Please enter Name</span>
+            @if(!name.valid && name.touched){
+            <span>Oops! it seems your name is missing</span>
             }
         </div>
         <div>
             <label for="email">What's your email?</label>
             <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email"
                 placeholder="youremail@email.com" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
-                @if(!email.valid && contactForm.submitted && name.valid){
-                    <span>Please enter email</span>
+                @if(!email.valid && email.touched){
+                    <span>Hoppla! your email is required</span>
                     }
         </div>
         <div>
             <label for="message">How can I help you?</label>
             <textarea #message="ngModel" [(ngModel)]="contactData.message" name="message" id="message" placeholder="your message"
                 required></textarea>
-                @if(!message.valid && contactForm.submitted && name.valid && email.valid){
-                    <span>Please enter Message</span>
+                @if(!message.valid && message.touched ){
+                    <span>What do you need to develop?</span>
                     }
         </div>
 
@@ -43,7 +43,7 @@
     </div>
     <div class="sendButtonContainer">
         <app-buttons id="sendButton" [text]="'Send'"
-            [color]="privacy ? 'getinTouchButton' : 'grey'"></app-buttons>
+            [color]="privacy ? 'white' : 'grey'"></app-buttons>
     </div>
 
 </form>

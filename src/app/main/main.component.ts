@@ -8,6 +8,7 @@ import { ColleaguesComponent } from './colleagues/colleagues.component';
 import { ContactComponent } from './contact/contact.component';
 
 
+
 @Component({
   selector: 'app-main',
   imports: [
@@ -18,6 +19,7 @@ import { ContactComponent } from './contact/contact.component';
     ProjectsComponent,
     ColleaguesComponent,
     ContactComponent,
+   
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss'

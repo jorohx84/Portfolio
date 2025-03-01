@@ -9,12 +9,25 @@ form {
             display: flex;
             flex-direction: column;
             border-bottom: solid;
+            border-top-color: transparent !important;
+            border-top: solid;
+
             border-color: var(--main-color);
             padding: 16px 24px;
             gap: 8px;
-            >span{
+
+            >span {
                 font-size: 14px;
-                color: var(--orange);
+                color: var(--red);
+            }
+
+            &:hover {
+
+                border-top-color: var(--logo-color) !important;
+                border-color: var(--logo-color);
+                >label{
+                    color: var(--orange);
+                }
             }
         }
     }
@@ -34,6 +47,11 @@ textarea {
     height: 20px;
     color: var(--white-font);
 
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    box-shadow: none; 
 }
 
 input::placeholder {
@@ -66,8 +84,13 @@ textarea::placeholder {
 
             >a {
                 color: var(--logo-color);
+
+                &:hover {
+                    color: var(--main-color);
+                }
             }
         }
+      
     }
 
 
