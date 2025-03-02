@@ -1,17 +1,18 @@
 <section class="english">
     <div class="menubar">
         <p [ngClass]="logo" class="logo">JR</p>
-        <a href="#aboutme" class="aboutme" [ngClass]="color">About me <img src="/img/aboutme.png" alt=""></a>
+        <a href="#aboutme" class="aboutme" [ngClass]="color">{{'header.aboutme'| translate}} <img src="/img/aboutme.png"
+                alt=""></a>
         <a href="#skills" [ngClass]="color">Skills <img src="/img/skills.png" alt=""></a>
         <a href="#projects">Projects <img src="/img/projects.png" alt=""></a>
         <a href="#contact">Contact <img src="/img/contact.png" alt=""></a>
         <div class="toogleLanguage">
-            <button (click)="changeLanguage('en')" [ngClass]="{'active': isActive('en')}">EN <img
+            <button (click)="changeLanguage('en'); toggleLanguage('en')" [ngClass]="{'active': isActive('en')}">EN <img
                     src="/img/Toggle 1.png" alt=""></button>
             <div class="line">
                 <div class="dot" [ngClass]="dotClass"></div>
             </div>
-            <button (click)="changeLanguage('de')" [ngClass]="{'active': isActive('de')}">DE<img src="/img/Toggle 1.png"
+            <button (click)="changeLanguage('de'); toggleLanguage('de')"  [ngClass]="{'active': isActive('de')}">DE<img src="/img/Toggle 1.png"
                     alt=""></button>
         </div>
         <div class="burgerButton" (click)="toggleRespMenu()">
@@ -38,12 +39,12 @@
             <a href="#projects">Projects <img src="/img/projects.png" alt=""></a>
             <a href="#contact">Contact <img src="/img/contact.png" alt=""></a>
             <div class="toogleLanguage">
-                <button (click)="changeLanguage('en')" [ngClass]="{'active': isActive('en')}">EN <img
+                <button (click)="changeLanguage('en'); toggleLanguage('en')" [ngClass]="{'active': isActive('en')}">EN <img
                         src="/img/Toggle 1.png" alt=""></button>
                 <div class="line">
                     <div class="dot" [ngClass]="dotClass"></div>
                 </div>
-                <button (click)="changeLanguage('de')" [ngClass]="{'active': isActive('de')}">DE<img
+                <button (click)="changeLanguage('de'); toggleLanguage('de') " [ngClass]="{'active': isActive('de')}">DE<img
                         src="/img/Toggle 1.png" alt=""></button>
             </div>
         </div>
@@ -53,4 +54,3 @@
 
 
     </div>
-

@@ -1,10 +1,13 @@
-import { CommonModule, NgClass } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { SocialmediaComponent } from '../socialmedia/socialmedia.component';
+import {TranslatePipe, TranslateDirective} from "@ngx-translate/core";
+import { LanguageService } from '../../language.service';  // Importiere den LanguageService
 
 @Component({
   selector: 'app-header',
-  imports: [CommonModule, SocialmediaComponent],
+  standalone:true,
+  imports: [CommonModule, SocialmediaComponent, TranslatePipe, TranslateDirective],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
@@ -14,8 +17,11 @@ export class HeaderComponent {
   dotClass: string = 'to-the-left';
   activeLanguage: string = 'en';
   burger: boolean = false;
+  currentLanguage: string='';
+  constructor(private languageService: LanguageService) {}
 
-  changeLanguage(language: string): void {
+
+  toggleLanguage(language: string): void {
 
 
     if (language === 'en') {
@@ -29,9 +35,15 @@ export class HeaderComponent {
 
 
     }
-    console.log(this.activeLanguage);
+   
     
   }
+  changeLanguage(lang: string) {
+    this.languageService.changeLanguage(lang); 
+    console.log(lang);// Aufruf der changeLanguage-Methode aus dem Service
+    this.currentLanguage = this.languageService.getCurrentLanguage();
+  }
+
 
   isActive(language: string): boolean {
     return this.activeLanguage === language;
