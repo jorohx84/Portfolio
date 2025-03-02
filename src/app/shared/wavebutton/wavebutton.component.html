@@ -3,7 +3,7 @@
         <img [ngClass]="{'rolling': isHover()}" class="rollingImage" [src]="imagePath" alt="">
     </div>
 
-    <a (mouseover)="toggleHover()" (mouseout)="toggleHover()" href="">{{text}}</a>
+    <a (mouseover)="toggleHover()" (mouseout)="toggleHover()" [href]="path">{{text}}</a>
 
 </section>
 

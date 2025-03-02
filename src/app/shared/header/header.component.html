@@ -2,9 +2,9 @@
     <div class="menubar">
         <p [ngClass]="logo" class="logo">JR</p>
         <a href="#aboutme" class="aboutme" [ngClass]="color">About me <img src="/img/aboutme.png" alt=""></a>
-        <a [ngClass]="color">Skills <img src="/img/skills.png" alt=""></a>
-        <a>Projects <img src="/img/projects.png" alt=""></a>
-        <a>Contact <img src="/img/contact.png" alt=""></a>
+        <a href="#skills" [ngClass]="color">Skills <img src="/img/skills.png" alt=""></a>
+        <a href="#projects">Projects <img src="/img/projects.png" alt=""></a>
+        <a href="#contact">Contact <img src="/img/contact.png" alt=""></a>
         <div class="toogleLanguage">
             <button (click)="changeLanguage('en')" [ngClass]="{'active': isActive('en')}">EN <img
                     src="/img/Toggle 1.png" alt=""></button>
@@ -33,10 +33,10 @@
         </div>
 
         <div class="menu-resp-buttons">
-            <a class="aboutme">About me <img src="/img/aboutme.png" alt=""></a>
-            <a>Skills <img src="/img/skills.png" alt=""></a>
-            <a>Projects <img src="/img/projects.png" alt=""></a>
-            <button>Contact <img src="/img/contact.png" alt=""></button>
+            <a href="#aboutme" class="aboutme">About me <img src="/img/aboutme.png" alt=""></a>
+            <a href="#skills">Skills <img src="/img/skills.png" alt=""></a>
+            <a href="#projects">Projects <img src="/img/projects.png" alt=""></a>
+            <a href="#contact">Contact <img src="/img/contact.png" alt=""></a>
             <div class="toogleLanguage">
                 <button (click)="changeLanguage('en')" [ngClass]="{'active': isActive('en')}">EN <img
                         src="/img/Toggle 1.png" alt=""></button>

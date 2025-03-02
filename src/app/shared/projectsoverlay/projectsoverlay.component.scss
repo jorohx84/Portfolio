@@ -196,14 +196,20 @@ section {
 
 
 @media(max-width:1440px) {
+
+    section {
+        height: fit-content
+    }
+
     .content {
         width: 100vw !important;
         min-height: fit-content;
         align-items: center;
-
+        gap: 32px;
         background-image: url(/img/project-background-rotate.png);
-        background-position: top;
-        background-size: 100% 100%;
+        background-position: left;
+
+        background-size:  180% 130%;
 
     }
 
@@ -224,15 +230,21 @@ section {
         height: fit-content !important;
     }
 
-    .contentRight{
+    .contentRight {
         height: fit-content !important;
         gap: 32px;
+        >div{
+            margin-top: 50px;
+        }
     }
 
     .goNextContainer {
         margin-bottom: 64px;
+        margin-top: 64px;
+
         >a {
-           content: url(/img/goBack-white.svg);
+            content: url(/img/goBack-white.svg);
+
             display: block !important;
 
         }
@@ -259,7 +271,7 @@ section {
 
 @media(max-width:650px) {
     .headline {
-        width: 100px;
+        width: 100%;
 
         >h1 {
 
@@ -275,7 +287,7 @@ section {
 
     .textContainer {
         height: fit-content !important;
-
+gap:20px;
         >div {
 
             >h2 {
@@ -300,36 +312,40 @@ section {
         }
     }
 
-    .contentRight{
-        >div{
+    .contentRight {
+        >div {
             display: flex;
             justify-content: center;
 
         }
     }
-.goNextContainer{
-    >div{
-        right: 10px !important;
-        img{
-         width: 120px;
+
+    .goNextContainer {
+        >div {
+            right: 10px !important;
+
+            img {
+                width: 120px;
+            }
+        }
+
+        >a {
+            left: 10px !important;
+
+            img {
+                width: 120px;
+            }
         }
     }
-    >a{
-        left: 10px !important;
-        img{
-            width: 120px;
-        }
-    }
-}
-  
+
 }
 
 @media(min-width:1440px) {
     .goNextContainer {
-        >a{
+        >a {
             display: none !important;
         }
-      
+
     }
 
     .goBackContaienr {

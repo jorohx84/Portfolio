@@ -29,6 +29,8 @@ export class HeaderComponent {
 
 
     }
+    console.log(this.activeLanguage);
+    
   }
 
   isActive(language: string): boolean {

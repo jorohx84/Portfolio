@@ -10,6 +10,7 @@ import { Component, Input } from '@angular/core';
 export class WavebuttonComponent {
   @Input() text: string = '';
   @Input() imagePath: string = '';
+  @Input() path: string = '';
 
   hover = false;
 
