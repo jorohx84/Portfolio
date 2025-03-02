@@ -16,12 +16,24 @@ section {
 
             &:hover {
                 animation-play-state: paused;
-               
+
+
             }
         }
+
+
     }
 
+    >h2 {
+        margin-bottom: 10px !important;
+    }
+
+    >p {
+        font-weight: 100 !important;
+    }
 }
+
+
 
 .imageCover {
     position: absolute;
@@ -39,6 +51,7 @@ section {
         bottom: 40px;
         right: 40px;
     }
+
 
 }
 
@@ -95,22 +108,26 @@ section {
     .imageCover {
         display: none;
     }
-section{
-    width: 320px;
-    >div{
-        width: 320px;
-        height: fit-content;
-        >img{
-            width:320px;
-           height: 320px;
-        }
 
-        >h2{
-            width: 100%!important;
-        }
-        >p{
-            width: 100% !important;
+    section {
+        width: 320px;
+
+        >div {
+            width: 320px;
+            height: fit-content;
+
+            >img {
+                width: 320px;
+                height: 320px;
+            }
+
+            >h2 {
+                width: 100% !important;
+            }
+
+            >p {
+                width: 100% !important;
+            }
         }
     }
-}
 }

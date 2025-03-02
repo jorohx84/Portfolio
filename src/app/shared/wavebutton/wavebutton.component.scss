@@ -1,0 +1,89 @@
+section {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 84px;
+
+
+
+    >a {
+        color: var(--white-font);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        border-radius: 100px;
+        width: 60px;
+        transition: width 0.3s ease-in-out;
+
+        &:hover {
+            background-color: var(--logo-color);
+            width: 84px;
+        }
+        &:active{
+            transform: scale(0.95);
+        }
+
+
+    }
+}
+
+.rollingImage {
+    position: relative;
+    width: 50px;
+    height: 28px;
+    transition: width 0.5s ease-in-out;
+    animation: rotateBackward 0.5s ease-in-out;
+
+    >img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 24px;
+        height: 24px;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+
+    }
+
+
+
+}
+
+
+.rolling {
+    opacity: 1 !important;
+
+    animation: rotate 0.5s ease-in-out;
+    transform: rotate(0deg);
+}
+
+
+
+@keyframes rotate {
+    0% {
+        transform: rotate(-220deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.width {
+    width: 100%;
+}
+
+
+
+@keyframes rotateBackward {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-220deg);
+    }
+}

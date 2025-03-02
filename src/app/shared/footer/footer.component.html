@@ -4,9 +4,25 @@
             <p >JR</p>
             <span>© Johannes Roth 2025</span>
         </div>
-     <a href="">Legal Notice</a>
+        <div class="legallink">
+            <a href="">Legal Notice</a>
+        </div>
+     
     </div>
-    <a href="">GitHub</a>
-    <a href="">LinkedIn</a>
-    <a href="">Email</a>
+<div class="footerlinks">
+    <app-wavebutton
+    [text]="'GitHub'"
+    [imagePath]="'/img/github-footer.svg'"
+    ></app-wavebutton>
+    <app-wavebutton
+    [text]="'LinkedIn'"
+    [imagePath]="'/img/linkedin.svg'"
+    ></app-wavebutton>
+    <app-wavebutton
+    [text]="'Email'"
+    [imagePath]="'/img/mail.svg'"
+    ></app-wavebutton>
+
+</div>
+
 </section>

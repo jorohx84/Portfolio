@@ -3,6 +3,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    gap: 200px;
 }
 
 .legal {
@@ -31,9 +32,12 @@ section {
 }
 
 
-.links {
-    width: 100%;
+.footerlinks {
+   display: flex;
+   justify-content: space-between;
+   width: 80%;
 }
+
 
 
 
@@ -41,4 +45,30 @@ a {
     color: var(--white-font);
     height: fit-content;
     font-size: 14px;
+}
+
+@media(max-width:780px){
+    section{
+        flex-direction: column;
+        gap:0px
+    }
+    .legal{
+        width: 100%;
+    }
+    .logo{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       width: 100% !important;
+    }
+
+    .legallink{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .footerlinks{
+        width: 100%;
+    }
 }

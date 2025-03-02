@@ -1,5 +1,3 @@
-
-
 section {
     background-image: url(/img/contact-background.png);
     background-size: cover;
@@ -15,16 +13,22 @@ section {
     align-items: center;
     gap: 48px;
     color: var(--white-font);
-  
-    &:hover{
-        .lineCover{
-            
+
+    &:hover {
+        .lineCover {
+
+            width: 0px;
+        }
+
+        .lineCover-resp {
+
             width: 0px;
         }
     }
 }
 
 .content {
+    position: relative;
     width: calc(100% - 240px);
     min-height: 560px;
     height: fit-content;
@@ -49,69 +53,102 @@ section {
         flex-direction: column;
         gap: 16px;
 
-        >span{
+        >span {
             font-size: 20px;
             font-weight: 500;
         }
-        >h1{
+
+        >h1 {
             font-weight: 700;
             font-size: 64px;
         }
-      
+
     }
-    p{
+
+    p {
         font-size: 18px;
         font-weight: 300;
     }
 }
 
-.line{
+.line {
     position: relative;
     display: flex;
     justify-content: flex-end;
     width: 100%;
     flex-direction: unset !important;
-   
-    >img{
+
+    >img {
         width: 100%;
         max-width: 280px;
-        
+
     }
 }
-.lineCover{
+
+.lineCover {
     width: 280px;
     height: 100%;
     position: absolute;
-    top:0;
-    right:0;
+    top: 0;
+    right: 0;
     background-image: url(/img/background-resp.png);
     transition: width 0.5s ease-in-out;
     border: none;
 }
 
-.contentRight{
+.line-resp {
+    position: absolute !important;
+    bottom: 0;
+    left: 0;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    flex-direction: unset !important;
+    margin: 0 !important;
+
+    >img {
+        width: 100%;
+        max-width: 280px;
+
+    }
+}
+
+.lineCover-resp {
+    width: 280px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url(/img/background-resp.png);
+    transition: width 0.5s ease-in-out;
+    border: none;
+}
+
+.contentRight {
     width: 100%;
     max-width: 480px;
     height: 100%;
-   
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        
-        align-items: flex-end;
-  >div:not(.sticker){
-    margin-top: 120px;
-  }
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-end;
+
+    >div:not(.sticker) {
+        margin-top: 120px;
+    }
 
 }
 
-.footerContainer{
+.footerContainer {
     width: calc(100% - 240px);
     height: fit-content;
- 
+
 }
 
-.sticker{
+.sticker {
     width: 168px;
     height: 168px;
     position: absolute;
@@ -119,4 +156,83 @@ section {
     background-position: center;
     background-size: cover;
     transform: rotate(90deg);
+}
+
+.sticker-resp {
+    width: 168px;
+    height: 168px;
+
+    background-image: url(/img/contactsticker.png);
+    background-position: center;
+    background-size: cover;
+    transform: rotate(90deg);
+}
+
+@media(max-width:1280px) {
+
+
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+        width: calc(100% - 40px);
+        margin-top: 100px;
+
+    }
+
+    .contentLeft {
+        margin-top: 140px;
+        min-height: fit-content;
+    }
+
+    .contentRight {
+        height: fit-content;
+    }
+
+    .sticker {
+        display: none;
+    }
+
+    .line {
+        display: none !important;
+    }
+    .line-resp{
+        width: 282px;
+    }
+
+    .footerContainer {
+        margin-bottom: 50px;
+    }
+
+    .sticker-resp{
+        position: absolute;
+        right: 0;
+    }
+
+}
+
+@media(min-width:1280px) {
+    .line-resp {
+        display: none !important;
+    }
+
+    .sticker-resp {
+        display: none;
+    }
+}
+
+@media(max-width:470px) {
+    .line-resp {
+        width: 200px;
+    }
+
+    .lineCover-resp {
+        width: 200px;
+    }
+}
+
+@media(max-width:780px) {
+    .footerContainer {
+        width: calc(100% - 40px);
+    }
 }

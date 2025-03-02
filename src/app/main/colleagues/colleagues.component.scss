@@ -5,6 +5,7 @@ section {
     width: 100vw;
     max-width: 1440px;
     height: 838.82px;
+    
 }
 
 .content {
@@ -219,6 +220,7 @@ section {
 }
 @media(max-width:1280px) {
     section{
+        margin-top: 100px;
         height: fit-content;
     }
     .thoughts {
@@ -228,6 +230,10 @@ section {
 
     .thoughtsContent {
         position: static;
+    }
+
+    h1{
+        text-align: end;
     }
 }
 
