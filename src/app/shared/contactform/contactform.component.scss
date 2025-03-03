@@ -137,12 +137,12 @@ textarea::placeholder {
 .checkbox-default {
     width: 24px;
     height: 24px;
-    background-image: url(/img/box_empty.svg);
+    background-image: url(./../../../../public/img/box_empty.svg);
     background-size: cover;
     background-position: center;
 
     &:hover {
-        background-image: url(/img/box_empty_hover.svg);
+        background-image:url(./../../../../public/img/box_empty_hover.svg);
     }
 
     &:active {

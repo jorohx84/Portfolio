@@ -23,9 +23,9 @@ export class SkillsComponent {
   ];
   currentStickerIndex = 0;
   stickerImages = [
-    'img/sticker1.svg',
-    'img/sticker2.svg',
-    'img/sticker3.svg'
+    './img/sticker1.svg',
+    './img/sticker2.svg',
+    './img/sticker3.svg'
   ];
   isAnimating = false;
 

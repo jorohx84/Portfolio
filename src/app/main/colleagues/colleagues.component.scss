@@ -104,7 +104,7 @@ section {
             align-items: center;
 
             &:hover {
-                background-image: url(/img/rectangle-sticker.svg);
+                background-image: url(./../../../../public/img/rectangle-sticker.svg);
             }
 
             >div {
@@ -178,7 +178,7 @@ section {
     z-index: 3;
 
     >div {
-        background-image: url(/img/thoughts-bg-a.png);
+        background-image: url(./../../../../public/img/thoughts-bg-a.png);
         background-size: cover;
         background-position: center;
     }
@@ -190,7 +190,7 @@ section {
     z-index: 2;
 
     >div {
-        background-image: url(/img/thoughts-bg-b.png);
+        background-image: url(./../../../../public/img/thoughts-bg-b.png);
         background-size: cover;
         background-position: center;
 
@@ -205,7 +205,7 @@ section {
     z-index: 1;
 
     >div {
-        background-image: url(/img/thoughts-bg-a.png);
+        background-image: url(./../../../../public/img/thoughts-bg-a.png);
         background-size: cover;
         background-position: center;
 

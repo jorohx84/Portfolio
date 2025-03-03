@@ -11,19 +11,19 @@ import { ProjectsoverlayComponent } from '../shared/projectsoverlay/projectsover
 export class JoinComponent {
   joinSkills = [
     {
-      imgPath: '/img/css.svg',
+      imgPath: './img/css.svg',
       name: 'CSS'
     },
     {
-      imgPath: '/img/html.svg',
+      imgPath: './img/html.svg',
       name: 'HTML'
     },
     {
-      imgPath: '/img/javascript.svg',
+      imgPath: './img/javascript.svg',
       name: 'JavaScript'
     },
     {
-      imgPath: '/img/firebase.svg',
+      imgPath: './img/firebase.svg',
       name: 'Firebase'
     },
 

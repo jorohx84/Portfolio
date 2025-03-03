@@ -159,7 +159,7 @@ a:hover img {
     justify-content: flex-start;
     align-items: center;
     gap: 64px;
-    background-image: url(/img/background-resp.png);
+    background-image: url(./../../../../public/img/background-resp.png);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -255,13 +255,13 @@ a:hover img {
 
 
 .burgerButton:hover img {
-    content: url(/img/burgerHover.svg);
+    content: url(./../../../../public/img/burgerHover.svg);
     width: 32px;
     height: 32px;
 }
 
 .closeRespMenu:hover {
-    content: url(/img/closeHover.svg);
+    content: url(./../../../../public/img/closeHover.svg);
     width: 32px;
     height: 32px;
 }

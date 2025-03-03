@@ -3,20 +3,20 @@
         <p [ngClass]="logo" class="logo">JR</p>
         <a href="#aboutme" class="aboutme" [ngClass]="color">{{'header.aboutme'| translate}} <img src="/img/aboutme.png"
                 alt=""></a>
-        <a href="#skills" [ngClass]="color">Skills <img src="/img/skills.png" alt=""></a>
-        <a href="#projects">Projects <img src="/img/projects.png" alt=""></a>
-        <a href="#contact">Contact <img src="/img/contact.png" alt=""></a>
+        <a href="#skills" [ngClass]="color">Skills <img src="./img/skills.png" alt=""></a>
+        <a href="#projects">Projects <img src="./img/projects.png" alt=""></a>
+        <a href="#contact">Contact <img src="./img/contact.png" alt=""></a>
         <div class="toogleLanguage">
             <button (click)="changeLanguage('en'); toggleLanguage('en')" [ngClass]="{'active': isActive('en')}">EN <img
-                    src="/img/Toggle 1.png" alt=""></button>
+                    src="./img/Toggle 1.png" alt=""></button>
             <div class="line">
                 <div class="dot" [ngClass]="dotClass"></div>
             </div>
-            <button (click)="changeLanguage('de'); toggleLanguage('de')"  [ngClass]="{'active': isActive('de')}">DE<img src="/img/Toggle 1.png"
+            <button (click)="changeLanguage('de'); toggleLanguage('de')"  [ngClass]="{'active': isActive('de')}">DE<img src="./img/Toggle 1.png"
                     alt=""></button>
         </div>
         <div class="burgerButton" (click)="toggleRespMenu()">
-            <img src="/img/menu.svg" alt="">
+            <img src="./img/menu.svg" alt="">
         </div>
     </div>
 
@@ -29,23 +29,23 @@
         <div class="menubar-resp">
             <p class="logo">JR</p>
             <div class="closeButtonContainer" (click)="toggleRespMenu()">
-                <img class="closeRespMenu" src="/img/menuclose.svg" alt="">
+                <img class="closeRespMenu" src="./img/menuclose.svg" alt="">
             </div>
         </div>
 
         <div class="menu-resp-buttons">
-            <a href="#aboutme" class="aboutme">About me <img src="/img/aboutme.png" alt=""></a>
-            <a href="#skills">Skills <img src="/img/skills.png" alt=""></a>
-            <a href="#projects">Projects <img src="/img/projects.png" alt=""></a>
-            <a href="#contact">Contact <img src="/img/contact.png" alt=""></a>
+            <a href="#aboutme" class="aboutme">About me <img src="./img/aboutme.png" alt=""></a>
+            <a href="#skills">Skills <img src="./img/skills.png" alt=""></a>
+            <a href="#projects">Projects <img src="./img/projects.png" alt=""></a>
+            <a href="#contact">Contact <img src="./img/contact.png" alt=""></a>
             <div class="toogleLanguage">
                 <button (click)="changeLanguage('en'); toggleLanguage('en')" [ngClass]="{'active': isActive('en')}">EN <img
-                        src="/img/Toggle 1.png" alt=""></button>
+                        src="./img/Toggle 1.png" alt=""></button>
                 <div class="line">
                     <div class="dot" [ngClass]="dotClass"></div>
                 </div>
                 <button (click)="changeLanguage('de'); toggleLanguage('de') " [ngClass]="{'active': isActive('de')}">DE<img
-                        src="/img/Toggle 1.png" alt=""></button>
+                        src="./img/Toggle 1.png" alt=""></button>
             </div>
         </div>
         <div class="socialmedia-resp">
