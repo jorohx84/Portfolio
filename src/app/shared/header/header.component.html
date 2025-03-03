@@ -3,9 +3,9 @@
         <p [ngClass]="logo" class="logo">JR</p>
         <a href="#aboutme" class="aboutme" [ngClass]="color">{{'header.aboutme'| translate}} <img src="/img/aboutme.png"
                 alt=""></a>
-        <a href="#skills" [ngClass]="color">Skills <img src="./img/skills.png" alt=""></a>
-        <a href="#projects">Projects <img src="./img/projects.png" alt=""></a>
-        <a href="#contact">Contact <img src="./img/contact.png" alt=""></a>
+        <a href="#skills" [ngClass]="color">{{'header.skills'| translate}} <img src="./img/skills.png" alt=""></a>
+        <a href="#projects">{{'header.projects'| translate}} <img src="./img/projects.png" alt=""></a>
+        <a href="#contact">{{'header.contact'| translate}} <img src="./img/contact.png" alt=""></a>
         <div class="toogleLanguage">
             <button (click)="changeLanguage('en'); toggleLanguage('en')" [ngClass]="{'active': isActive('en')}">EN <img
                     src="./img/Toggle 1.png" alt=""></button>
@@ -34,10 +34,10 @@
         </div>
 
         <div class="menu-resp-buttons">
-            <a href="#aboutme" class="aboutme">About me <img src="./img/aboutme.png" alt=""></a>
-            <a href="#skills">Skills <img src="./img/skills.png" alt=""></a>
-            <a href="#projects">Projects <img src="./img/projects.png" alt=""></a>
-            <a href="#contact">Contact <img src="./img/contact.png" alt=""></a>
+            <a href="#aboutme" class="aboutme">{{'header.aboutme'| translate}}<img src="./img/aboutme.png" alt=""></a>
+            <a href="#skills">{{'header.skills'| translate}} <img src="./img/skills.png" alt=""></a>
+            <a href="#projects">{{'header.projects'| translate}} <img src="./img/projects.png" alt=""></a>
+            <a href="#contact">{{'header.contact'| translate}} <img src="./img/contact.png" alt=""></a>
             <div class="toogleLanguage">
                 <button (click)="changeLanguage('en'); toggleLanguage('en')" [ngClass]="{'active': isActive('en')}">EN <img
                         src="./img/Toggle 1.png" alt=""></button>

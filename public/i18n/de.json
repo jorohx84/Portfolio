@@ -1,0 +1,28 @@
+{
+  "header": {
+    "aboutme": "Über mich",
+    "skills": "Fähigkeiten",
+    "projects": "Projekte",
+    "contact": "Kontakt"
+  },
+  "aboutme": {
+    "smallheadline": "WER IST JOHANNES?",
+    "headline": "Über mich",
+    "base": "Wohnhaft in Karlsruhe",
+    "location": "Platzhalter",
+    "remote": "Offen für Homeoffice",
+    "text": "Hallo, ich bin Johannes und habe gerade meine Ausbildung zum Frontend-Entwickler abgeschlossen. Ich liebe es, kreative und performante Weblösungen zu entwickeln. Jede Herausforderung inspiriert mich, effizientere und elegantere Lösungen zu finden. Lass uns etwas Großartiges bauen!"
+  },
+  "skills": {
+      "smallheadline": "MEINE WERKZEUGE",
+    "headline": "Fähigkeiten",
+    "introduction": "Ich bin ein engagierter Frontend-Entwickler mit einer Leidenschaft für moderne Webtechnologien. Offen für Neues, lerne ich stetig dazu und passe mich schnell an neue Herausforderungen an. Überzeugen Sie sich selbst von meinen Fähigkeiten!"
+  
+  },
+  "projects":{
+    "smallheadline": "Mein Handwerk",
+    "headline": "Projekte",
+    "introduction":"Schauen Sie sich gerne meine Projekte an und testen Sie sie. Ich fokussiere mich auf benutzerfreundliche, reaktionsschnelle Designs und effizienten Code."
+
+  }
+}

@@ -1,14 +1,18 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import {TranslatePipe, TranslateDirective} from "@ngx-translate/core";
+import { LanguageService } from '../../language.service';  
 
 @Component({
   selector: 'app-skills',
-  imports: [CommonModule],
+  imports: [CommonModule, TranslatePipe],
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.scss'
 })
 export class SkillsComponent {
   hover = false;
+
+  constructor(private languageService: LanguageService) {}
   names = [
     { name: 'HTML', img: 'img/html.svg' },
     { name: 'CSS', img: 'img/css.svg' },

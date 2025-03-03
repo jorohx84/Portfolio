@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { SocialmediaComponent } from '../socialmedia/socialmedia.component';
 import {TranslatePipe, TranslateDirective} from "@ngx-translate/core";
-import { LanguageService } from '../../language.service';  // Importiere den LanguageService
+import { LanguageService } from '../../language.service';  
 
 @Component({
   selector: 'app-header',

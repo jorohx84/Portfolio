@@ -1,11 +1,13 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ButtonsComponent } from '../buttons/buttons.component';
 import { Router } from '@angular/router';
+import {TranslatePipe, TranslateDirective} from "@ngx-translate/core";
+import { LanguageService } from '../../language.service';  
 
 @Component({
   selector: 'app-singleproject',
-  imports: [CommonModule, ButtonsComponent],
+  imports: [CommonModule, ButtonsComponent, TranslatePipe],
   templateUrl: './singleproject.component.html',
   styleUrl: './singleproject.component.scss'
 })
@@ -18,8 +20,8 @@ export class SingleprojectComponent {
   @Input() sticker: string = '';
   @Input() stickerClass: string = '';
 
-  constructor(private router: Router) {}
-
+  constructor(private router: Router, private languageService: LanguageService) {}
+  currentLanguage: any = '';
   hover = false;
   toggleHover() {
     this.hover = !this.hover;
@@ -32,9 +34,12 @@ export class SingleprojectComponent {
   openOverlay(route:string) {
 
       this.router.navigate([route]);
-
-   
-
   }
-
+  ngOnInit() {
+   this.currentLanguage="projects.description | transalte"
+  console.log(this.currentLanguage);
+  
+  }
 }
+
+

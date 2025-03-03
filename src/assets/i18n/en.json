@@ -1,8 +1,12 @@
 {
-    "header": {
-      "aboutme": "About me"
-    },
-    "footer": {
-      "text": "This is a footer in English"
-    }
+  "header": {
+    "aboutme": "About me",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "aboutme":{
+    "smallheadline":"WHO'S JOHANNES",
+    "headline":"About me"
   }
+}

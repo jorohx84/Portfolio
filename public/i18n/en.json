@@ -1,0 +1,29 @@
+{
+  "header": {
+    "aboutme": "About me",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "aboutme": {
+    "smallheadline": "WHO'S JOHANNES?",
+    "headline": "About me",
+    "base": "Based in Karlsruhe",
+    "location": "Placeholder",
+    "remote": "Open to work remote",
+    "text": "Hey there, I'm Johannes. I just completed my training as a frontend developer and love creating creative and high-performance web solutions. Every challenge inspires me to find more efficient and elegant solutions. Let's build something great together!"
+  },
+  "skills": {
+    "smallheadline": "MY STACK",
+    "headline": "Skill set",
+    "introduction": "I am a dedicated frontend developer with a passion for modern web technologies. Always open to learning, I quickly adapt to new challenges. See for yourself what I can do!"
+  },
+  "projects": {
+    "smallheadline": "MY CRAFT",
+    "headline": "Projects",
+    "introduction": "Feel free to check out my projects and interact with them. I focus on user-friendly, responsive designs and efficient code."
+  },
+  "singeproject":{
+    "description":"Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
+  }
+}
