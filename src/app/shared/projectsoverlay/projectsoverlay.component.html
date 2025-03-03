@@ -40,7 +40,11 @@
 
                 </div>
                 <div class="contentRight">
-                    <img [src]="image" alt="">
+                    <div class="images">
+                        <img [ngClass]="stickerClass" class="sticker" src="/img/sticker-blue.svg" alt="">
+                        <img [src]="image" alt="">
+                    </div>
+                   
                     <div>
                         <app-buttons  [text]="'GitHub'" [color]="'getinTouchButton'"></app-buttons>
                         <app-buttons  [text]="'Live Test'" [color]="'getinTouchButton'"></app-buttons>

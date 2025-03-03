@@ -1,5 +1,6 @@
 <section>
     <div>
+        <img [ngClass]="stickerClass" class="sticker" [src]="sticker" alt="">
         <img [src]="imagePath" alt="" [ngClass]="className">
         <div class="imageCover" (mouseover)="toggleHover()" (mouseout)="toggleHover()" [ngClass]="{'cover': isHover()}">
             <div>

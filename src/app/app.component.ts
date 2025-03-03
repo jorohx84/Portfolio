@@ -1,20 +1,20 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { TranslateService, TranslatePipe, TranslateDirective } from "@ngx-translate/core";
+import { LanguageService } from './language.service';  // Importiere den LanguageService
 
 
 @Component({
   selector: 'app-root',
 
-  imports: [RouterOutlet, TranslatePipe, TranslateDirective],
+  imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'portfolio';
-  constructor(private translate: TranslateService) {
-    this.translate.addLangs(['de', 'en']);
-    this.translate.setDefaultLang('en');
-    this.translate.use('en');
+
+constructor(private languageService: LanguageService) {
+  // Initiale Sprache wird im Service gesetzt
 }
 }

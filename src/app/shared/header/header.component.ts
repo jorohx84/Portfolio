@@ -7,7 +7,7 @@ import { LanguageService } from '../../language.service';  // Importiere den Lan
 @Component({
   selector: 'app-header',
   standalone:true,
-  imports: [CommonModule, SocialmediaComponent, TranslatePipe, TranslateDirective],
+  imports: [CommonModule, SocialmediaComponent, TranslatePipe],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
@@ -32,6 +32,7 @@ export class HeaderComponent {
     } else {
       this.dotClass = 'to-the-right'
       this.activeLanguage = 'de';
+
 
 
     }

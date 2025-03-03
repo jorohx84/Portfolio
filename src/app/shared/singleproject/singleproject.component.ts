@@ -15,6 +15,8 @@ export class SingleprojectComponent {
   @Input() text: string = '';
   @Input() className: string = '';
   @Input() param: string = '';
+  @Input() sticker: string = '';
+  @Input() stickerClass: string = '';
 
   constructor(private router: Router) {}
 
