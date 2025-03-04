@@ -10,7 +10,7 @@
         </div>
     </div>
     <h2>{{title}}</h2>
-    <p>{{text}}</p>
+    <p>{{text | translate}}</p>
     <div class="respbutton">
         <app-buttons [text]="'Project details'" [color]="'black'" (click)="openOverlay(param)"></app-buttons>
     </div>

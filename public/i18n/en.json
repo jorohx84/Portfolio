@@ -23,7 +23,21 @@
     "headline": "Projects",
     "introduction": "Feel free to check out my projects and interact with them. I focus on user-friendly, responsive designs and efficient code."
   },
-  "singeproject":{
-    "description":"Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
+  "singleproject":{
+    "join-description":"Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+    "pollo-description":"Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
+    "dabubble-description":"This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization."
+  },
+  "overlay":{
+    "description":"Description",
+    "details": "Implementation Details",
+    "duration":"Duration",
+    "weeks":"weeks",
+    "join-description":"Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+    "join-details":"In our first group project with Git and Firebase, I was responsible for developing the Kanban board with drag-and-drop functionality, managing contacts, and integrating the Firebase database. I demonstrated my ability to work independently, in a structured way, and collaborate effectively within the team.",
+    "pollo-description":"Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
+    "pollo-details":"Short text that describes your role or the workflow for this specific project. Let a recruiter know more about your knowledge and ability to work independently or collaboratively in a structured way.",
+    "dabubble-description":"This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
+    "dabubble-details":"Short text that describes your role or the workflow for this specific project. Let a recruiter know more about your knowledge and ability to work independently or collaboratively in a structured way."
   }
 }

@@ -21,7 +21,7 @@ export class SingleprojectComponent {
   @Input() stickerClass: string = '';
 
   constructor(private router: Router, private languageService: LanguageService) {}
-  currentLanguage: any = '';
+ 
   hover = false;
   toggleHover() {
     this.hover = !this.hover;
@@ -34,11 +34,6 @@ export class SingleprojectComponent {
   openOverlay(route:string) {
 
       this.router.navigate([route]);
-  }
-  ngOnInit() {
-   this.currentLanguage="projects.description | transalte"
-  console.log(this.currentLanguage);
-  
   }
 }
 

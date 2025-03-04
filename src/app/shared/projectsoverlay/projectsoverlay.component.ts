@@ -3,10 +3,12 @@ import { Component, Input } from '@angular/core';
 import { HeaderComponent } from '../header/header.component';
 import { ButtonsComponent } from '../buttons/buttons.component';
 import { Router } from '@angular/router';
+import {TranslatePipe, TranslateDirective} from "@ngx-translate/core";
+import { LanguageService } from '../../language.service';  
 
 @Component({
   selector: 'app-projectsoverlay',
-  imports: [CommonModule, HeaderComponent, ButtonsComponent],
+  imports: [CommonModule, HeaderComponent, ButtonsComponent, TranslatePipe],
   templateUrl: './projectsoverlay.component.html',
   styleUrl: './projectsoverlay.component.scss'
 })
@@ -21,8 +23,8 @@ export class ProjectsoverlayComponent {
   @Input() path: string = '';
   @Input() stickerClass: string = '';
 
-
-  constructor(private router: Router) {}
+ 
+  constructor(private router: Router, private languageService: LanguageService) {}
   openOverlay(route:string) {
 
     this.router.navigate([route]);

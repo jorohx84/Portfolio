@@ -14,16 +14,33 @@
     "text": "Hallo, ich bin Johannes und habe gerade meine Ausbildung zum Frontend-Entwickler abgeschlossen. Ich liebe es, kreative und performante Weblösungen zu entwickeln. Jede Herausforderung inspiriert mich, effizientere und elegantere Lösungen zu finden. Lass uns etwas Großartiges bauen!"
   },
   "skills": {
-      "smallheadline": "MEINE WERKZEUGE",
+    "smallheadline": "MEINE WERKZEUGE",
     "headline": "Fähigkeiten",
     "introduction": "Ich bin ein engagierter Frontend-Entwickler mit einer Leidenschaft für moderne Webtechnologien. Offen für Neues, lerne ich stetig dazu und passe mich schnell an neue Herausforderungen an. Überzeugen Sie sich selbst von meinen Fähigkeiten!"
-  
   },
-  "projects":{
+  "projects": {
     "smallheadline": "Mein Handwerk",
     "headline": "Projekte",
-    "introduction":"Schauen Sie sich gerne meine Projekte an und testen Sie sie. Ich fokussiere mich auf benutzerfreundliche, reaktionsschnelle Designs und effizienten Code."
-
+    "introduction": "Schauen Sie sich gerne meine Projekte an und testen Sie sie. Ich fokussiere mich auf benutzerfreundliche, reaktionsschnelle Designs und effizienten Code."
+  },
+  "singleproject": {
+    "join-description": "Task-Manager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mit Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu.",
+    "pollo-description": "Ein Jump-'n'-Run- und Wurfspiel basierend auf einem objektorientierten Ansatz. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen das verrückte Huhn zu kämpfen.",
+    "dabubble-description":"Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation und Zusammenarbeit mit einer intuitiven Benutzeroberfläche, Echtzeitnachrichten und einer leistungsstarken Kanalorganisation."
+  },
+  "overlay":{
+    "description":"Beschreibung",
+    "details": "Details",
+    "duration":"Dauer",
+    "weeks":"Wochen",
+    "join-description":"Task-Manager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mit Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu.",
+    "join-details":"In unserem ersten Gruppenprojekt mit Git und Firebase war ich für die Entwicklung des Kanban-Boards mit Drag-and-Drop-Funktion, die Verwaltung der Kontakte und die Integration der Firebase-Datenbank zuständig. Dabei konnte ich meine Fähigkeit zur selbstständigen, strukturierten Arbeit und effektiven Zusammenarbeit im Team unter Beweis stellen.",
+    "pollo-description":"Springe-, Lauf- und Wurfspiel basierend auf einem objektorientierten Ansatz. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen das verrückte Huhn zu kämpfen.",
+    "pollo-details":"Ein kurzer Text, der deine Rolle oder den Arbeitsablauf für dieses spezielle Projekt beschreibt. Zeige einem Recruiter mehr über dein Wissen und deine Fähigkeit, selbstständig oder kollaborativ in einer strukturierten Weise zu arbeiten.",
+    "dabubble-description":"Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation und Zusammenarbeit mit ihrer intuitiven Benutzeroberfläche, Echtzeitnachrichten und einer leistungsstarken Kanalorganisation.",
+    "dabubble-details":"Ein kurzer Text, der deine Rolle oder den Arbeitsablauf in diesem spezifischen Projekt beschreibt. Zeige einem Recruiter dein Wissen sowie deine Fähigkeit, selbstständig oder kollaborativ in einer strukturierten Weise zu arbeiten."
   }
+
+
   
 }
