@@ -41,7 +41,6 @@ export class ContactformComponent {
   };
 
   onSubmit(ngForm: any) {
-  console.log(this.isError);
   
       if (ngForm.valid && ngForm.submitted) {
         if (this.privacy === true) {
@@ -72,6 +71,9 @@ export class ContactformComponent {
 
   toggleChecked() {
     this.privacy = !this.privacy
+    if (this.privacy===true) {
+      this.isError=false;
+    }
   }
 
   isChecked() {

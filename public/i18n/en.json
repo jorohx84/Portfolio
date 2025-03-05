@@ -64,12 +64,16 @@
   "form": {
     "name": "Waht's your name?",
     "name-placeholder": "your name goes here",
+    "name-error":"Oops! it seems your name is missing",
     "email": "What's your email?",
     "email-placeholder": "youremail@email.com",
+    "email-error":"Hoppla! your email is required",
     "message": "How can I help you?",
     "message-placeholder": "your message",
+    "message-error":"What do you need to develop?",
     "privacy1": "I've read the",
     "privacy2": "and agree to the processing of my data as outlined.",
+    "privacy-error":"Please accept the privacy policy",
     "link": "privacy policy",
     "button": "Send"
   },

@@ -1,14 +1,83 @@
-
-
-  {
-    "header": {
-      "aboutme": "Über mich",
-      "skills": "Fähigkeiten",
-      "projects": "Projekte",
-      "contact": "Kontakt"
-    },
-    "aboutme":{
-      "smallheadline":"WHO'S JOHANNES",
-      "headline":"About me"
-    }
+{
+  "header": {
+    "aboutme": "Über mich",
+    "skills": "Fähigkeiten",
+    "projects": "Projekte",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "hello": "Hallo Welt",
+    "name": "Ich bin Johannes Roth",
+    "button":"Schreibe mir"
+    
+  },
+  "aboutme": {
+    "smallheadline": "WER IST JOHANNES?",
+    "headline": "Über mich",
+    "base": "Wohnhaft in Karlsruhe",
+    "location": "Platzhalter",
+    "remote": "Offen für Homeoffice",
+    "text": "Hallo, ich bin Johannes und habe gerade meine Ausbildung zum Frontend-Entwickler abgeschlossen. Ich liebe es, kreative und performante Weblösungen zu entwickeln. Jede Herausforderung inspiriert mich, effizientere und elegantere Lösungen zu finden. Lass uns etwas Großartiges bauen!",
+  "button":"Lass uns reden"
+  },
+  "skills": {
+    "smallheadline": "MEINE WERKZEUGE",
+    "headline": "Fähigkeiten",
+    "introduction": "Ich bin ein engagierter Frontend-Entwickler mit einer Leidenschaft für moderne Webtechnologien. Offen für Neues, lerne ich stetig dazu und passe mich schnell an neue Herausforderungen an. Überzeugen Sie sich selbst von meinen Fähigkeiten!"
+  },
+  "projects": {
+    "smallheadline": "Mein Handwerk",
+    "headline": "Projekte",
+    "introduction": "Schauen Sie sich gerne meine Projekte an und testen Sie sie. Ich fokussiere mich auf benutzerfreundliche, reaktionsschnelle Designs und effizienten Code."
+  },
+  "singleproject": {
+    "join-description": "Task-Manager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mit Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu.",
+    "pollo-description": "Ein Jump-'n'-Run- und Wurfspiel basierend auf einem objektorientierten Ansatz. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen das verrückte Huhn zu kämpfen.",
+    "dabubble-description": "Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation und Zusammenarbeit mit einer intuitiven Benutzeroberfläche, Echtzeitnachrichten und einer leistungsstarken Kanalorganisation.",
+    "button":"zum Projekt"
+  },
+  "overlay": {
+    "description": "Beschreibung",
+    "details": "Details",
+    "duration": "Dauer",
+    "weeks": "Wochen",
+    "back":"zurück",
+    "next":"nächstes Projekt",
+    "join-description": "Task-Manager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mit Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu.",
+    "join-details": "In unserem ersten Gruppenprojekt mit Git und Firebase war ich für die Entwicklung des Kanban-Boards mit Drag-and-Drop-Funktion, die Verwaltung der Kontakte und die Integration der Firebase-Datenbank zuständig. Dabei konnte ich meine Fähigkeit zur selbstständigen, strukturierten Arbeit und effektiven Zusammenarbeit im Team unter Beweis stellen.",
+    "pollo-description": "Springe-, Lauf- und Wurfspiel basierend auf einem objektorientierten Ansatz. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen das verrückte Huhn zu kämpfen.",
+    "pollo-details": "In diesem Soloprojekt sammelte ich erste Erfahrungen mit der objektorientierten Programmierung. Ich entwickelte grundlegende Spielmechaniken und implementierte Animationen, wodurch ich mein Verständnis für strukturiertes Coding vertiefen und mir erste Fähigkeiten in der Spieleentwicklung aneignen konnte.",
+    "dabubble-description": "Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation und Zusammenarbeit mit ihrer intuitiven Benutzeroberfläche, Echtzeitnachrichten und einer leistungsstarken Kanalorganisation.",
+    "dabubble-details": "In diesem Gruppenprojekt habe ich erstmals mit Angular, TypeScript, Firestore Database, Firebase Authentication und Material Design gearbeitet. Mein Aufgabenbereich umfasste die User-Integration sowie die Erstellung der Kontakt- und Channelbar, wodurch ich meine Kenntnisse in diesen Bereichen gezielt vertiefen konnte."
+  },
+  "thoughts": {
+    "smallheadline": "Feedback",
+    "headline": "meiner Kollegen",
+    "thought1": "Als Kollege ist Johannes absolut zuverlässig und hilfsbereit. Er bringt sich aktiv ins Team ein, unterstützt andere bei Herausforderungen und sorgt für eine angenehme Arbeitsatmosphäre. Besonders beeindruckt mich seine strukturierte und lösungsorientierte Arbeitsweise, die das Team voranbringt.",
+    "thought2": "Mit Johannes zusammenzuarbeiten ist immer angenehm, da er professionell, kommunikativ und teamorientiert ist. Er geht respektvoll mit unterschiedlichen Meinungen um und schafft es, gemeinsame Lösungen zu finden. Seine positive Art motiviert das Team, und er ist immer bereit, Verantwortung zu übernehmen.",
+    "thought3": "Johannes zeichnet sich durch eine hohe Eigenverantwortung und eine sehr strukturierte Arbeitsweise aus. Er arbeitet effizient, bleibt auch in stressigen Situationen lösungsorientiert und verliert nie den Blick für das Wesentliche. Zudem überzeugt er durch seine Teamfähigkeit, da er nicht nur eigene Aufgaben erfolgreich meistert, sondern auch aktiv zur Weiterentwicklung des Teams beiträgt."
+  },
+  "contact": {
+    "smallheadline": "Kontaktieren Sie mich",
+    "headline": "Bereit zusammen zu arbeiten?",
+    "text": "Ich freue mich darauf, Teil eines engagierten Entwicklerteams zu werden und meine Fähigkeiten im Frontend-Bereich weiter auszubauen. Mit meiner strukturierten Arbeitsweise, meiner Lernbereitschaft und meiner Begeisterung für moderne Web-Technologien bin ich überzeugt, einen wertvollen Beitrag zu leisten. Ich bin offen für neue Herausforderungen und motiviert, benutzerfreundliche und innovative Lösungen zu entwickeln. Wenn Sie auf der Suche nach einem engagierten Frontend-Entwickler sind, der sowohl eigenverantwortlich als auch kollaborativ arbeitet, freue ich mich über eine Kontaktaufnahme."
+  },
+  "form": {
+    "name": "Wie ist dein Name?",
+    "name-placeholder": "dein Name steht hier",
+    "name-error":"Oops! Es scheint, dass dein Name fehlt.",
+    "email": "Wie lautet deine Email?",
+    "email-placeholder": "deineemail@email.com",
+    "email-error":"Hoppla! Deine E-Mail wird benötigt",
+    "message": "Wie kann ich dir helfen?",
+    "message-placeholder": "deine Nachricht",
+    "message-error":"Was möchtest du entwickeln?",
+    "privacy1": "Ich habe die ",
+    "privacy2": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
+    "link": "Datenschutzerklärung",
+    "button":"Senden"
+  },
+  "footer": {
+    "legal": "Impressum"
   }
+}

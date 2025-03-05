@@ -5,7 +5,7 @@
             <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name"
                 placeholder="{{'form.name-placeholder' | translate}}" required>
             @if(!name.valid && (message.touched || contactForm.submitted) ){
-            <span>Oops! it seems your name is missing</span>
+            <span>{{'form.name-error' | translate}}</span>
             }
         </div>
         <div>
@@ -13,7 +13,7 @@
             <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email"
                 placeholder="{{'form.email-placeholder' | translate}}" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
                 @if(!email.valid && (message.touched || contactForm.submitted) && name.valid){
-                    <span>Hoppla! your email is required</span>
+                    <span>{{'form.email-error' | translate}}</span>
                     }
         </div>
         <div>
@@ -21,7 +21,7 @@
             <textarea #message="ngModel" [(ngModel)]="contactData.message" name="message" id="message" placeholder="{{'form.message-placeholder' | translate}}"
                 required></textarea>
                 @if(!message.valid && (message.touched || contactForm.submitted)&& name.valid && email.valid){
-                    <span>What do you need to develop?</span>
+                    <span>{{'form.message-error' | translate}}</span>
                     }
         </div>
 
@@ -37,7 +37,7 @@
             <p>{{'form.privacy1' | translate}} <a href="">{{'form.link' | translate}}</a> {{'form.privacy2' | translate}}</p>
         </div>
         <div class="privacyError">
-            <p [ngClass]="{'block': isError}">Please accept the privacy policy</p>
+            <p [ngClass]="{'block': isError}">{{'form.privacy-error' | translate}}</p>
         </div>
 
     </div>

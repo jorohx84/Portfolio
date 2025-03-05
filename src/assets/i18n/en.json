@@ -5,8 +5,78 @@
     "projects": "Projects",
     "contact": "Contact"
   },
-  "aboutme":{
-    "smallheadline":"WHO'S JOHANNES",
-    "headline":"About me"
+  "hero": {
+    "hello": "Hallo World",
+    "name": "I'm Johannes Roth",
+    "button": "Get in Touch"
+  },
+  "aboutme": {
+    "smallheadline": "WHO'S JOHANNES?",
+    "headline": "About me",
+    "base": "Based in Karlsruhe",
+    "location": "Placeholder",
+    "remote": "Open to work remote",
+    "text": "Hey there, I'm Johannes. I just completed my training as a frontend developer and love creating creative and high-performance web solutions. Every challenge inspires me to find more efficient and elegant solutions. Let's build something great together!",
+    "button": "Let's Talk"
+  },
+  "skills": {
+    "smallheadline": "MY STACK",
+    "headline": "Skill set",
+    "introduction": "I am a dedicated frontend developer with a passion for modern web technologies. Always open to learning, I quickly adapt to new challenges. See for yourself what I can do!"
+  },
+  "projects": {
+    "smallheadline": "MY CRAFT",
+    "headline": "Projects",
+    "introduction": "Feel free to check out my projects and interact with them. I focus on user-friendly, responsive designs and efficient code."
+  },
+  "singleproject": {
+    "join-description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+    "pollo-description": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
+    "dabubble-description": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
+    "button":"Project details"
+  },
+  "overlay": {
+    "description": "Description",
+    "details": "Implementation Details",
+    "duration": "Duration",
+    "weeks": "weeks",
+    "back":"Go Back",
+    "next":"Next Project",
+    "join-description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+    "join-details": "In our first group project with Git and Firebase, I was responsible for developing the Kanban board with drag-and-drop functionality, managing contacts, and integrating the Firebase database. I demonstrated my ability to work independently, in a structured way, and collaborate effectively within the team.",
+    "pollo-description": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
+    "pollo-details": "In this solo project, I gained my first experience with object-oriented programming. I developed basic game mechanics and implemented animations, allowing me to deepen my understanding of structured coding and acquire initial skills in game development.",
+    "dabubble-description": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
+    "dabubble-details": "In this group project, I worked with Angular, TypeScript, Firestore Database, Firebase Authentication, and Material Design for the first time. My tasks included user integration and developing the contact and channel bar, allowing me to deepen my knowledge in these areas."
+  },
+  "thoughts": {
+    "smallheadline": "IN THEIR WORDS",
+    "headline": "Colleagues' Thoughts",
+    "thought1": "Johannes is an absolutely reliable and helpful colleague. He actively contributes to the team, supports others with challenges, and helps create a positive work atmosphere. I am particularly impressed by his structured and solution-oriented approach, which drives the team forward.",
+    "thought2": "Working with Johannes is always a pleasure because he is professional, communicative, and team-oriented. He respects different opinions and finds common solutions. His positive attitude motivates the team, and he is always ready to take on responsibility.",
+    "thought3": "Johannes demonstrates a high level of responsibility and a very structured way of working. He is efficient, remains solution-oriented even in stressful situations, and never loses sight of what’s important. Additionally, he stands out for his teamwork skills, successfully managing his tasks while actively contributing to the team’s development."
+  },
+  "contact": {
+    "smallheadline": "Contact",
+    "headline": "Ready to work together?",
+    "text":"I am excited to become part of a dedicated development team and further expand my skills in frontend development. With my structured approach, eagerness to learn, and passion for modern web technologies, I am confident that I can make a valuable contribution. I am open to new challenges and motivated to develop user-friendly and innovative solutions. If you are looking for a committed frontend developer who can work both independently and collaboratively, I would love to connect."
+  },
+  "form": {
+    "name": "Waht's your name?",
+    "name-placeholder": "your name goes here",
+    "name-error":"Oops! it seems your name is missing",
+    "email": "What's your email?",
+    "email-placeholder": "youremail@email.com",
+    "email-error":"Hoppla! your email is required",
+    "message": "How can I help you?",
+    "message-placeholder": "your message",
+    "message-error":"What do you need to develop?",
+    "privacy1": "I've read the",
+    "privacy2": "and agree to the processing of my data as outlined.",
+    "link": "privacy policy",
+    "button": "Send"
+  },
+  "footer": {
+    "legal": "Legal Notice"
   }
 }

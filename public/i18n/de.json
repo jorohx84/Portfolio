@@ -65,12 +65,16 @@
   "form": {
     "name": "Wie ist dein Name?",
     "name-placeholder": "dein Name steht hier",
+    "name-error":"Oops! Es scheint, dass dein Name fehlt.",
     "email": "Wie lautet deine Email?",
     "email-placeholder": "deineemail@email.com",
+    "email-error":"Hoppla! Deine E-Mail wird benötigt",
     "message": "Wie kann ich dir helfen?",
     "message-placeholder": "deine Nachricht",
+    "message-error":"Was möchtest du entwickeln?",
     "privacy1": "Ich habe die ",
     "privacy2": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
+    "privacy-error":"Bitte akzeptiere die Datenschutzrichtlinie.",
     "link": "Datenschutzerklärung",
     "button":"Senden"
   },
