@@ -4,7 +4,7 @@
         <img [src]="imagePath" alt="" [ngClass]="className">
         <div class="imageCover" (mouseover)="toggleHover()" (mouseout)="toggleHover()" [ngClass]="{'cover': isHover()}">
             <div>
-                <app-buttons [text]="'Project details'" [color]="'white'" (click)="openOverlay(param)"></app-buttons>
+                <app-buttons text="singleproject.button" [color]="'white'" (click)="openOverlay(param)"></app-buttons>
             </div>
 
         </div>
@@ -12,7 +12,7 @@
     <h2>{{title}}</h2>
     <p>{{text | translate}}</p>
     <div class="respbutton">
-        <app-buttons [text]="'Project details'" [color]="'black'" (click)="openOverlay(param)"></app-buttons>
+        <app-buttons text="singleproject.button" [color]="'black'" (click)="openOverlay(param)"></app-buttons>
     </div>
 
 </section>

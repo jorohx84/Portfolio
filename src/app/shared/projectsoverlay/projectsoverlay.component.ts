@@ -21,7 +21,7 @@ export class ProjectsoverlayComponent {
   @Input() skills: { imgPath: string, name: string }[] = [];
   @Input() image: string = '';
   @Input() path: string = '';
-  @Input() stickerClass: string = '';
+  @Input() sticker: string = '';
 
  
   constructor(private router: Router, private languageService: LanguageService) {}

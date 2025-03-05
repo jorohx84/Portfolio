@@ -7,8 +7,8 @@
                     <img [ngClass]="{'rotateHand': ishover()}" src="./img/waving_hand.svg" alt="">
                     <button (mouseover)="changeHover()" (mouseout)="changeHover()"
                         [ngClass]="{'stretchButton': ishover()}">
-                        <span class="respHide" [ngClass]="{'hideButton': ishover()}">Hallo World</span>
-                        <span class="hide" [ngClass]="{'showButton': ishover()}">I'm Johannes Roth</span>
+                        <span class="respHide" [ngClass]="{'hideButton': ishover()}">{{'hero.hello' | translate}}</span>
+                        <span class="hide" [ngClass]="{'showButton': ishover()}">{{'hero.name' | translate}}</span>
 
                     </button>
 
@@ -36,7 +36,7 @@
             </div>
 
             <app-buttons
-            [text]="'Get in Touch'"
+            text="hero.button"
             [color]="'getinTouchButton'"
  
             ></app-buttons>

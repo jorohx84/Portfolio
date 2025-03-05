@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { SocialmediaComponent } from '../socialmedia/socialmedia.component';
 import {TranslatePipe, TranslateDirective} from "@ngx-translate/core";
 import { LanguageService } from '../../language.service';  
@@ -15,16 +15,27 @@ export class HeaderComponent {
   @Input() color: string = '';
   @Input() logo: string = '';
   dotClass: string = 'to-the-left';
-  activeLanguage: string = 'en';
+  activeLanguage: string = '';
   burger: boolean = false;
   currentLanguage: string='';
+
+  private readonly LANGUAGE_STORAGE_KEY = 'activeLanguage';
+  private readonly DOTCLASS_STORAGE_KEY = 'dotClass';
+
   constructor(private languageService: LanguageService) {}
 
+  ngOnInit(): void {  
+    const savedLanguage = localStorage.getItem(this.LANGUAGE_STORAGE_KEY) || 'en';
+    const savedDotClass = localStorage.getItem(this.DOTCLASS_STORAGE_KEY) || 'to-the-left';
+    this.activeLanguage = savedLanguage;
+    this.dotClass = savedDotClass;
+  }
 
-  toggleLanguage(language: string): void {
 
-
-    if (language === 'en') {
+  changeLanguage(lang: string) {
+    this.languageService.changeLanguage(lang); 
+    this.currentLanguage = this.languageService.getCurrentLanguage();
+    if (lang === 'en') {
       this.dotClass = 'to-the-left';
       this.activeLanguage = 'en';
 
@@ -32,17 +43,9 @@ export class HeaderComponent {
     } else {
       this.dotClass = 'to-the-right'
       this.activeLanguage = 'de';
-
-
-
     }
-   
-    
-  }
-  changeLanguage(lang: string) {
-    this.languageService.changeLanguage(lang); 
-    console.log(lang);// Aufruf der changeLanguage-Methode aus dem Service
-    this.currentLanguage = this.languageService.getCurrentLanguage();
+    localStorage.setItem(this.LANGUAGE_STORAGE_KEY, this.activeLanguage);
+    localStorage.setItem(this.DOTCLASS_STORAGE_KEY, this.dotClass);
   }
 
 

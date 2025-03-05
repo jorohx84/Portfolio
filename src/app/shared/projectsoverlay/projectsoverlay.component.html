@@ -4,7 +4,10 @@
     <div class="content">
         <app-header [color]="'black'" [logo]="'blue'"></app-header>
         <div class="goBackContaienr">
-            <a href="#projects"><img src="./img/goBack.svg" alt=""></a>
+            <div>
+                <img src="./img/back.svg" alt=""> <a href="#projects">{{'overlay.back' | translate}}</a>
+            </div>
+
         </div>
         <div class="description">
             <div>
@@ -41,7 +44,7 @@
                 </div>
                 <div class="contentRight">
                     <div class="images">
-                        <img [ngClass]="stickerClass" class="sticker" src="./img/sticker-blue.svg" alt="">
+                        <img class="sticker" [src]="sticker" alt="">
                         <img [src]="image" alt="">
                     </div>
                    
@@ -54,8 +57,10 @@
         </div>
 
         <div class="goNextContainer">
-            <a href="#projects"><img src="./img/goBack.svg" alt=""></a>
-            <div (click)="openOverlay(path)" href=""><img src="./img/next.svg" alt=""></div>
+            <div class="back-resp">
+                <img src="./img/back.svg" alt=""> <a href="#projects">{{'overlay.back' | translate}}</a>
+            </div>
+            <div (click)="openOverlay(path)" href="">{{'overlay.next' | translate}}<img src="./img/nextproject.svg" alt=""></div>
         </div>
 
 

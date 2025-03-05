@@ -5,13 +5,16 @@ import { ButtonsComponent } from '../buttons/buttons.component';
 import { HttpClient } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { NgModel } from '@angular/forms';
+import {TranslatePipe, TranslateDirective} from "@ngx-translate/core";
+import { LanguageService } from '../../language.service';  
 @Component({
   selector: 'app-contactform',
-  imports: [CommonModule, FormsModule, ReactiveFormsModule, ButtonsComponent],
+  imports: [CommonModule, FormsModule, ReactiveFormsModule, ButtonsComponent, TranslatePipe ],
   templateUrl: './contactform.component.html',
   styleUrl: './contactform.component.scss'
 })
 export class ContactformComponent {
+   constructor(private languageService: LanguageService) {}
   privacy = false;
   isError = false;
 

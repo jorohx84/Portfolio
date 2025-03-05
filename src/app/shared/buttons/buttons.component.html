@@ -1,7 +1,7 @@
 
 
     <div class="buttonBack" [ngClass]="color">
-        <button (mouseover)="changeActive()" (mouseout)="changeActive()" [ngClass]="{'slideButton': isActive()}" ><span>{{text}}</span></button>  
+        <button (mouseover)="changeActive()" (mouseout)="changeActive()" [ngClass]="{'slideButton': isActive()}" ><span>{{text | translate}}</span></button>  
     </div>
 
 

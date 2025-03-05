@@ -1,33 +1,35 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import {TranslatePipe, TranslateDirective} from "@ngx-translate/core";
+import { LanguageService } from '../../language.service';  
 
 @Component({
   selector: 'app-colleagues',
-  imports: [CommonModule],
+  imports: [CommonModule, TranslatePipe],
   templateUrl: './colleagues.component.html',
   styleUrl: './colleagues.component.scss'
 })
 export class ColleaguesComponent {
   arrow = false;
-
+  constructor(private languageService: LanguageService) {}
   thoughts = [
     {
       name: 'Ramona Hombeuel',
       job: 'Business Development',
       linkedin: '',
-      comment: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident accusamus est iste sed laudantium aspernatur cupiditate alias rem quidem, ipsam assumenda delectus. Voluptas eos optio dolores sequi illum cumque sunt.'
+      comment: 'thoughts.thought1'
     },
     {
       name: 'Nadine Taenzer',
       job: 'Sales Administrative',
       linkedin: '',
-      comment: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident accusamus est iste sed laudantium aspernatur cupiditate alias rem quidem, ipsam assumenda delectus. Voluptas eos optio dolores sequi illum cumque sunt.'
+      comment: 'thoughts.thought2'
     },
     {
       name: 'Dr. Volker Nagel',
       job: 'Sales Director',
       linkedin: '',
-      comment: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident accusamus est iste sed laudantium aspernatur cupiditate alias rem quidem, ipsam assumenda delectus. Voluptas eos optio dolores sequi illum cumque sunt.'
+      comment: 'thoughts.thought3'
     },
 
   ];

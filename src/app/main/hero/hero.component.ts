@@ -3,15 +3,17 @@ import { Component } from '@angular/core';
 import { HeaderComponent } from '../../shared/header/header.component';
 import { ButtonsComponent } from '../../shared/buttons/buttons.component';
 import { SocialmediaComponent } from '../../shared/socialmedia/socialmedia.component';
-
+import {TranslatePipe, TranslateDirective} from "@ngx-translate/core";
+import { LanguageService } from '../../language.service';  
 
 @Component({
   selector: 'app-hero',
-  imports: [CommonModule, HeaderComponent, ButtonsComponent, SocialmediaComponent],
+  imports: [CommonModule, HeaderComponent, ButtonsComponent, SocialmediaComponent, TranslatePipe],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss'
 })
 export class HeroComponent {
+  constructor(private languageService: LanguageService) {}
   hover: boolean = false;
  
   frontend = ['F', 'r', 'o', 'n', 't', 'e', 'n', 'd'];
