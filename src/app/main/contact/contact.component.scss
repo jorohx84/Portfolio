@@ -1,5 +1,5 @@
 section {
-    background-image: url(./../../../../public/img/contact-background.png);
+    background-image: url(./../../../../public/img/contact-background.webp);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -91,7 +91,7 @@ section {
     position: absolute;
     top: 0;
     right: 0;
-    background-image: url(./../../../../public/img/background-resp.png);
+    background-image: url(./../../../../public/img/background-resp.webp);
     transition: width 0.5s ease-in-out;
     border: none;
 }
@@ -229,10 +229,25 @@ section {
     .lineCover-resp {
         width: 200px;
     }
+    .contentLeft{
+        >div>h1{
+            font-size: 48px;
+        }
+    }
 }
 
 @media(max-width:780px) {
     .footerContainer {
         width: calc(100% - 40px);
+    }
+}
+
+@media(max-width: 374px){
+    .line-resp{
+        width: 140px !important;
+    }
+    .sticker-resp{
+        width: 140px;
+        height: 140px;
     }
 }

@@ -7,7 +7,7 @@ section {
     width: 100%;
     max-width: 1440px;
     height: 900px;
-    background-image: url(./../../../../public/img/herobackground.png);
+    background-image: url(./../../../../public/img/herobackground.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -213,6 +213,22 @@ button {
 
 }
 
+.portrait-container {
+    position: relative;
+    width: 237px;
+    height: 270px;
+}
+
+.portrait {
+    position: absolute;
+    top: 29px;
+    left: 60px;
+    transform: rotate(8deg);;
+
+    width: 130px;
+z-index: 0;
+
+}
 
 .polaroid-resp {
     display: none;
@@ -352,11 +368,25 @@ button {
 
     .helloWorld button {
         width: 218px;
-    }  
+    }
 
     .helloWorld img {
         opacity: 1;
         right: unset;
         transform: rotate(0);
+    }
+}
+
+@media(max-width:374px) {
+    .titleAboveText {
+        >span {
+            font-size: 40px;
+        }
+    }
+
+    .titleBelowText {
+        >span {
+            font-size: 40px;
+        }
     }
 }

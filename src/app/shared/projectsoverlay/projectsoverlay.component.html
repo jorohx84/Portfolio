@@ -49,8 +49,8 @@
                     </div>
                    
                     <div>
-                        <app-buttons  [text]="'GitHub'" [color]="'getinTouchButton'"></app-buttons>
-                        <app-buttons  [text]="'Live Test'" [color]="'getinTouchButton'"></app-buttons>
+                        <app-buttons (click)="loadProject(github)"  [text]="'GitHub'" [color]="'getinTouchButton'"></app-buttons>
+                        <app-buttons (click)="loadProject(projectPath)" [text]="'Live Test'" [color]="'getinTouchButton'"></app-buttons>
                     </div>
                 </div>
             </div>

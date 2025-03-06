@@ -115,3 +115,16 @@ section {
     }
 
 }
+@media(max-width: 374px){
+    .content{
+        width: calc(100% - 20px) !important;
+        >div{
+            width: 300px;
+        }
+    }
+    .title{
+        width: 290px;
+    }
+
+    
+}

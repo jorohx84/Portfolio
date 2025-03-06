@@ -5,7 +5,7 @@ section {
     width: 100vw;
     max-width: 1440px;
     height: 838.82px;
-    
+
 }
 
 .content {
@@ -105,6 +105,9 @@ section {
 
             &:hover {
                 background-image: url(./../../../../public/img/rectangle-sticker.svg);
+                background-repeat: no-repeat;
+                background-size: cover;
+
             }
 
             >div {
@@ -181,6 +184,7 @@ section {
         background-image: url(./../../../../public/img/thoughts-bg-a.png);
         background-size: cover;
         background-position: center;
+        background-repeat: no-repeat !important;
     }
 
 }
@@ -193,7 +197,7 @@ section {
         background-image: url(./../../../../public/img/thoughts-bg-b.png);
         background-size: cover;
         background-position: center;
-
+        background-repeat: no-repeat !important;
     }
 
 }
@@ -208,7 +212,7 @@ section {
         background-image: url(./../../../../public/img/thoughts-bg-a.png);
         background-size: cover;
         background-position: center;
-
+        background-repeat: no-repeat !important;
     }
 
 }
@@ -218,13 +222,15 @@ section {
     color: white;
 
 }
+
 @media(max-width:1280px) {
-    section{
+    section {
         margin-top: 100px;
         height: fit-content;
     }
+
     .thoughts {
-        flex-direction: column ;
+        flex-direction: column;
         height: 1500px;
     }
 
@@ -232,7 +238,7 @@ section {
         position: static;
     }
 
-    h1{
+    h1 {
         text-align: end;
     }
 }
@@ -251,11 +257,11 @@ section {
 
     .headline {
         width: 320px;
-        
+
     }
 
     .thoughts {
-       
+
         width: 320px;
         flex-direction: column;
         height: 1500px;
@@ -268,17 +274,22 @@ section {
 
         >div {
             width: 327px;
-            height: 343px;
+            height: 450px;
+
+
 
             >div {
                 >div {
+                    justify-content: flex-start !important;
+                    gap: 50px;
+
                     >p {
                         width: unset
                     }
-                
+
                     >div {
                         width: unset !important;
-                        
+
                     }
                 }
             }
@@ -287,4 +298,43 @@ section {
 
     }
 
+}
+
+@media(max-width: 410px) {
+    section {
+        width: 100vw !important;
+    }
+
+    .headline {
+        width: 300px;
+    }
+
+    .thoughts {
+        width: 320px;
+    }
+
+    .thoughtsContent {
+        min-width: unset !important;
+        width: 300px !important;
+        transform: rotate(0);
+
+        >div {
+            width: 300px;
+            height: 420px;
+            padding-block: 30px;
+
+            >div {
+                align-items: flex-start;
+
+                >div {
+                    justify-content: space-between !important;
+
+                }
+            }
+
+
+
+
+        }
+    }
 }

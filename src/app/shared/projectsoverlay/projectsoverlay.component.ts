@@ -22,16 +22,21 @@ export class ProjectsoverlayComponent {
   @Input() image: string = '';
   @Input() path: string = '';
   @Input() sticker: string = '';
+  @Input() github: string = '';
+  @Input() projectPath: string = '';
+
 
  
   constructor(private router: Router, private languageService: LanguageService) {}
   openOverlay(route:string) {
-
     this.router.navigate([route]);
 
- 
-
 }
-  
+ 
+loadProject(path:string){
+  window.open(path)
+}
+
+
 }
 
