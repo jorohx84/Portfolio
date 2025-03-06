@@ -33,7 +33,7 @@ section {
     }
 }
 
-.sticker{
+.sticker {
     position: absolute;
     width: 168px !important;
     height: 168px !important;
@@ -43,7 +43,7 @@ section {
     border: none !important;
 }
 
-.opacity{
+.opacity {
     display: none;
 }
 
@@ -109,6 +109,26 @@ section {
     }
 }
 
+@media(max-width:1280px) {
+    section {
+        width: 320px;
+
+        >div {
+            width: 320px;
+            height: fit-content;
+
+            >img {
+                width: 320px;
+                height: 220px;
+            }
+        }
+    }
+
+    .sticker {
+        width: 120px !important;
+    }
+}
+
 @media(min-width:650px) {
     .respbutton {
         display: none;
@@ -130,7 +150,7 @@ section {
 
             >img {
                 width: 320px;
-                height: 320px;
+                height: 220px;
             }
 
             >h2 {
@@ -143,22 +163,24 @@ section {
         }
     }
 
-    .sticker{
-        width: 120px !important;
-    }
+
 }
 
-@media(max-width: 374px){
-    section{
+@media(max-width: 374px) {
+    section {
         width: 300px;
-        >div{
+
+        >div {
             width: 300px;
-            img{
+
+            img {
                 width: 300px;
+                height: 220px;
             }
         }
     }
-    .respbutton{
+
+    .respbutton {
         width: 300px !important;
     }
 }

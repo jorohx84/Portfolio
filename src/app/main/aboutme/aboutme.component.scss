@@ -41,12 +41,12 @@ section {
 .base {
     top: 0;
     transform: rotate(0deg);
-    background-image: url(./../../../../public/img/rippedpaperyellow.svg);
+    background-image: url(./../../../../public/img/rippedpaperyellow.png);
     z-index: 2;
 }
 
 .free {
-    background-image: url(./../../../../public/img/rippedpaperblue.svg);
+    background-image: url(./../../../../public/img/rippedpaperblue.png);
     z-index: 1;
 }
 
@@ -60,7 +60,7 @@ section {
 }
 
 .work {
-    background-image: url(./../../../../public/img/rippedpaperorange.svg);
+    background-image: url(./../../../../public/img/rippedpaperorange.png);
 }
 
 .workContent {
