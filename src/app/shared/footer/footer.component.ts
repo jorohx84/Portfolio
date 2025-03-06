@@ -3,6 +3,8 @@ import { Component } from '@angular/core';
 import { WavebuttonComponent } from '../wavebutton/wavebutton.component';
 import {TranslatePipe, TranslateDirective} from "@ngx-translate/core";
 import { LanguageService } from '../../language.service';  
+import { Router } from '@angular/router'; 
+
 
 @Component({
   selector: 'app-footer',
@@ -11,5 +13,9 @@ import { LanguageService } from '../../language.service';
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
-  constructor(private languageService: LanguageService) {}
+  constructor(private languageService: LanguageService, private router:Router) {}
+
+  loadLegals(path:string){
+    this.router.navigate([path])
+  }
 }

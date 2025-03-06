@@ -79,5 +79,127 @@
   },
   "footer": {
     "legal": "Legal Notice"
+  },
+  
+    "impressum": {
+      "title": "Imprint",
+      "tmg": "Information according to § 5 TMG",
+      "owner": {
+        "name": "Johannes Roth",
+        "address": "Max-Seither-Ring 32",
+        "city": "76863 Herxheim"
+      },
+      "contact": {
+        "title": "Contact",
+        "email": "kontakt@johannes-roth.de",
+        "phone": "+49 151 41292919"
+      },
+      "responsibility": {
+        "title": "Responsible for content according to § 18 Abs. 2 MStV",
+        "name": "Johannes Roth",
+        "address": "Max-Seither-Ring 32",
+        "city": "76863 Herxheim"
+      },
+      "notes": {
+        "title": "Notes"
+      },
+      "dispute_resolution": {
+        "title": "Dispute Resolution",
+        "text": "The European Commission provides a platform for online dispute resolution (ODR), available at",
+        "link": "https://ec.europa.eu/consumers/odr",
+        "note": "We are neither obliged nor willing to participate in dispute resolution proceedings before a consumer arbitration board."
+      },
+      "disclaimer": {
+        "title": "Disclaimer",
+        "text": "We assume no liability for the content of external links. The operators of the linked pages are solely responsible for their content."
+      },
+      "copyright": {
+        "title": "Copyright",
+        "text": "All content on this website, including texts, images, and vectors, is protected by copyright. Reproduction, distribution, or use of the content without explicit permission is not allowed."
+      }
+    },
+    "datenschutz": {
+      "title": "Privacy Policy",
+      "responsible": {
+        "title": "1. Name and Contact Details of the Responsible Party",
+        "name": "Johannes Roth",
+        "address": "Max-Seither-Ring 32, 76863 Herxheim",
+        "email": "kontakt@johannes-roth.de",
+        "phone": "+4915141292919"
+      },
+      "data_collection": {
+        "title": "2. Collection and Storage of Personal Data and How It Is Used",
+        "intro": "We process personal data on our website as follows:",
+        "visit": {
+          "title": "When visiting the website:",
+          "info": [
+            "IP address of the requesting computer",
+            "Date and time of access",
+            "Name and URL of the accessed file",
+            "Website from which access is made (Referrer-URL)",
+            "Browser used, operating system, and name of the access provider"
+          ],
+          "purpose": [
+            "Ensuring a smooth connection to the website",
+            "Ensuring comfortable use of our website",
+            "Evaluating system security and stability",
+            "Other administrative purposes"
+          ],
+          "legal_basis": "The legal basis for data processing is Art. 6 Para. 1 S. 1 lit. f GDPR."
+        }
+      },
+      "data_sharing": {
+        "title": "3. Data Sharing",
+        "intro": "Your personal data will only be shared with third parties under the following conditions:",
+        "cases": [
+          "You have given explicit consent according to Art. 6 Para. 1 S. 1 lit. a GDPR.",
+          "The disclosure is required for asserting, exercising, or defending legal claims according to Art. 6 Para. 1 S. 1 lit. f GDPR, and there is no reason to assume you have an overriding interest in non-disclosure.",
+          "There is a legal obligation under Art. 6 Para. 1 S. 1 lit. c GDPR.",
+          "It is necessary for contract fulfillment under Art. 6 Para. 1 S. 1 lit. b GDPR."
+        ]
+      },
+      "cookies": {
+        "title": "4. Cookies",
+        "description": "We use cookies on our website, which are small files automatically stored on your device when you visit our site.",
+        "types": {
+          "necessary": "Technically necessary cookies: Essential for website functionality.",
+          "marketing": "Analysis or marketing cookies (if used): We require your consent."
+        },
+        "legal_basis": "The legal basis for data processing via cookies is Art. 6 Para. 1 lit. a GDPR (consent) or Art. 6 Para. 1 lit. f GDPR (legitimate interest).",
+        "disable_info": "You can disable cookie storage in your browser settings."
+      },
+      "analytics": {
+        "title": "5. Analytics Tools (if used)",
+        "google": {
+          "title": "Example: Google Analytics",
+          "description": "This website uses Google Analytics, a web analytics service by Google Inc. Data processing is based on your consent according to Art. 6 Para. 1 lit. a GDPR.",
+          "link": "https://policies.google.com/privacy",
+          "link_text": "Google Privacy Policy"
+        }
+      },
+      "user_rights": {
+        "title": "6. User Rights",
+        "rights": [
+          "Right to access your personal data according to Art. 15 GDPR.",
+          "Right to correct inaccurate data according to Art. 16 GDPR.",
+          "Right to delete stored data according to Art. 17 GDPR.",
+          "Right to restrict processing according to Art. 18 GDPR.",
+          "Right to data portability according to Art. 20 GDPR.",
+          "Right to withdraw consent at any time according to Art. 7 Para. 3 GDPR.",
+          "Right to file a complaint with a supervisory authority according to Art. 77 GDPR."
+        ]
+      },
+      "updates": {
+        "title": "7. Updates and Changes to This Privacy Policy",
+        "text": "This privacy policy is current as of December 22, 2024."
+      },
+      "important_notes": {
+        "title": "Important Notes:",
+        "list": [
+          "Ensure completeness if additional tools (e.g., newsletters, social plugins, hosting providers) are used.",
+          "Implement a cookie banner if cookies or tracking tools are used.",
+          "If using web analytics tools like Google Analytics, provide an opt-out function."
+        ]
+      }
+    }
   }
-}

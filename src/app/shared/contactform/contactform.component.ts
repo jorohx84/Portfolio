@@ -7,6 +7,9 @@ import { NgModule } from '@angular/core';
 import { NgModel } from '@angular/forms';
 import {TranslatePipe, TranslateDirective} from "@ngx-translate/core";
 import { LanguageService } from '../../language.service';  
+import { Router } from '@angular/router';
+
+
 @Component({
   selector: 'app-contactform',
   imports: [CommonModule, FormsModule, ReactiveFormsModule, ButtonsComponent, TranslatePipe ],
@@ -14,7 +17,7 @@ import { LanguageService } from '../../language.service';
   styleUrl: './contactform.component.scss'
 })
 export class ContactformComponent {
-   constructor(private languageService: LanguageService) {}
+   constructor(private languageService: LanguageService, private router: Router) {}
   privacy = false;
   isError = false;
 
@@ -80,5 +83,7 @@ export class ContactformComponent {
     return this.privacy === true;
   }
 
-
+  loadLegals(path:string){
+    this.router.navigate([path])
+  }
 }

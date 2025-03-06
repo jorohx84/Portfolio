@@ -80,5 +80,126 @@
   },
   "footer": {
     "legal": "Impressum"
+  },
+  "impressum": {
+    "title": "Impressum",
+    "tmg": "Angaben gemäß § 5 TMG",
+    "owner": {
+      "name": "Johannes Roth",
+      "address": "Max-Seither-Ring 32",
+      "city": "76863 Herxheim"
+    },
+    "contact": {
+      "title": "Kontakt",
+      "email": "kontakt@johannes-roth.de",
+      "phone": "0151 41292919"
+    },
+    "responsibility": {
+      "title": "Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV",
+      "name": "Johannes Roth",
+      "address": "Max-Seither-Ring 32",
+      "city": "76863 Herxheim"
+    },
+    "notes": {
+      "title": "Hinweise"
+    },
+    "dispute_resolution": {
+      "title": "Streitbeilegung",
+      "text": "Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit, die unter",
+      "link": "https://ec.europa.eu/consumers/odr",
+      "note": "Wir sind weder verpflichtet noch bereit, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen."
+    },
+    "disclaimer": {
+      "title": "Haftungsausschluss",
+      "text": "Wir übernehmen keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich."
+    },
+    "copyright": {
+      "title": "Urheberrecht",
+      "text": "Alle Inhalte auf dieser Webseite, einschließlich Texte, Bilder und Vektoren, sind urheberrechtlich geschützt. Die Vervielfältigung, Verbreitung oder Nutzung von Inhalten ohne ausdrückliche Genehmigung ist nicht gestattet."
+    }
+  },
+  "datenschutz": {
+    "title": "Datenschutzerklärung",
+    "responsible": {
+      "title": "1. Name und Kontaktdaten des Verantwortlichen",
+      "name": "Johannes Roth",
+      "address": "Max-Seither-Ring 32, 76863 Herxheim",
+      "email": "kontakt@johannes-roth.de",
+      "phone": "+49 151 41292919"
+    },
+    "data_collection": {
+      "title": "2. Erhebung und Speicherung personenbezogener Daten sowie Art und Zweck ihrer Verwendung",
+      "intro": "Wir verarbeiten personenbezogene Daten auf unserer Website wie folgt:",
+      "visit": {
+        "title": "Beim Besuch der Website",
+        "info": [
+          "IP-Adresse des anfragenden Rechners",
+          "Datum und Uhrzeit des Zugriffs",
+          "Name und URL der abgerufenen Datei",
+          "Website, von der aus der Zugriff erfolgt (Referrer-URL)",
+          "Verwendeter Browser und ggf. das Betriebssystem sowie der Name des Access-Providers"
+        ],
+        "purpose": [
+          "Sicherstellung eines reibungslosen Verbindungsaufbaus der Website",
+          "Sicherstellung einer komfortablen Nutzung unserer Website",
+          "Auswertung der Systemsicherheit und -stabilität",
+          "Zu weiteren administrativen Zwecken"
+        ],
+        "legal_basis": "Die Rechtsgrundlage für die Datenverarbeitung ist Art. 6 Abs. 1 S. 1 lit. f DSGVO."
+      }
+    },
+    "data_sharing": {
+      "title": "3. Weitergabe von Daten",
+      "intro": "Eine Übermittlung deiner persönlichen Daten an Dritte zu anderen als den im Folgenden aufgeführten Zwecken findet nicht statt.",
+      "cases": [
+        "du deine nach Art. 6 Abs. 1 S. 1 lit. a DSGVO ausdrückliche Einwilligung dazu erteilt hast",
+        "die Weitergabe nach Art. 6 Abs. 1 S. 1 lit. f DSGVO zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen erforderlich ist",
+        "eine gesetzliche Verpflichtung nach Art. 6 Abs. 1 S. 1 lit. c DSGVO besteht",
+        "die Weitergabe gesetzlich zulässig und für die Abwicklung von Vertragsverhältnissen erforderlich ist (Art. 6 Abs. 1 S. 1 lit. b DSGVO)"
+      ]
+    },
+    "cookies": {
+      "title": "4. Cookies",
+      "description": "Wir verwenden auf unserer Website Cookies. Das sind kleine Dateien, die dein Browser automatisch erstellt und speichert.",
+      "types": {
+        "necessary": "Technisch notwendige Cookies: Diese sind für den Betrieb der Website unerlässlich.",
+        "marketing": "Analyse- oder Marketing-Cookies: Hier benötigen wir deine Zustimmung."
+      },
+      "legal_basis": "Die Rechtsgrundlage für die Verarbeitung ist Art. 6 Abs. 1 lit. a DSGVO (Einwilligung) oder Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse).",
+      "disable_info": "Du kannst die Speicherung von Cookies in den Einstellungen deines Browsers deaktivieren."
+    },
+    "analytics": {
+      "title": "5. Analyse-Tools (falls verwendet)",
+      "google": {
+        "title": "Beispiel für Google Analytics",
+        "description": "Diese Website nutzt Google Analytics, einen Webanalysedienst der Google Inc. Die Verarbeitung der Daten erfolgt auf Basis deiner Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO.",
+        "link_text": "Google Datenschutzerklärung",
+        "link": "https://policies.google.com/privacy"
+      }
+    },
+    "user_rights": {
+      "title": "6. Rechte der Betroffenen",
+      "rights": [
+        "Art. 15 DSGVO: Auskunft über deine gespeicherten personenbezogenen Daten",
+        "Art. 16 DSGVO: Berichtigung unrichtiger oder Vervollständigung gespeicherter Daten",
+        "Art. 17 DSGVO: Löschung gespeicherter personenbezogener Daten",
+        "Art. 18 DSGVO: Einschränkung der Verarbeitung",
+        "Art. 20 DSGVO: Übermittlung deiner Daten an dich oder einen anderen Verantwortlichen",
+        "Art. 7 Abs. 3 DSGVO: Widerruf einer erteilten Einwilligung",
+        "Art. 77 DSGVO: Beschwerde bei einer Aufsichtsbehörde"
+      ]
+    },
+    "updates": {
+      "title": "7. Aktualität und Änderung dieser Datenschutzerklärung",
+      "text": "Diese Datenschutzerklärung ist aktuell gültig und hat den Stand 22.12.2024."
+    },
+    "important_notes": {
+      "title": "Wichtiger Hinweis",
+      "list": [
+        "Prüfe die Datenschutzerklärung auf Vollständigkeit, wenn du weitere Tools nutzt.",
+        "Binde einen Cookie-Banner ein, falls Cookies oder Tracking-Tools verwendet werden.",
+        "Richte eine Opt-out-Funktion für Webanalyse-Tools wie Google Analytics ein."
+      ]
+    }
   }
 }

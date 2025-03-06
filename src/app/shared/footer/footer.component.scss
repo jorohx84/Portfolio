@@ -45,6 +45,10 @@ a {
     color: var(--white-font);
     height: fit-content;
     font-size: 14px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
 }
 
 @media(max-width:780px){
