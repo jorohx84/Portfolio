@@ -16,7 +16,7 @@
                 <div class="titleAboveText">
                     <span *ngFor="let letter of frontend; let i = index"
                         (mouseover)="toggleCase(frontend, hasChangedFrontend, i)"
-                        (mouseout)="resetCase(frontend, hasChangedFrontend, i, originalFrontend)">
+                        (mouseout)="resetCase(frontend, hasChangedFrontend, originalFrontend)">
                         {{letter}}
                     </span>
                 </div>
@@ -37,7 +37,7 @@
             <div class="titleBelowText">
                 <span *ngFor="let letter of developer; let i =index"
                     (mouseover)="toggleCase(developer, hasChangedDeveloper, i)"
-                    (mouseout)="resetCase(developer, hasChangedDeveloper, i, originalDeveloper)">
+                    (mouseout)="resetCase(developer, hasChangedDeveloper, originalDeveloper)">
                     {{letter}}
                 </span>
             </div>

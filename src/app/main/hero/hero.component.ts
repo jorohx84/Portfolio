@@ -25,6 +25,7 @@ export class HeroComponent {
   hasChangedDeveloper = Array(this.developer.length).fill(false);
 
   toggleCase(array: string[], hasChanged: boolean[], index: number) {
+    
     if (hasChanged[index] === false) {
       const letter = array[index];
       array[index] = letter === letter.toUpperCase()
@@ -32,13 +33,16 @@ export class HeroComponent {
         : letter.toUpperCase();
       hasChanged[index] = true;
     }
+      
   }
 
-  resetCase(array: string[], hasChanged: boolean[], index: number, originalArray: string[]) {
-    if (hasChanged[index]) {
+  resetCase(array: string[], hasChanged: boolean[], originalArray: string[]) {
+    array.forEach((_, index) => {
+  
       array[index] = originalArray[index];
+  
       hasChanged[index] = false;
-    }
+    });
   }
 
   changeHover() {
