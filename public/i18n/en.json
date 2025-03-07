@@ -14,7 +14,7 @@
     "smallheadline": "WHO'S JOHANNES?",
     "headline": "About me",
     "base": "Based in Karlsruhe",
-    "location": "Placeholder",
+    "location": "No relocation available",
     "remote": "Open to work remote",
     "text": "Hey there, I'm Johannes. I just completed my training as a frontend developer and love creating creative and high-performance web solutions. Every challenge inspires me to find more efficient and elegant solutions. Let's build something great together!",
     "button": "Let's Talk"
@@ -92,6 +92,7 @@
       "contact": {
         "title": "Contact",
         "email": "kontakt@johannes-roth.de",
+        "phone-name":"phone",
         "phone": "+49 151 41292919"
       },
       "responsibility": {
@@ -125,6 +126,7 @@
         "name": "Johannes Roth",
         "address": "Max-Seither-Ring 32, 76863 Herxheim",
         "email": "kontakt@johannes-roth.de",
+        "phone-name":"phone",
         "phone": "+4915141292919"
       },
       "data_collection": {

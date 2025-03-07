@@ -4,6 +4,12 @@
     src: url('./assets/fonts/Bricolage_Grotesque,Nunito/Bricolage_Grotesque/BricolageGrotesque-VariableFont_opsz,wdth,wght.ttf');
 }
 
+@font-face {
+    font-display: swap;
+    font-family: 'Kalam';
+   src: url('./assets/fonts/Kalam/Kalam-Regular.ttf');
+}
+
 
 body {
     font-family: 'Bricolage Grotesque';

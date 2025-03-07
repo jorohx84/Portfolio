@@ -1,72 +1,83 @@
-<section >
-    <app-header [background]="'legalbackground'"></app-header>
+<section>
+    <div class="header-bg">
+        <app-header [background]="'legalbackground'"></app-header>
+    </div>
+
     <div class="datenschutz">
-    <h1>{{ 'datenschutz.title' | translate }}</h1>
+        <div>
+            <h1>{{ 'datenschutz.title' | translate }}</h1>
 
-    <h2>{{ 'datenschutz.responsible.title' | translate }}</h2>
-    <p>
-        <strong>{{ 'datenschutz.responsible.name' | translate }}</strong><br>
-        {{ 'datenschutz.responsible.address' | translate }}<br>
-        <strong>{{ 'datenschutz.responsible.email' | translate }}:</strong> 
-        <a href="mailto:{{ 'datenschutz.responsible.email' | translate }}">{{ 'datenschutz.responsible.email' | translate }}</a><br>
-        <strong>{{ 'datenschutz.responsible.phone' | translate }}:</strong> 
-        <a href="tel:{{ 'datenschutz.responsible.phone' | translate }}">{{ 'datenschutz.responsible.phone' | translate }}</a>
-    </p>
+            <h2>{{ 'datenschutz.responsible.title' | translate }}</h2>
+            <p>
+                <strong>{{ 'datenschutz.responsible.name' | translate }}</strong><br>
+                {{ 'datenschutz.responsible.address' | translate }}<br>
+                <strong>Email: </strong>
+                <a href="mailto:{{ 'datenschutz.responsible.email' | translate }}">{{ 'datenschutz.responsible.email' |
+                    translate }}</a><br>
+                <strong>{{ 'datenschutz.responsible.phone-name' | translate }}: </strong>
+                <a href="tel:{{ 'datenschutz.responsible.phone' | translate }}">{{ 'datenschutz.responsible.phone' |
+                    translate }}</a>
+            </p>
 
-    <h2>{{ 'datenschutz.data_collection.title' | translate }}</h2>
-    <p>{{ 'datenschutz.data_collection.intro' | translate }}</p>
+            <h2>{{ 'datenschutz.data_collection.title' | translate }}</h2>
+            <p>{{ 'datenschutz.data_collection.intro' | translate }}</p>
 
-    <ul>
-        <li>
-            <strong>{{ 'datenschutz.data_collection.visit.title' | translate }}</strong><br>
-            <p>{{ 'datenschutz.data_collection.visit.info' | translate }}</p>
             <ul>
-                <li *ngFor="let item of ('datenschutz.data_collection.visit.info' | translate)">{{ item }}</li>
+                <li>
+                    <strong>{{ 'datenschutz.data_collection.visit.title' | translate }}</strong><br>
+                    <p>{{ 'datenschutz.data_collection.visit.info' | translate }}</p>
+                    <ul>
+                        <li *ngFor="let item of ('datenschutz.data_collection.visit.info' | translate)">{{ item }}</li>
+                    </ul>
+                    <p>{{ 'datenschutz.data_collection.visit.purpose' | translate }}</p>
+                    <ul>
+                        <li *ngFor="let item of ('datenschutz.data_collection.visit.purpose' | translate)">{{ item }}
+                        </li>
+                    </ul>
+                    <p><strong>{{ 'datenschutz.data_collection.visit.legal_basis' | translate }}</strong></p>
+                </li>
             </ul>
-            <p>{{ 'datenschutz.data_collection.visit.purpose' | translate }}</p>
+
+            <h2>{{ 'datenschutz.data_sharing.title' | translate }}</h2>
+            <p>{{ 'datenschutz.data_sharing.intro' | translate }}</p>
             <ul>
-                <li *ngFor="let item of ('datenschutz.data_collection.visit.purpose' | translate)">{{ item }}</li>
+                <li *ngFor="let item of ('datenschutz.data_sharing.cases' | translate)">{{ item }}</li>
             </ul>
-            <p><strong>{{ 'datenschutz.data_collection.visit.legal_basis' | translate }}</strong></p>
-        </li>
-    </ul>
 
-    <h2>{{ 'datenschutz.data_sharing.title' | translate }}</h2>
-    <p>{{ 'datenschutz.data_sharing.intro' | translate }}</p>
-    <ul>
-        <li *ngFor="let item of ('datenschutz.data_sharing.cases' | translate)">{{ item }}</li>
-    </ul>
+            <h2>{{ 'datenschutz.cookies.title' | translate }}</h2>
+            <p>{{ 'datenschutz.cookies.description' | translate }}</p>
+            <ul>
+                <li><strong>{{ 'datenschutz.cookies.types.necessary' | translate }}</strong></li>
+                <li><strong>{{ 'datenschutz.cookies.types.marketing' | translate }}</strong></li>
+            </ul>
+            <p>{{ 'datenschutz.cookies.legal_basis' | translate }}</p>
+            <p>{{ 'datenschutz.cookies.disable_info' | translate }}</p>
 
-    <h2>{{ 'datenschutz.cookies.title' | translate }}</h2>
-    <p>{{ 'datenschutz.cookies.description' | translate }}</p>
-    <ul>
-        <li><strong>{{ 'datenschutz.cookies.types.necessary' | translate }}</strong></li>
-        <li><strong>{{ 'datenschutz.cookies.types.marketing' | translate }}</strong></li>
-    </ul>
-    <p>{{ 'datenschutz.cookies.legal_basis' | translate }}</p>
-    <p>{{ 'datenschutz.cookies.disable_info' | translate }}</p>
+            <h2>{{ 'datenschutz.analytics.title' | translate }}</h2>
+            <p><strong>{{ 'datenschutz.analytics.google.title' | translate }}</strong></p>
+            <p>{{ 'datenschutz.analytics.google.description' | translate }}</p>
+            <p>
+                <a href="{{ 'datenschutz.analytics.google.link' | translate }}" target="_blank">
+                    {{ 'datenschutz.analytics.google.link_text' | translate }}
+                </a>
+            </p>
 
-    <h2>{{ 'datenschutz.analytics.title' | translate }}</h2>
-    <p><strong>{{ 'datenschutz.analytics.google.title' | translate }}</strong></p>
-    <p>{{ 'datenschutz.analytics.google.description' | translate }}</p>
-    <p>
-        <a href="{{ 'datenschutz.analytics.google.link' | translate }}" target="_blank">
-            {{ 'datenschutz.analytics.google.link_text' | translate }}
-        </a>
-    </p>
+            <h2>{{ 'datenschutz.user_rights.title' | translate }}</h2>
+            <ul>
+                <li *ngFor="let item of ('datenschutz.user_rights.rights' | translate)">{{ item }}</li>
+            </ul>
 
-    <h2>{{ 'datenschutz.user_rights.title' | translate }}</h2>
-    <ul>
-        <li *ngFor="let item of ('datenschutz.user_rights.rights' | translate)">{{ item }}</li>
-    </ul>
+            <h2>{{ 'datenschutz.updates.title' | translate }}</h2>
+            <p>{{ 'datenschutz.updates.text' | translate }}</p>
 
-    <h2>{{ 'datenschutz.updates.title' | translate }}</h2>
-    <p>{{ 'datenschutz.updates.text' | translate }}</p>
-
-    <h3>{{ 'datenschutz.important_notes.title' | translate }}</h3>
-    <ul>
-        <li *ngFor="let item of ('datenschutz.important_notes.list' | translate)">{{ item }}</li>
-    </ul>
-    <a class="back-button" href="#contact"> <img src="./img/back.svg" alt="">{{'overlay.back' | translate}}</a>
-</div>
+            <h3>{{ 'datenschutz.important_notes.title' | translate }}</h3>
+            <ul>
+                <li *ngFor="let item of ('datenschutz.important_notes.list' | translate)">{{ item }}</li>
+            </ul>
+            <div class="back-button">
+                <a href="#contact"> <img src="./img/back.svg" alt="">{{'overlay.back' | translate}}</a>
+            </div>
+           
+        </div>
+    </div>
 </section>

@@ -15,7 +15,7 @@
     "smallheadline": "WER IST JOHANNES?",
     "headline": "Über mich",
     "base": "Wohnhaft in Karlsruhe",
-    "location": "Platzhalter",
+    "location": "Kein Umzug möglich",
     "remote": "Offen für Homeoffice",
     "text": "Hallo, ich bin Johannes und habe gerade meine Ausbildung zum Frontend-Entwickler abgeschlossen. Ich liebe es, kreative und performante Weblösungen zu entwickeln. Jede Herausforderung inspiriert mich, effizientere und elegantere Lösungen zu finden. Lass uns etwas Großartiges bauen!",
   "button":"Lass uns reden"
@@ -92,6 +92,7 @@
     "contact": {
       "title": "Kontakt",
       "email": "kontakt@johannes-roth.de",
+      "phone-name":"Tel",
       "phone": "0151 41292919"
     },
     "responsibility": {
@@ -125,6 +126,7 @@
       "name": "Johannes Roth",
       "address": "Max-Seither-Ring 32, 76863 Herxheim",
       "email": "kontakt@johannes-roth.de",
+      "phone-name":"Tel",
       "phone": "+49 151 41292919"
     },
     "data_collection": {

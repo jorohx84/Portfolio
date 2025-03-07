@@ -221,25 +221,36 @@ button {
 
 .portrait {
     position: absolute;
-    top: 29px;
-    left: 60px;
+    top: 43px;
+    left: 20px;
     transform: rotate(8deg);;
 
-    width: 130px;
+    width: 200px;
 z-index: 0;
 
 }
 
-.polaroid-resp {
+.name{
+    font-family: 'Kalam';
+    font-size: 24px;
+    font-weight: 700;
+    position: absolute;
+    bottom: 23px;
+    left: 50px;
+    transform: rotate(8deg);
+    color: #000000;
+}
+
+.resp {
     display: none;
 }
 
 @media (max-width: 900px) {
-    .polaroid-resp {
-        display: block;
+    .resp {
+        display: block !important;
     }
 
-    .polaroid {
+    .portrait-container {
         display: none;
     }
 
