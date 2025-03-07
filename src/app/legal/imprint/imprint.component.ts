@@ -11,4 +11,7 @@ import { LanguageService } from '../../language.service';
 })
 export class ImprintComponent {
   constructor(private languageService: LanguageService) {}
+  ngOnInit() {
+    window.scrollTo(0, 0);
+  }
 }
