@@ -14,6 +14,7 @@ import { LanguageService } from '../../language.service';
 export class HeaderComponent {
   @Input() color: string = '';
   @Input() logo: string = '';
+  @Input() background: string = '';
   dotClass: string = 'to-the-left';
   activeLanguage: string = '';
   burger: boolean = false;

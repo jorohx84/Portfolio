@@ -1,4 +1,6 @@
-<section class="datenschutz">
+<section >
+    <app-header [background]="'legalbackground'"></app-header>
+    <div class="datenschutz">
     <h1>{{ 'datenschutz.title' | translate }}</h1>
 
     <h2>{{ 'datenschutz.responsible.title' | translate }}</h2>
@@ -65,4 +67,6 @@
     <ul>
         <li *ngFor="let item of ('datenschutz.important_notes.list' | translate)">{{ item }}</li>
     </ul>
+    <a class="back-button" href="#contact"> <img src="./img/back.svg" alt="">{{'overlay.back' | translate}}</a>
+</div>
 </section>

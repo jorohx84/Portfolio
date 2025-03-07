@@ -9,6 +9,7 @@ section {
 
 }
 
+
 .menubar {
     display: flex;
     justify-content: space-between;
@@ -151,6 +152,8 @@ a:hover img {
     transition: transform 1s ease-in-out;
 }
 
+
+
 .menu-resp-content {
     width: 100%;
     height: 656px;
@@ -268,6 +271,9 @@ a:hover img {
 
 .black{
     color: black !important;
+}
+.legalbackground{
+    background-color: #000000 !important;
 }
 
 .blue{

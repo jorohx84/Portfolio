@@ -1,47 +1,55 @@
-<section class="impressum">
-    <h1>{{ 'impressum.title' | translate }}</h1>
-    
-    <p><strong>{{ 'impressum.tmg' | translate }}</strong></p>
-    
-    <p>
-        <strong>{{ 'impressum.owner.name' | translate }}</strong><br>
-        {{ 'impressum.owner.address' | translate }}<br>
-        {{ 'impressum.owner.city' | translate }}
-    </p>
 
-    <h2>{{ 'impressum.contact.title' | translate }}</h2>
-    <p>
-        <strong>{{ 'impressum.contact.email' | translate }}:</strong> 
-        <a [href]="'mailto:' + ('impressum.contact.email' | translate)">
-            {{ 'impressum.contact.email' | translate }}
-        </a><br>
-        <strong>{{ 'impressum.contact.phone' | translate }}:</strong> 
-        <a [href]="'tel:' + ('impressum.contact.phone' | translate)">
-            {{ 'impressum.contact.phone' | translate }}
-        </a>
-    </p>
+<section >
+    <app-header></app-header>
+    <div class="impressum">
+       
+        <h1>{{ 'impressum.title' | translate }}</h1>
 
-    <h2>{{ 'impressum.responsibility.title' | translate }}</h2>
-    <p>
-        <strong>{{ 'impressum.responsibility.name' | translate }}</strong><br>
-        {{ 'impressum.responsibility.address' | translate }}<br>
-        {{ 'impressum.responsibility.city' | translate }}
-    </p>
+        <p><strong>{{ 'impressum.tmg' | translate }}</strong></p>
 
-    <h2>{{ 'impressum.notes.title' | translate }}</h2>
+        <p>
+            <strong>{{ 'impressum.owner.name' | translate }}</strong><br>
+            {{ 'impressum.owner.address' | translate }}<br>
+            {{ 'impressum.owner.city' | translate }}
+        </p>
 
-    <h2>{{ 'impressum.dispute_resolution.title' | translate }}</h2>
-    <p>
-        {{ 'impressum.dispute_resolution.text' | translate }} 
-        <a [href]="'impressum.dispute_resolution.link' | translate" target="_blank">
-            {{ 'impressum.dispute_resolution.link' | translate }}
-        </a>
-    </p>
-    <p>{{ 'impressum.dispute_resolution.note' | translate }}</p>
+        <h2>{{ 'impressum.contact.title' | translate }}</h2>
+        <p>
+            <strong>{{ 'impressum.contact.email' | translate }}:</strong>
+            <a [href]="'mailto:' + ('impressum.contact.email' | translate)">
+                {{ 'impressum.contact.email' | translate }}
+            </a><br>
+            <strong>{{ 'impressum.contact.phone' | translate }}:</strong>
+            <a [href]="'tel:' + ('impressum.contact.phone' | translate)">
+                {{ 'impressum.contact.phone' | translate }}
+            </a>
+        </p>
 
-    <h2>{{ 'impressum.disclaimer.title' | translate }}</h2>
-    <p>{{ 'impressum.disclaimer.text' | translate }}</p>
+        <h2>{{ 'impressum.responsibility.title' | translate }}</h2>
+        <p>
+            <strong>{{ 'impressum.responsibility.name' | translate }}</strong><br>
+            {{ 'impressum.responsibility.address' | translate }}<br>
+            {{ 'impressum.responsibility.city' | translate }}
+        </p>
 
-    <h2>{{ 'impressum.copyright.title' | translate }}</h2>
-    <p>{{ 'impressum.copyright.text' | translate }}</p>
+        <h2>{{ 'impressum.notes.title' | translate }}</h2>
+
+        <h2>{{ 'impressum.dispute_resolution.title' | translate }}</h2>
+        <p>
+            {{ 'impressum.dispute_resolution.text' | translate }}
+            <a [href]="'impressum.dispute_resolution.link' | translate" target="_blank">
+                {{ 'impressum.dispute_resolution.link' | translate }}
+            </a>
+        </p>
+        <p>{{ 'impressum.dispute_resolution.note' | translate }}</p>
+
+        <h2>{{ 'impressum.disclaimer.title' | translate }}</h2>
+        <p>{{ 'impressum.disclaimer.text' | translate }}</p>
+
+        <h2>{{ 'impressum.copyright.title' | translate }}</h2>
+        <p>{{ 'impressum.copyright.text' | translate }}</p>
+        <a class="back-button" href="#contact"> <img src="./img/back.svg" alt="">{{'overlay.back' | translate}}</a>
+    </div>
+
+   
 </section>
