@@ -93,7 +93,7 @@ section {
 
         &:hover {
             color: var(--main-color);
-            
+
         }
     }
 }
@@ -126,7 +126,7 @@ section {
 
         &:hover {
             color: var(--main-color);
-          
+
         }
     }
 }
@@ -219,20 +219,38 @@ button {
     position: relative;
     width: 237px;
     height: 270px;
+  
+
+    &:hover {
+        >.portrait {
+            content: url(./../../../../public/img/photos/portrait-color-small-sw.webp);
+        }
+
+        >.name {
+            >.default {
+                display: none;
+            }
+            >.hover{
+                display: block;
+            }
+        }
+    }
 }
 
 .portrait {
     position: absolute;
     top: 43px;
     left: 20px;
-    transform: rotate(8deg);;
-
+    transform: rotate(8deg);
     width: 200px;
-z-index: 0;
+    z-index: 0;
 
 }
 
-.name{
+.name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: 'Kalam';
     font-size: 24px;
     font-weight: 700;
@@ -241,6 +259,10 @@ z-index: 0;
     left: 50px;
     transform: rotate(8deg);
     color: #000000;
+}
+
+.hover {
+    display: none;
 }
 
 .resp {

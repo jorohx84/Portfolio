@@ -60,8 +60,10 @@ export class ContactformComponent {
             },
             complete: () => console.log('send post complete'),
           });
+          this.privacy=false;
         }  else{
           this.isError = true;
+    
         }
       } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
         

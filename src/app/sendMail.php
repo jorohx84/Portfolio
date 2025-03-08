@@ -19,15 +19,15 @@ switch ($_SERVER['REQUEST_METHOD']) {
             $message = $params->message;
     
             $recipient = 'kontakt@johannes-roth.de';  
-            $subject = "Contact From <$email>";
-            $message = "From:" . $name . "<br>" . $message ;
+            $subject = "neue Nachricht von deiner Website";
+            $message = "<br><strong>Von: </strong>" . $name . "<br><strong>Email: </strong> " . $email . "<br><br><br><strong>Nachricht:</strong><br><br>" . $message;
     
             $headers   = array();
             $headers[] = 'MIME-Version: 1.0';
             $headers[] = 'Content-type: text/html; charset=utf-8';
 
             // Additional headers
-            $headers[] = "From: noreply@mywebsite.com";
+            $headers[] = "From: noreply@johannes-roth.de";
 
             mail($recipient, $subject, $message, implode("\r\n", $headers));
             break;
