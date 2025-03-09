@@ -36,7 +36,7 @@ section {
 .title {
     position: relative;
     width: 100%;
-    max-width: 261px;
+    max-width: fit-content;
     height: 108px;
     color: var(--white-font);
     display: flex;
@@ -66,7 +66,7 @@ section {
         position: absolute;
         left: 0;
         bottom: 0;
-
+width: 100%;
     }
 
 }
@@ -188,7 +188,7 @@ section {
     }
 
     .title {
-        width: 261px;
+  
         height: 83.62px;
         align-items: flex-end;
 
@@ -197,9 +197,12 @@ section {
         }
 
         >img {
-            width: 188px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100% !important;
             height: 57.62px;
-            left: unset;
+           
         }
     }
 
