@@ -9,6 +9,6 @@ RewriteRule ^.*$ - [NC,L]
 
 RewriteRule ^.*$ /index.html [NC,L]
 
-# HTTPS erzwingen (ohne www.)
-RewriteCond %{HTTPS} !=on
-RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
