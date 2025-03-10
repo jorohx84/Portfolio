@@ -1,4 +1,4 @@
-<section  id="projects" id="projects" (mouseover)="toggleHover()" (mouseout)="toggleHover()">
+<section  id="projects" id="projects">
     <div class="content">
         <div>
             <div class="title">
@@ -6,7 +6,7 @@
                 <div>
                     <h1>{{"projects.headline" | translate}}</h1>
                     <img src="./img/project-line.svg" alt="">
-                    <div class="lineCover" [ngClass]="{'linewidth': isHover()}"></div>
+                    <div class="lineCover" [ngClass]="{'linewidth': isVisible}"></div>
                 </div>
 
                 <p>{{"projects.introduction" | translate}}</p>

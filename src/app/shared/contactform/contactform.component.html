@@ -42,6 +42,10 @@
 
     </div>
     <div class="sendButtonContainer">
+        <div class="line-resp">
+            <div [ngClass]="{'hideCover': isVisible}" class="lineCover-resp"></div>
+            <img src="./img/contactLine.svg" alt="">
+        </div>
         <app-buttons id="sendButton" text="form.button"
             [color]="contactForm.valid && privacy ? 'white' : 'grey'"></app-buttons>
            

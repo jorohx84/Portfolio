@@ -1,4 +1,4 @@
-<section id="aboutme" (mouseover)="toogleHover()" (mouseout)="toogleHover()">
+<section id="aboutme">
     <div class="contentLeft">
 
         <div class="rippedPaper base">
@@ -29,14 +29,18 @@
             <span>{{"aboutme.smallheadline"| translate}}</span>
             <div>
                 <h1>{{"aboutme.headline"| translate}}</h1>
-                <img [ngClass]="{'linewidth': isHover()}" src="./img/Blueline.svg" alt="">
+                <div class="line">
+                    <div [ngClass]="{'linewidth': isVisible}" class="lineCover"></div>
+                    <img src="./img/Blueline.svg" alt="">
+                </div>
+
             </div>
 
         </div>
         <p>{{"aboutme.text" | translate}}</p>
         <div class="buttonContainer">
             <a href="#contact"> <app-buttons text="aboutme.button" [color]="'black'"></app-buttons></a>
-           
+
         </div>
 
     </div>

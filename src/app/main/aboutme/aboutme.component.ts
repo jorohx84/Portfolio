@@ -1,26 +1,30 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit, ElementRef } from '@angular/core';
 import { ButtonsComponent } from '../../shared/buttons/buttons.component';
-import {TranslatePipe, TranslateDirective} from "@ngx-translate/core";
-import { LanguageService } from '../../language.service';  
+import { TranslatePipe } from "@ngx-translate/core";
+import { LanguageService } from '../../language.service';
+import { VisibilityService } from '../../visibility.service';
 
 @Component({
   selector: 'app-aboutme',
   imports: [CommonModule, ButtonsComponent, TranslatePipe],
   templateUrl: './aboutme.component.html',
-  styleUrl: './aboutme.component.scss'
+  styleUrls: ['./aboutme.component.scss']
 })
-export class AboutmeComponent {
-  hover = false;
+export class AboutmeComponent implements OnInit {
 
-  constructor(private languageService: LanguageService) {}
+  isVisible: boolean = false;
 
-  toogleHover() {
-    this.hover = !this.hover;
-    console.log(this.hover);
-    
+  constructor(
+    private languageService: LanguageService,
+    private elementRef: ElementRef,
+    private visibilityService: VisibilityService
+  ) {}
+
+  ngOnInit(): void {
+    this.visibilityService.addScrollListener(this.elementRef, (isVisible) => {
+      this.isVisible = isVisible;
+    });
   }
-  isHover() {
-    return this.hover === true;
-  }
+
 }

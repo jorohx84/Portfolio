@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, inject } from '@angular/core';
+import { Component, inject, ElementRef, OnInit } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ButtonsComponent } from '../buttons/buttons.component';
 import { HttpClient } from '@angular/common/http';
@@ -8,7 +8,7 @@ import { NgModel } from '@angular/forms';
 import {TranslatePipe, TranslateDirective} from "@ngx-translate/core";
 import { LanguageService } from '../../language.service';  
 import { Router } from '@angular/router';
-
+import { VisibilityService } from '../../visibility.service';
 
 @Component({
   selector: 'app-contactform',
@@ -17,10 +17,11 @@ import { Router } from '@angular/router';
   styleUrl: './contactform.component.scss'
 })
 export class ContactformComponent {
-   constructor(private languageService: LanguageService, private router: Router) {}
+   constructor(private languageService: LanguageService, private router: Router,  private elementRef: ElementRef,
+    private visibilityService: VisibilityService) {}
   privacy = false;
   isError = false;
-
+  isVisible: boolean = false;
   isButtonDisabled: boolean = true;
 
   http = inject(HttpClient);
@@ -73,6 +74,14 @@ export class ContactformComponent {
   
 
   }
+
+  ngOnInit(): void {
+    this.visibilityService.addScrollListener(this.elementRef, (isVisible) => {
+      this.isVisible = isVisible;
+    });
+  }
+
+  
 
   toggleChecked() {
     this.privacy = !this.privacy

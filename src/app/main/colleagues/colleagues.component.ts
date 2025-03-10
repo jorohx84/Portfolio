@@ -1,7 +1,8 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
-import {TranslatePipe, TranslateDirective} from "@ngx-translate/core";
+import { Component, ElementRef, OnInit } from '@angular/core';
+import {TranslatePipe} from "@ngx-translate/core";
 import { LanguageService } from '../../language.service';  
+import { VisibilityService } from '../../visibility.service';
 
 @Component({
   selector: 'app-colleagues',
@@ -10,8 +11,13 @@ import { LanguageService } from '../../language.service';
   styleUrl: './colleagues.component.scss'
 })
 export class ColleaguesComponent {
-  arrow = false;
-  constructor(private languageService: LanguageService) {}
+  isVisible: boolean = false;
+  constructor(
+    private languageService: LanguageService,
+    private elementRef: ElementRef,
+    private visibilityService: VisibilityService
+  ) {}
+
   thoughts = [
     {
       name: 'Ramona Hombeuel',
@@ -34,15 +40,11 @@ export class ColleaguesComponent {
 
   ];
 
-
-
-
-  changeArrow() {
-    this.arrow = !this.arrow;
+  ngOnInit(): void {
+    this.visibilityService.addScrollListener(this.elementRef, (isVisible) => {
+      this.isVisible = isVisible;
+    });
   }
 
-  isArrow() {
-    return this.arrow === true;
-  }
 
 }

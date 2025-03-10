@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit, ElementRef } from '@angular/core';
 import {TranslatePipe, TranslateDirective} from "@ngx-translate/core";
 import { LanguageService } from '../../language.service';  
-
+import { VisibilityService } from '../../visibility.service';
 @Component({
   selector: 'app-skills',
   imports: [CommonModule, TranslatePipe],
@@ -10,9 +10,9 @@ import { LanguageService } from '../../language.service';
   styleUrl: './skills.component.scss'
 })
 export class SkillsComponent {
-  hover = false;
 
-  constructor(private languageService: LanguageService) {}
+  isVisible: boolean = false;
+  constructor(private languageService: LanguageService, private elementRef:ElementRef, private visibilityService: VisibilityService) {}
   names = [
     { name: 'HTML', img: 'img/html.svg' },
     { name: 'CSS', img: 'img/css.svg' },
@@ -75,13 +75,11 @@ export class SkillsComponent {
     return this.stickerImages[this.currentStickerIndex];
   }
 
-
-  changeHover() {
-    this.hover = !this.hover
+  ngOnInit(): void {
+    this.visibilityService.addScrollListener(this.elementRef, (isVisible) => {
+      this.isVisible = isVisible;
+    });
   }
 
-  isHover() {
-    return this.hover === true;
-  }
 }
 

@@ -1,4 +1,4 @@
-<section id="skills" (mouseover)="changeHover()" (mouseout)="changeHover()">
+<section id="skills">
     <div class="content">
         <div class="headline">
             <div class="title">
@@ -7,7 +7,7 @@
                 </div>
 
                 <h1>{{"skills.headline" | translate}}</h1>
-                <img src="./img/skill_line.svg" alt="" [ngClass]="{'d_none': isHover()}">
+                <img src="./img/skill_line.svg" alt="" [ngClass]="{'d_none': isVisible}">
 
             </div>
             <div class="text">

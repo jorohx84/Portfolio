@@ -1,9 +1,9 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, ElementRef, OnInit } from '@angular/core';
 import { SingleprojectComponent } from '../../shared/singleproject/singleproject.component';
-import {TranslatePipe, TranslateDirective} from "@ngx-translate/core";
-import { LanguageService } from '../../language.service';  
-
+import { TranslatePipe, TranslateDirective } from "@ngx-translate/core";
+import { LanguageService } from '../../language.service';
+import { VisibilityService } from '../../visibility.service';
 @Component({
   selector: 'app-projects',
   imports: [CommonModule, SingleprojectComponent, TranslatePipe],
@@ -11,15 +11,14 @@ import { LanguageService } from '../../language.service';
   styleUrl: './projects.component.scss'
 })
 export class ProjectsComponent {
-  constructor(private languageService: LanguageService) {}
-  hover = false;
+    isVisible: boolean = false;
+  constructor(private languageService: LanguageService,  private elementRef: ElementRef, private visibilityService: VisibilityService) { }
 
-  toggleHover() {
-    this.hover = !this.hover;
 
-  }
 
-  isHover() {
-    return this.hover === true;
+  ngOnInit(): void {
+    this.visibilityService.addScrollListener(this.elementRef, (isVisible) => {
+      this.isVisible = isVisible;
+    });
   }
 }

@@ -9,7 +9,7 @@
             </div>
             <p>{{'contact.text' | translate}}</p>
                 <div class="line">
-                    <div class="lineCover"></div>
+                    <div [ngClass]="{'hideCover': isVisible}" class="lineCover"></div>
                     <img src="./img/contactLine.svg" alt="">
                 </div>
              
@@ -20,10 +20,9 @@
                 
                 <app-contactform></app-contactform> 
             </div>
-            <div class="line-resp">
-                <div class="lineCover-resp"></div>
-                <img src="./img/contactLine.svg" alt="">
-            </div>
+
+         
+         
         </div>
     </div>
   <div class="footerContainer">

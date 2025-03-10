@@ -181,5 +181,60 @@ textarea::placeholder {
 
 .sendButtonContainer {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.line-resp {
+ 
+
+    position: relative;
+
+    width: 280px;
+    flex-direction: unset !important;
+    margin: 0 !important;
+    border: none !important;
+    padding: 0 !important;
+    >img {
+        width: 100%;
+        max-width: 280px;
+
+    }
+}
+
+.lineCover-resp {
+    width: 280px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url(./../../../../public/img/background-resp.png);
+    transition: width 0.5s ease-in-out;
+    border: none;
+}
+
+.hideCover{
+    width: 0px !important;
+}
+
+@media(min-width: 1280px){
+
+    .line-resp{
+        display: none !important;
+    }
+
+    .sendButtonContainer{
+        justify-content: flex-end;
+    }
+}
+
+@media(max-width: 500px){
+.line-resp{
+    width: 180px;
+}
+.lineCover-resp{
+    width: 180px;
+}
+
 }

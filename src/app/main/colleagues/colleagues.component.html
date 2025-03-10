@@ -1,9 +1,9 @@
-<section  (mouseover)="changeArrow()" (mouseout)="changeArrow()">
+<section>
     <div class="content">
         <div class="headline">
             <div>
                 <div class="arrow">
-                    <div class="arrowCover" [ngClass]="{'cover':isArrow()}"></div>
+                    <div class="arrowCover" [ngClass]="{'cover':isVisible}"></div>
                     <img src="./img/bluearrow.svg" alt="">
                 </div>
 

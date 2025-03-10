@@ -21,13 +21,10 @@ section {
     background-size: cover;
     background-repeat: no-repeat;
 
-    &:hover {
-        .headline {
-            >div {
-                transform: scale(1);
-            }
-        }
-    }
+}
+
+.transform{
+    transform: scale(1) !important;
 }
 
 .goBackContaienr {
