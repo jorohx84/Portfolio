@@ -29,6 +29,7 @@ section {
         color:var(--logo-color);
         transition: color 0.5s ease-in-out;
         letter-spacing: -6px;
+        cursor: pointer;
         &:hover{
             color: var(--main-color);
 
@@ -128,7 +129,7 @@ a:hover img {
     position: relative;
     width: 32px;
     height: 32px;
-
+cursor: pointer;
     >img {
         width: 24px;
         height: 16px;
@@ -245,6 +246,7 @@ a:hover img {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .showRespMenu {
@@ -285,6 +287,10 @@ a:hover img {
 .black{
     color: black !important;
 }
+
+.white{
+    color: var(--white-font);
+}
 .legalbackground{
     background-color: #000000 !important;
 }
@@ -292,7 +298,11 @@ a:hover img {
 .blue{
     color:#3355FF !important;
 }
-
+@media(max-width: 1440px) {
+.white{
+    color: black !important;
+}
+}
 @media(max-width: 900px) {
 
     button,

@@ -1,12 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 import { SocialmediaComponent } from '../socialmedia/socialmedia.component';
-import {TranslatePipe, TranslateDirective} from "@ngx-translate/core";
-import { LanguageService } from '../../language.service';  
+import { TranslatePipe, TranslateDirective } from "@ngx-translate/core";
+import { LanguageService } from '../../language.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
-  standalone:true,
+  standalone: true,
   imports: [CommonModule, SocialmediaComponent, TranslatePipe],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
@@ -15,17 +16,19 @@ export class HeaderComponent {
   @Input() color: string = '';
   @Input() logo: string = '';
   @Input() background: string = '';
+  @Input() respColor: string = '';
   dotClass: string = 'to-the-left';
   activeLanguage: string = '';
   burger: boolean = false;
-  currentLanguage: string='';
+  currentLanguage: string = '';
+  
 
   private readonly LANGUAGE_STORAGE_KEY = 'activeLanguage';
   private readonly DOTCLASS_STORAGE_KEY = 'dotClass';
 
-  constructor(private languageService: LanguageService) {}
+  constructor(private languageService: LanguageService, private router: Router) { }
 
-  ngOnInit(): void {  
+  ngOnInit(): void {
     const savedLanguage = localStorage.getItem(this.LANGUAGE_STORAGE_KEY) || 'en';
     const savedDotClass = localStorage.getItem(this.DOTCLASS_STORAGE_KEY) || 'to-the-left';
     this.activeLanguage = savedLanguage;
@@ -34,7 +37,7 @@ export class HeaderComponent {
 
 
   changeLanguage(lang: string) {
-    this.languageService.changeLanguage(lang); 
+    this.languageService.changeLanguage(lang);
     this.currentLanguage = this.languageService.getCurrentLanguage();
     if (lang === 'en') {
       this.dotClass = 'to-the-left';
@@ -65,4 +68,10 @@ export class HeaderComponent {
     return this.burger === true;
   }
 
+
+  reload() {
+    this.router.navigate(['main']).then(() => {
+      window.location.reload();
+    });
+  }
 }

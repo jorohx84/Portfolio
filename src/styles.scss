@@ -10,7 +10,10 @@
    src: url('./assets/fonts/Kalam/Kalam-Regular.ttf');
 }
 
-
+html{
+    scroll-behavior: smooth;
+    transition: scroll 225 ms;
+}
 body {
     font-family: 'Bricolage Grotesque';
     margin: 0;
@@ -33,6 +36,10 @@ a {
 }
 
 .d_none {
+    display: none;
+}
+
+::-webkit-scrollbar{
     display: none;
 }
 

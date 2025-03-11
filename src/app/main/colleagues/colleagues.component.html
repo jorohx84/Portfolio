@@ -15,7 +15,9 @@
         <div class="thoughts">
             <div class="thoughtsContent" *ngFor="let item of thoughts let index = index" [ngClass]="'card' + index">
                 <div>
+                    <div class="bg-overlay"></div>
                     <div>
+                    
                         <div>
                             <p>{{item.comment | translate}}</p>
                             <div>

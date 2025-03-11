@@ -2,10 +2,11 @@
 
 
     <div class="content">
-        <app-header [color]="'black'" [logo]="'blue'"></app-header>
+        <app-header [color]="'black'" [logo]="'blue'" [respColor]="'white'"></app-header>
         <div class="goBackContaienr">
-            <div>
-                <img src="./img/back.svg" alt=""> <a href="#projects">{{'overlay.back' | translate}}</a>
+            <div (click)="goBack()">
+                <img src="./img/back.svg" alt="">
+                <p>{{'overlay.back' | translate}}</p>
             </div>
 
         </div>
@@ -47,10 +48,12 @@
                         <img class="sticker" [src]="sticker" alt="">
                         <img [src]="image" alt="">
                     </div>
-                   
+
                     <div>
-                        <app-buttons (click)="loadProject(github)"  [text]="'GitHub'" [color]="'getinTouchButton'"></app-buttons>
-                        <app-buttons (click)="loadProject(projectPath)" [text]="'Live Test'" [color]="'getinTouchButton'"></app-buttons>
+                        <app-buttons (click)="loadProject(github)" [text]="'GitHub'"
+                            [color]="'getinTouchButton'"></app-buttons>
+                        <app-buttons (click)="loadProject(projectPath)" [text]="'Live Test'"
+                            [color]="'getinTouchButton'"></app-buttons>
                     </div>
                 </div>
             </div>
@@ -60,7 +63,8 @@
             <div class="back-resp">
                 <img src="./img/back.svg" alt=""> <a href="#projects">{{'overlay.back' | translate}}</a>
             </div>
-            <div (click)="openOverlay(path)" href="">{{'overlay.next' | translate}}<img src="./img/nextproject.svg" alt=""></div>
+            <div (click)="openOverlay(path)" href="">{{'overlay.next' | translate}}<img src="./img/nextproject.svg"
+                    alt=""></div>
         </div>
 
 
@@ -68,6 +72,6 @@
 
 
 
-  
+
 
 </section>

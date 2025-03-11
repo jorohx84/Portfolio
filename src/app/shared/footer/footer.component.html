@@ -1,11 +1,11 @@
 <section>
     <div class="legal">
         <div class="logo">
-            <p >JR</p>
+            <p (click)="reload()" >JR</p>
             <span>© Johannes Roth 2025</span>
         </div>
         <div class="legallink">
-            <a (click)="loadLegals('/imprint')" >{{'footer.legal' | translate}}</a>
+            <a (click)="loadLegals('imprint')" >{{'footer.legal' | translate}}</a>
         </div>
      
     </div>

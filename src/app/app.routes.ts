@@ -12,5 +12,7 @@ export const routes: Routes = [
     { path: 'polloloco', component: PollolocoComponent },
     { path: 'dabubble', component: DabubbleComponent },
     { path: 'imprint', component: ImprintComponent },
-    { path: 'privacy', component: PrivacypolicyComponent }
+    { path: 'privacy', component: PrivacypolicyComponent },
+    { path: 'main', component: MainComponent },
+    
 ];

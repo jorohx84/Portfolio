@@ -1,6 +1,6 @@
 section {
     width: 100vw;
-    max-width: 1440px;
+    max-width: 100%;
     min-height: 800px;
     height: fit-content;
     display: flex;
@@ -9,6 +9,7 @@ section {
     background-image: url(./../../../../public/img/skill-background.webp);
     background-position: center;
     background-size: 100% 100%;
+    object-fit: cover;
     background-repeat: no-repeat;
 }
 
@@ -130,10 +131,10 @@ width: 100%;
 }
 
 .sticker {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     position: absolute;
-    right: 12px;
+    right: 32px;
     bottom: 50px;
     transform: rotate(12deg);
     background-image: url(./../../../../public/img/sticker1.svg);
@@ -170,8 +171,8 @@ width: 100%;
     }
 
     .sticker {
-        bottom: -230px;
-        right: 20px;
+        bottom: -120px;
+       
     }
 }
 
@@ -229,6 +230,10 @@ width: 100%;
                 width: 56px;
             }
         }
+    }
+    .sticker {
+        bottom: -210px;
+       
     }
 }
 

@@ -1,12 +1,15 @@
 section {
     width: 100vw;
-    max-width: 1440px;
+    
     min-height: 100vh;
     height: max-content;
     background-image: url(./../../../../public/img/herobackground.webp);
-    background-position: center;
+    background-position: bottom;
     object-fit: cover;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -16,9 +19,11 @@ section {
     justify-content: flex-start;
     align-items: flex-start;
     width: calc(100% - 144px);
+    max-width: 1200px;
+    box-sizing: border-box;
     height: fit-content;
     padding: 56px 72px;
-    max-width: 1440px;
+
     color: var(--white-font);
     gap: 20px;
    

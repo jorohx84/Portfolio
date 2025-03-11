@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
 import { ElementRef } from '@angular/core';
 
+
 @Injectable({
-  providedIn: 'root'  // Der Service ist in der gesamten App verfügbar
+  providedIn: 'root'  
 })
+
 export class VisibilityService {
   private scrollListener?: () => void;
-
-  constructor() {}
+  constructor() { }
 
   checkVisibility(elementRef: ElementRef): boolean {
     const rect = elementRef.nativeElement.getBoundingClientRect();
@@ -26,7 +27,7 @@ export class VisibilityService {
     window.addEventListener('scroll', this.scrollListener);
     window.addEventListener('resize', this.scrollListener);
 
-    // Initiale Sichtbarkeitsprüfung
+
     callback(this.checkVisibility(elementRef));
   }
 
@@ -36,4 +37,6 @@ export class VisibilityService {
       window.removeEventListener('resize', this.scrollListener);
     }
   }
+
+
 }

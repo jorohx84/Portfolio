@@ -4,13 +4,23 @@ section {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 100%;
-    max-width: 1440px;
-    height: 900px;
+    width: 100vw;
+    height: 1000px;
     background-image: url(./../../../../public/img/herobackground.webp);
-    background-position: center;
+    background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.fit-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+    position: relative;
+
 }
 
 .title {
@@ -219,7 +229,7 @@ button {
     position: relative;
     width: 237px;
     height: 270px;
-  
+
 
     &:hover {
         >.portrait {
@@ -230,7 +240,8 @@ button {
             >.default {
                 display: none;
             }
-            >.hover{
+
+            >.hover {
                 display: block;
             }
         }

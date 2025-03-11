@@ -52,3 +52,6 @@
         </div>
 
 </form>
+<div [ngClass]="{'show': isSend, 'hide': !isSend}" class="slider">
+    <p>{{'contact.send' | translate}}</p>
+</div>

@@ -1,31 +1,32 @@
 <section id="contact">
     <div class="content">
+      
         <div class="sticker-resp"> <img src="./img/contactsticker.png" alt=""></div>
         <div class="contentLeft">
-           
+
             <div>
                 <span>{{'contact.smallheadline' | translate}}</span>
                 <h1>{{'contact.headline' | translate}}</h1>
             </div>
             <p>{{'contact.text' | translate}}</p>
-                <div class="line">
-                    <div [ngClass]="{'hideCover': isVisible}" class="lineCover"></div>
-                    <img src="./img/contactLine.svg" alt="">
-                </div>
-             
+            <div class="line">
+                <div [ngClass]="{'hideCover': isVisible}" class="lineCover"></div>
+                <img src="./img/contactLine.svg" alt="">
+            </div>
+
         </div>
         <div class="contentRight">
             <div class="sticker"><img src="./img/contactsticker.png" alt=""></div>
             <div>
-                
-                <app-contactform></app-contactform> 
+
+                <app-contactform></app-contactform>
             </div>
 
-         
-         
+
+
         </div>
     </div>
-  <div class="footerContainer">
-    <app-footer></app-footer>
-  </div>
+    <div class="footerContainer">
+        <app-footer></app-footer>
+    </div>
 </section>

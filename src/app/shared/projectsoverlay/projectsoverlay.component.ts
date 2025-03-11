@@ -3,8 +3,8 @@ import { Component, Input, ElementRef, OnInit } from '@angular/core';
 import { HeaderComponent } from '../header/header.component';
 import { ButtonsComponent } from '../buttons/buttons.component';
 import { Router } from '@angular/router';
-import {TranslatePipe, TranslateDirective} from "@ngx-translate/core";
-import { LanguageService } from '../../language.service';  
+import { TranslatePipe, TranslateDirective } from "@ngx-translate/core";
+import { LanguageService } from '../../language.service';
 import { VisibilityService } from '../../visibility.service';
 @Component({
   selector: 'app-projectsoverlay',
@@ -26,23 +26,30 @@ export class ProjectsoverlayComponent {
   @Input() projectPath: string = '';
 
   isVisible: boolean = false;
- 
-  constructor(private router: Router, private languageService: LanguageService,  private elementRef: ElementRef, private visibilityService: VisibilityService) {}
-  openOverlay(route:string) {
+
+  constructor(private router: Router, private languageService: LanguageService, private elementRef: ElementRef, private visibilityService: VisibilityService) { }
+  openOverlay(route: string) {
     this.router.navigate([route]);
 
-}
+  }
 
-ngOnInit(): void {
-  this.visibilityService.addScrollListener(this.elementRef, (isVisible) => {
-    this.isVisible = isVisible;
-  });
-}
+  ngOnInit(): void {
+    window.scrollTo({ top: 0 })
+    this.visibilityService.addScrollListener(this.elementRef, (isVisible) => {
+      this.isVisible = isVisible;
+    });
+  }
 
-loadProject(path:string){
-  window.open(path)
-}
+  loadProject(path: string) {
+    window.open(path)
+  }
 
+  goBack() {
+    let projects = document.getElementById('projects');
+    this.router.navigate(['main']).then(() => {
+      projects?.scrollIntoView({ block: 'start' })
 
+    });
+  }
 }
 

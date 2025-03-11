@@ -18,4 +18,9 @@ export class FooterComponent {
   loadLegals(path:string){
     this.router.navigate([path])
   }
+
+  reload() {
+    window.scrollTo({top:0})
+  
+  }
 }

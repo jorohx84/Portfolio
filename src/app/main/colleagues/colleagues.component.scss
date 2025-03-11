@@ -84,6 +84,7 @@ section {
 
     &:hover {
         .white {
+           
             color: white;
         }
 
@@ -91,24 +92,20 @@ section {
     }
 
     >div {
+        position: relative;
         width: 100%;
         height: 320px;
         border-radius: 20px;
-        transition: background-image 1s ease-in-out;
-
+      
+    
         >div {
             width: 100%;
             height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-
-            &:hover {
-                background-image: url(./../../../../public/img/rectangle-sticker.svg);
-                background-repeat: no-repeat;
-                background-size: cover;
-
-            }
+           
+         
 
             >div {
                 width: calc(100% - 80px);
@@ -116,7 +113,7 @@ section {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-
+               
 
                 >p {
                     width: 432px;
@@ -129,15 +126,16 @@ section {
                     display: flex;
                     justify-content: space-between;
                     align-items: flex-end;
-
+                 
                     >div {
                         width: fit-content;
                         height: 47px;
                         display: flex;
                         flex-direction: column;
                         gap: 4px;
-
+                        z-index: 3;
                         >span {
+                           
                             font-size: 16px;
                         }
 
@@ -171,6 +169,17 @@ section {
     position: absolute;
     width: 100%;
     height: 100%;
+    background-image: url(./../../../../public/img/rectangle-sticker.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    z-index: 0;
+    &:hover {
+        
+            opacity: 0.6;    
+
+    }
 
 }
 

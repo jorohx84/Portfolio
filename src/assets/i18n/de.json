@@ -8,8 +8,7 @@
   "hero": {
     "hello": "Hallo Welt",
     "name": "Ich bin Johannes Roth",
-    "button":"Schreibe mir"
-    
+    "button": "Schreibe mir"
   },
   "aboutme": {
     "smallheadline": "WER IST JOHANNES?",
@@ -18,7 +17,7 @@
     "location": "Kein Umzug möglich",
     "remote": "Offen für Homeoffice",
     "text": "Hallo, ich bin Johannes und habe gerade meine Ausbildung zum Frontend-Entwickler abgeschlossen. Ich liebe es, kreative und performante Weblösungen zu entwickeln. Jede Herausforderung inspiriert mich, effizientere und elegantere Lösungen zu finden. Lass uns etwas Großartiges bauen!",
-  "button":"Lass uns reden"
+    "button": "Lass uns reden"
   },
   "skills": {
     "smallheadline": "MEINE WERKZEUGE",
@@ -34,15 +33,15 @@
     "join-description": "Task-Manager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mit Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu.",
     "pollo-description": "Ein Jump-'n'-Run- und Wurfspiel basierend auf einem objektorientierten Ansatz. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen das verrückte Huhn zu kämpfen.",
     "dabubble-description": "Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation und Zusammenarbeit mit einer intuitiven Benutzeroberfläche, Echtzeitnachrichten und einer leistungsstarken Kanalorganisation.",
-    "button":"zum Projekt"
+    "button": "zum Projekt"
   },
   "overlay": {
     "description": "Beschreibung",
     "details": "Details",
     "duration": "Dauer",
     "weeks": "Wochen",
-    "back":"zurück",
-    "next":"nächstes Projekt",
+    "back": "zurück",
+    "next": "nächstes Projekt",
     "join-description": "Task-Manager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mit Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu.",
     "join-details": "In unserem ersten Gruppenprojekt mit Git und Firebase war ich für die Entwicklung des Kanban-Boards mit Drag-and-Drop-Funktion, die Verwaltung der Kontakte und die Integration der Firebase-Datenbank zuständig. Dabei konnte ich meine Fähigkeit zur selbstständigen, strukturierten Arbeit und effektiven Zusammenarbeit im Team unter Beweis stellen.",
     "pollo-description": "Springe-, Lauf- und Wurfspiel basierend auf einem objektorientierten Ansatz. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen das verrückte Huhn zu kämpfen.",
@@ -60,23 +59,24 @@
   "contact": {
     "smallheadline": "Kontaktieren Sie mich",
     "headline": "Bereit zusammen zu arbeiten?",
-    "text": "Ich freue mich darauf, Teil eines engagierten Entwicklerteams zu werden und meine Fähigkeiten im Frontend-Bereich weiter auszubauen. Mit meiner strukturierten Arbeitsweise, meiner Lernbereitschaft und meiner Begeisterung für moderne Web-Technologien bin ich überzeugt, einen wertvollen Beitrag zu leisten. Ich bin offen für neue Herausforderungen und motiviert, benutzerfreundliche und innovative Lösungen zu entwickeln. Wenn Sie auf der Suche nach einem engagierten Frontend-Entwickler sind, der sowohl eigenverantwortlich als auch kollaborativ arbeitet, freue ich mich über eine Kontaktaufnahme."
+    "text": "Ich freue mich darauf, Teil eines engagierten Entwicklerteams zu werden und meine Fähigkeiten im Frontend-Bereich weiter auszubauen. Mit meiner strukturierten Arbeitsweise, meiner Lernbereitschaft und meiner Begeisterung für moderne Web-Technologien bin ich überzeugt, einen wertvollen Beitrag zu leisten. Ich bin offen für neue Herausforderungen und motiviert, benutzerfreundliche und innovative Lösungen zu entwickeln. Wenn Sie auf der Suche nach einem engagierten Frontend-Entwickler sind, der sowohl eigenverantwortlich als auch kollaborativ arbeitet, freue ich mich über eine Kontaktaufnahme.",
+    "send": "Nachricht gesendet !"
   },
   "form": {
     "name": "Wie ist dein Name?",
     "name-placeholder": "dein Name steht hier",
-    "name-error":"Oops! Es scheint, dass dein Name fehlt.",
+    "name-error": "Oops! Es scheint, dass dein Name fehlt.",
     "email": "Wie lautet deine Email?",
     "email-placeholder": "deineemail@email.com",
-    "email-error":"Hoppla! Deine E-Mail wird benötigt",
+    "email-error": "Hoppla! Deine E-Mail wird benötigt",
     "message": "Wie kann ich dir helfen?",
     "message-placeholder": "deine Nachricht",
-    "message-error":"Was möchtest du entwickeln?",
+    "message-error": "Was möchtest du entwickeln?",
     "privacy1": "Ich habe die ",
     "privacy2": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
-    "privacy-error":"Bitte akzeptiere die Datenschutzrichtlinie.",
+    "privacy-error": "Bitte akzeptiere die Datenschutzrichtlinie.",
     "link": "Datenschutzerklärung",
-    "button":"Senden"
+    "button": "Senden"
   },
   "footer": {
     "legal": "Impressum"
@@ -92,7 +92,7 @@
     "contact": {
       "title": "Kontakt",
       "email": "kontakt@johannes-roth.de",
-      "phone-name":"Tel",
+      "phone-name": "Tel",
       "phone": "0151 41292919"
     },
     "responsibility": {
@@ -126,7 +126,7 @@
       "name": "Johannes Roth",
       "address": "Max-Seither-Ring 32, 76863 Herxheim",
       "email": "kontakt@johannes-roth.de",
-      "phone-name":"Tel",
+      "phone-name": "Tel",
       "phone": "+49 151 41292919"
     },
     "data_collection": {

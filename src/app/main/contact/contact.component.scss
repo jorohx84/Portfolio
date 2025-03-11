@@ -3,8 +3,9 @@ section {
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
+    object-fit: cover;
     width: 100vw;
-    max-width: 1440px;
+    max-width: 100%;
     min-height: 1000px;
     height: fit-content;
     display: flex;
@@ -22,9 +23,12 @@ section {
     min-height: 560px;
     height: fit-content;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
+    gap: 100px;
 }
+
+
 
 .contentLeft {
     width: 100%;
@@ -86,7 +90,7 @@ section {
 }
 
 
-.hideCover{
+.hideCover {
     width: 0px !important;
 }
 
@@ -109,6 +113,7 @@ section {
 
 .footerContainer {
     width: calc(100% - 240px);
+    max-width: 1440px;
     height: fit-content;
 
 }
@@ -117,7 +122,8 @@ section {
     width: 168px;
     height: 168px;
     position: absolute;
-    >img{
+
+    >img {
         width: 100%;
         height: 100%;
     }
@@ -126,7 +132,9 @@ section {
 .sticker-resp {
     width: 168px;
     height: 168px;
-    >img{
+position: absolute;
+top: 0;
+    >img {
         width: 100%;
         height: 100%;
     }
@@ -142,6 +150,7 @@ section {
         align-items: center;
         width: calc(100% - 40px);
         margin-top: 100px;
+        gap: 0;
 
     }
 
@@ -152,6 +161,9 @@ section {
 
     .contentRight {
         height: fit-content;
+        >div{
+            margin-top: 60px !important;
+        }
     }
 
     .sticker {
@@ -161,7 +173,8 @@ section {
     .line {
         display: none !important;
     }
-    .line-resp{
+
+    .line-resp {
         width: 282px;
     }
 
@@ -169,7 +182,7 @@ section {
         margin-bottom: 50px;
     }
 
-    .sticker-resp{
+    .sticker-resp {
         position: absolute;
         right: 0;
     }
@@ -194,8 +207,9 @@ section {
     .lineCover-resp {
         width: 200px;
     }
-    .contentLeft{
-        >div>h1{
+
+    .contentLeft {
+        >div>h1 {
             font-size: 48px;
         }
     }
@@ -207,11 +221,12 @@ section {
     }
 }
 
-@media(max-width: 374px){
-    .line-resp{
+@media(max-width: 374px) {
+    .line-resp {
         width: 140px !important;
     }
-    .sticker-resp{
+
+    .sticker-resp {
         width: 140px;
         height: 140px;
     }

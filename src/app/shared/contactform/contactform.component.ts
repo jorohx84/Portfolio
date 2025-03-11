@@ -5,25 +5,25 @@ import { ButtonsComponent } from '../buttons/buttons.component';
 import { HttpClient } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { NgModel } from '@angular/forms';
-import {TranslatePipe, TranslateDirective} from "@ngx-translate/core";
-import { LanguageService } from '../../language.service';  
+import { TranslatePipe, TranslateDirective } from "@ngx-translate/core";
+import { LanguageService } from '../../language.service';
 import { Router } from '@angular/router';
 import { VisibilityService } from '../../visibility.service';
 
 @Component({
   selector: 'app-contactform',
-  imports: [CommonModule, FormsModule, ReactiveFormsModule, ButtonsComponent, TranslatePipe ],
+  imports: [CommonModule, FormsModule, ReactiveFormsModule, ButtonsComponent, TranslatePipe],
   templateUrl: './contactform.component.html',
   styleUrl: './contactform.component.scss'
 })
 export class ContactformComponent {
-   constructor(private languageService: LanguageService, private router: Router,  private elementRef: ElementRef,
-    private visibilityService: VisibilityService) {}
+  constructor(private languageService: LanguageService, private router: Router, private elementRef: ElementRef,
+    private visibilityService: VisibilityService) { }
   privacy = false;
   isError = false;
   isVisible: boolean = false;
   isButtonDisabled: boolean = true;
-
+  isSend: boolean = false
   http = inject(HttpClient);
   contactData = {
     name: "",
@@ -45,11 +45,11 @@ export class ContactformComponent {
   };
 
   onSubmit(ngForm: any) {
-  
-      if (ngForm.valid && ngForm.submitted) {
-        if (this.privacy === true) {
-          this.isError = false;
-          console.log(this.contactData);
+
+    if (ngForm.valid && ngForm.submitted) {
+      if (this.privacy === true) {
+        this.isError = false;
+        console.log(this.contactData);
         this.http.post(this.post.endPoint, this.post.body(this.contactData))
           .subscribe({
             next: (response) => {
@@ -61,17 +61,18 @@ export class ContactformComponent {
             },
             complete: () => console.log('send post complete'),
           });
-          this.privacy=false;
-        }  else{
-          this.isError = true;
-    
-        }
-      } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-        
-        ngForm.resetForm();
+        this.privacy = false;
+        this.showFeedback();
+      } else {
+        this.isError = true;
 
       }
-  
+    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
+
+      ngForm.resetForm();
+
+    }
+
 
   }
 
@@ -81,12 +82,12 @@ export class ContactformComponent {
     });
   }
 
-  
+
 
   toggleChecked() {
     this.privacy = !this.privacy
-    if (this.privacy===true) {
-      this.isError=false;
+    if (this.privacy === true) {
+      this.isError = false;
     }
   }
 
@@ -94,7 +95,14 @@ export class ContactformComponent {
     return this.privacy === true;
   }
 
-  loadLegals(path:string){
+  loadLegals(path: string) {
     this.router.navigate([path])
+  }
+
+  showFeedback() {
+    this.isSend = true
+    setTimeout(() => {
+      this.isSend = false
+    }, 3500);
   }
 }

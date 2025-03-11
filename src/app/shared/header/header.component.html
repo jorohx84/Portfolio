@@ -1,11 +1,11 @@
 <section [ngClass]="background">
     <div class="menubar">
-        <p [ngClass]="logo" class="logo">JR</p>
+        <p (click)="reload()" [ngClass]="logo" class="logo">JR</p>
         <a href="#aboutme" class="aboutme" [ngClass]="color">{{'header.aboutme'| translate}} <img src="./img/aboutme.png"
                 alt=""></a>
         <a href="#skills" [ngClass]="color">{{'header.skills'| translate}} <img src="./img/skills.png" alt=""></a>
-        <a href="#projects">{{'header.projects'| translate}} <img src="./img/projects.png" alt=""></a>
-        <a href="#contact">{{'header.contact'| translate}} <img src="./img/contact.png" alt=""></a>
+        <a href="#projects" [ngClass]="respColor">{{'header.projects'| translate}} <img src="./img/projects.png" alt=""></a>
+        <a href="#contact" [ngClass]="respColor">{{'header.contact'| translate}} <img src="./img/contact.png" alt=""></a>
         <div class="toogleLanguage">
             <button (click)="changeLanguage('en')" [ngClass]="{'active': isActive('en')}">EN <img
                     src="./img/Toggle 1.png" alt=""></button>
