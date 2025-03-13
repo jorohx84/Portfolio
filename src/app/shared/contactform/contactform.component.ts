@@ -49,7 +49,6 @@ export class ContactformComponent {
     if (ngForm.valid && ngForm.submitted) {
       if (this.privacy === true) {
         this.isError = false;
-        console.log(this.contactData);
         this.http.post(this.post.endPoint, this.post.body(this.contactData))
           .subscribe({
             next: (response) => {

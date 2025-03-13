@@ -1,14 +1,15 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input} from '@angular/core';
 import { SocialmediaComponent } from '../socialmedia/socialmedia.component';
-import { TranslatePipe, TranslateDirective } from "@ngx-translate/core";
+import { TranslatePipe} from "@ngx-translate/core";
 import { LanguageService } from '../../language.service';
-import { Router } from '@angular/router';
+import { Router} from '@angular/router';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule, SocialmediaComponent, TranslatePipe],
+  imports: [CommonModule, SocialmediaComponent, TranslatePipe, RouterModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
@@ -33,7 +34,10 @@ export class HeaderComponent {
     const savedDotClass = localStorage.getItem(this.DOTCLASS_STORAGE_KEY) || 'to-the-left';
     this.activeLanguage = savedLanguage;
     this.dotClass = savedDotClass;
+
+ 
   }
+
 
 
   changeLanguage(lang: string) {

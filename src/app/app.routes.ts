@@ -7,6 +7,8 @@ import { ImprintComponent } from './legal/imprint/imprint.component';
 import { PrivacypolicyComponent } from './legal/privacypolicy/privacypolicy.component';
 import { ContactComponent } from './main/contact/contact.component';
 import { PokedexComponent } from './pokedex/pokedex.component';
+import { AboutmeComponent } from './main/aboutme/aboutme.component';
+import { SkillsComponent } from './main/skills/skills.component';
 
 export const routes: Routes = [
     { path: '', component: MainComponent },
@@ -17,6 +19,9 @@ export const routes: Routes = [
     { path: 'imprint', component: ImprintComponent },
     { path: 'privacy', component: PrivacypolicyComponent },
     { path: 'main', component: MainComponent },
-    { path: 'contact', component: ContactComponent }
+    { path: 'contact', component: ContactComponent },
+    { path: 'aboutme', component: AboutmeComponent },
+    { path: 'skills', component: SkillsComponent }
+
 
 ];
