@@ -58,7 +58,7 @@ export class ContactformComponent {
             error: (error) => {
               console.error(error);
             },
-            complete: () => console.log('send post complete'),
+            
           });
         this.privacy = false;
         this.showFeedback();
