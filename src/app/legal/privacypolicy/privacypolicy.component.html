@@ -75,7 +75,7 @@
                 <li *ngFor="let item of ('datenschutz.important_notes.list' | translate)">{{ item }}</li>
             </ul>
             <div class="back-button">
-                <a href="#contact"> <img src="./img/back.svg" alt="">{{'overlay.back' | translate}}</a>
+                <a (click)="goBack()"> <img src="./img/back.svg" alt="">{{'overlay.back' | translate}}</a>
             </div>
            
         </div>

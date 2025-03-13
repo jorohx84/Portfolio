@@ -45,11 +45,7 @@ export class ProjectsoverlayComponent {
   }
 
   goBack() {
-    let projects = document.getElementById('projects');
-    this.router.navigate(['main']).then(() => {
-      projects?.scrollIntoView({ block: 'start' })
-
-    });
+    this.router.navigate(['main'])
   }
 }
 

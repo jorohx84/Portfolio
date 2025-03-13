@@ -1,61 +1,67 @@
 <section id="hero">
     <div class="fit-content">
-    <app-header></app-header>
-    <div class="title">
-        <div class="titleAbove">
-            <div class="titelAboveLeft">
-                <div class="helloWorld" [ngClass]="{'moveHand': ishover()}">
-                    <img [ngClass]="{'rotateHand': ishover()}" src="./img/waving_hand.svg" alt="">
-                    <button (mouseover)="changeHover()" (mouseout)="changeHover()"
-                        [ngClass]="{'stretchButton': ishover()}">
-                        <span class="respHide" [ngClass]="{'hideButton': ishover()}">{{'hero.hello' | translate}}</span>
-                        <span class="hide" [ngClass]="{'showButton': ishover()}">{{'hero.name' | translate}}</span>
+        <app-header></app-header>
+        <div class="title">
+            <div class="titleAbove">
+                <div class="titelAboveLeft">
+                    <div class="helloWorld" [ngClass]="{'moveHand': ishover()}">
+                        <img [ngClass]="{'rotateHand': ishover()}" src="./img/waving_hand.svg" alt="">
+                        <button (mouseover)="changeHover()" (mouseout)="changeHover()"
+                            [ngClass]="{'stretchButton': ishover()}">
+                            <span class="respHide" [ngClass]="{'hideButton': ishover()}">{{'hero.hello' |
+                                translate}}</span>
+                            <span class="hide" [ngClass]="{'showButton': ishover()}">{{'hero.name' | translate}}</span>
 
-                    </button>
+                        </button>
 
+                    </div>
+                    <div class="titleAboveText">
+                        <span *ngFor="let letter of frontend; let i = index"
+                            (mouseover)="toggleCase(frontend, hasChangedFrontend, i)"
+                            (mouseout)="resetCase(frontend, hasChangedFrontend, originalFrontend)">
+                            {{letter}}
+                        </span>
+                    </div>
                 </div>
-                <div class="titleAboveText">
-                    <span *ngFor="let letter of frontend; let i = index"
-                        (mouseover)="toggleCase(frontend, hasChangedFrontend, i)"
-                        (mouseout)="resetCase(frontend, hasChangedFrontend, originalFrontend)">
+                <div class="portrait-container">
+                    <img class="portrait" src="./img/photos/portrait-color-small-sw.webp" alt="">
+                    <img class="polaroid" src="./img/Polaroid-Frame.svg" alt="">
+                    <div class="name">Johannes : <p class="default">)</p>
+                        <p class="hover">D</p>
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+            <div class="titleBelow">
+                <div class="titleBelowText">
+                    <span *ngFor="let letter of developer; let i =index"
+                        (mouseover)="toggleCase(developer, hasChangedDeveloper, i)"
+                        (mouseout)="resetCase(developer, hasChangedDeveloper, originalDeveloper)">
                         {{letter}}
                     </span>
                 </div>
+                <div class="herobuttonBG ">
+                    <a class="herobutton" href="#contact">{{'hero.button' | translate}}</a>
+                </div>
             </div>
-<div class="portrait-container">
-    <img class="portrait" src="./img/photos/portrait-color-small-sw.webp" alt="">
-    <img class="polaroid" src="./img/Polaroid-Frame.svg" alt="">
-    <div class="name">Johannes : <p class="default">)</p><p class="hover">D</p></div>
-</div>
-            
-                
-               
-          
-
-
-        </div>
-        <div class="titleBelow">
-            <div class="titleBelowText">
-                <span *ngFor="let letter of developer; let i =index"
-                    (mouseover)="toggleCase(developer, hasChangedDeveloper, i)"
-                    (mouseout)="resetCase(developer, hasChangedDeveloper, originalDeveloper)">
-                    {{letter}}
-                </span>
-            </div>
-            <a [routerLink]="[]" [fragment]="'contact'"> <app-buttons text="hero.button" [color]="'getinTouchButton'"></app-buttons></a>
 
         </div>
 
-    </div>
+        <div class="portrait-container resp">
+            <img class="portrait" src="./img/photos/portrait-color-small-sw.webp" alt="">
+            <img class="polaroid" src="./img/Polaroid-Frame.svg" alt="">
+            <div class="name">Johannes : <p class="default">)</p>
+                <p class="hover">D</p>
+            </div>
+        </div>
 
-    <div class="portrait-container resp">
-        <img class="portrait" src="./img/photos/portrait-color-small-sw.webp" alt="">
-        <img class="polaroid" src="./img/Polaroid-Frame.svg" alt="">
-        <div class="name">Johannes : <p class="default">)</p><p class="hover">D</p></div>
+        <div class="socialmedia">
+            <app-socialmedia></app-socialmedia>
+        </div>
     </div>
-
-    <div class="socialmedia">
-        <app-socialmedia></app-socialmedia>
-    </div>
-</div>
 </section>

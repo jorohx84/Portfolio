@@ -177,7 +177,7 @@ button {
     border: solid;
     border-radius: 100px;
     border-width: 1px;
-    border-color: var(--white-font);
+    border-color: white;
     color: var(--white-font);
     transition: all 0.5s ease-in-out;
     opacity: 1;
@@ -186,6 +186,43 @@ button {
         font-size: 18px;
     }
 
+}
+
+.herobuttonBG {
+    position: relative;
+    width: 145px;
+    height: 40px;
+    background-color: white;
+    border: solid;
+    border-radius: 100px;
+    border-width: 1px;
+
+}
+
+.herobutton {
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 18px;
+    width: 145px !important;
+    height: 40px !important;
+    background-color: black !important;
+    border: solid;
+    border-radius: 100px;
+    border-width: 1px;
+    border-color: var(--white-font);
+    color: white;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        top: 0;
+        left: 0;
+        background-color: #F87A55 !important;
+    }
 }
 
 .hide {
@@ -434,5 +471,14 @@ button {
         >span {
             font-size: 40px;
         }
+    }
+}
+
+@media(pointer: coarse) {
+
+    .herobutton {
+        top: -1px;
+        left: -1px;
+        background-color: #F87A55 !important;
     }
 }
