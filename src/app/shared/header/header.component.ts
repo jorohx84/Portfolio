@@ -21,7 +21,7 @@ export class HeaderComponent {
   activeLanguage: string = '';
   burger: boolean = false;
   currentLanguage: string = '';
-  
+
 
   private readonly LANGUAGE_STORAGE_KEY = 'activeLanguage';
   private readonly DOTCLASS_STORAGE_KEY = 'dotClass';
@@ -57,11 +57,15 @@ export class HeaderComponent {
     return this.activeLanguage === language;
   }
 
-  toggleRespMenu() {
+  toggleRespMenu(event: Event): void {
 
     this.burger = !this.burger
     console.log(this.burger);
+    event.stopPropagation();
+  }
 
+  closeRespMenu() {
+    this.burger = false;
   }
 
   showRespMenu() {

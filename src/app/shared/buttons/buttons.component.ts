@@ -1,7 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import {TranslatePipe, TranslateDirective} from "@ngx-translate/core";
-import { LanguageService } from '../../language.service';  
+import { TranslatePipe, TranslateDirective } from "@ngx-translate/core";
+import { LanguageService } from '../../language.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-buttons',
@@ -16,7 +17,8 @@ export class ButtonsComponent {
   @Input() hoverClass: string = '';
   @Input() disabled: boolean = false;
 
-  constructor(private languageService: LanguageService) {}
+
+  constructor(private languageService: LanguageService, private router: Router) { }
 
   secondhover: boolean = false;
   changeActive() {
@@ -26,4 +28,6 @@ export class ButtonsComponent {
   isActive() {
     return this.secondhover === true;
   }
+
+
 }

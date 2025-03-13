@@ -104,6 +104,7 @@ textarea::placeholder {
         border: none !important;
         padding: 0 !important;
         gap: 8px;
+        cursor: pointer;
 
         >p {
             font-size: 16px;

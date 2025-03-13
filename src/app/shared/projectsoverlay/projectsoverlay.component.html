@@ -60,8 +60,9 @@
         </div>
 
         <div class="goNextContainer">
-            <div class="back-resp">
-                <img src="./img/back.svg" alt=""> <a href="#projects">{{'overlay.back' | translate}}</a>
+            <div (click)="goBack()" class="back-resp">
+                <img src="./img/back.svg" alt="">
+                <p>{{'overlay.back' | translate}}</p>
             </div>
             <div (click)="openOverlay(path)" href="">{{'overlay.next' | translate}}<img src="./img/nextproject.svg"
                     alt=""></div>

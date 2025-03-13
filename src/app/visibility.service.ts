@@ -8,6 +8,7 @@ import { ElementRef } from '@angular/core';
 
 export class VisibilityService {
   private scrollListener?: () => void;
+  
   constructor() { }
 
   checkVisibility(elementRef: ElementRef): boolean {
@@ -37,6 +38,7 @@ export class VisibilityService {
       window.removeEventListener('resize', this.scrollListener);
     }
   }
+
 
 
 }

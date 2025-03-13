@@ -19,7 +19,7 @@ import { ContactComponent } from './contact/contact.component';
     ProjectsComponent,
     ColleaguesComponent,
     ContactComponent,
-   
+
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss'

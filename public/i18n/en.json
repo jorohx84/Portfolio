@@ -33,19 +33,22 @@
     "join-description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
     "pollo-description": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
     "dabubble-description": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
+    "pokedex-description": "Pokedex is a web app that serves as a digital Pokémon card collection, allowing users to browse, manage, and store their Pokémon cards.",
     "button": "Project details"
   },
   "overlay": {
     "description": "Description",
     "details": "Implementation Details",
     "duration": "Duration",
-    "weeks": "weeks",
+    "weeks": "week(s)",
     "back": "Go Back",
     "next": "Next Project",
     "join-description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
     "join-details": "In our first group project with Git and Firebase, I was responsible for developing the Kanban board with drag-and-drop functionality, managing contacts, and integrating the Firebase database. I demonstrated my ability to work independently, in a structured way, and collaborate effectively within the team.",
     "pollo-description": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
     "pollo-details": "In this solo project, I gained my first experience with object-oriented programming. I developed basic game mechanics and implemented animations, allowing me to deepen my understanding of structured coding and acquire initial skills in game development.",
+    "pokedex-description":"Pokedex allows users to search, collect, and save Pokémon as favorites, offering an organized digital collection for easy browsing and management.",
+    "pokedex-details":"In this project, I worked with an API as a data source for the first time, retrieving Pokémon data. I used this data to create a user-friendly interface, providing an interactive and dynamic user experience based on real information.",
     "dabubble-description": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
     "dabubble-details": "In this group project, I worked with Angular, TypeScript, Firestore Database, Firebase Authentication, and Material Design for the first time. My tasks included user integration and developing the contact and channel bar, allowing me to deepen my knowledge in these areas."
   },

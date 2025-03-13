@@ -3,7 +3,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    gap: 200px;
+    gap: 100px;
 }
 
 .legal {
@@ -17,9 +17,11 @@ section {
 }
 
 .logo {
-
+width: 150px;
+cursor: pointer;
 
     >p {
+        width:40px ;
         margin: 0 !important;
         font-size: 40px;
         font-weight: 600;
@@ -43,16 +45,46 @@ section {
    width: 80%;
 }
 
+.legallink{
 
+    width: 108px;
+    height: 42px;
+>a{
+    position: relative;
+    width: 108px;
+    height: 42px;
+    &:hover{
+        >img{
+            display: block !important;
+    
+        }
+    }
+     
+    >img{
+        position: absolute;
+        display: none;
+       width: 80px;
+        top: 0;
+        left: 0;
+  
+    }
+
+}
+ 
+}
 
 
 a {
+
     color: var(--white-font);
     height: fit-content;
     font-size: 14px;
     background-color: transparent;
     border: none;
     cursor: pointer;
+ 
+   
+  
 
 }
 
@@ -75,6 +107,9 @@ a {
         width: 100%;
         display: flex;
         justify-content: flex-end;
+      >a{
+        width: fit-content;
+      }
     }
 
     .footerlinks{

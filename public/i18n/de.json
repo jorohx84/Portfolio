@@ -33,19 +33,22 @@
     "join-description": "Task-Manager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mit Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu.",
     "pollo-description": "Ein Jump-'n'-Run- und Wurfspiel basierend auf einem objektorientierten Ansatz. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen das verrückte Huhn zu kämpfen.",
     "dabubble-description": "Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation und Zusammenarbeit mit einer intuitiven Benutzeroberfläche, Echtzeitnachrichten und einer leistungsstarken Kanalorganisation.",
+    "pokedex-description": "Pokedex ist eine Web-App, die als digitale Pokémon-Kartensammlung dient, um Pokémon-Karten zu durchsuchen, zu verwalten und zu speichern.",
     "button": "zum Projekt"
   },
   "overlay": {
     "description": "Beschreibung",
     "details": "Details",
     "duration": "Dauer",
-    "weeks": "Wochen",
+    "weeks": "Woche(n)",
     "back": "zurück",
     "next": "nächstes Projekt",
     "join-description": "Task-Manager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mit Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu.",
     "join-details": "In unserem ersten Gruppenprojekt mit Git und Firebase war ich für die Entwicklung des Kanban-Boards mit Drag-and-Drop-Funktion, die Verwaltung der Kontakte und die Integration der Firebase-Datenbank zuständig. Dabei konnte ich meine Fähigkeit zur selbstständigen, strukturierten Arbeit und effektiven Zusammenarbeit im Team unter Beweis stellen.",
     "pollo-description": "Springe-, Lauf- und Wurfspiel basierend auf einem objektorientierten Ansatz. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen das verrückte Huhn zu kämpfen.",
     "pollo-details": "In diesem Soloprojekt sammelte ich erste Erfahrungen mit der objektorientierten Programmierung. Ich entwickelte grundlegende Spielmechaniken und implementierte Animationen, wodurch ich mein Verständnis für strukturiertes Coding vertiefen und mir erste Fähigkeiten in der Spieleentwicklung aneignen konnte.",
+    "pokedex-description": "Pokedex ermöglicht es Nutzern, Pokémon zu suchen, zu sammeln und als Favoriten zu speichern, und bietet eine übersichtliche digitale Sammlung zur einfachen Verwaltung.",
+    "pokedex-details": "In diesem Projekt habe ich erstmals eine API als Datenquelle verwendet, um Pokémon-Daten abzurufen. Diese Daten wurden genutzt, um ein benutzerfreundliches Interface zu erstellen, das eine interaktive und dynamische Benutzererfahrung bietet, basierend auf realen Informationen.",
     "dabubble-description": "Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation und Zusammenarbeit mit ihrer intuitiven Benutzeroberfläche, Echtzeitnachrichten und einer leistungsstarken Kanalorganisation.",
     "dabubble-details": "In diesem Gruppenprojekt habe ich erstmals mit Angular, TypeScript, Firestore Database, Firebase Authentication und Material Design gearbeitet. Mein Aufgabenbereich umfasste die User-Integration sowie die Erstellung der Kontakt- und Channelbar, wodurch ich meine Kenntnisse in diesen Bereichen gezielt vertiefen konnte."
   },

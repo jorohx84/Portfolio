@@ -15,7 +15,7 @@
             <button (click)="changeLanguage('de')"  [ngClass]="{'active': isActive('de')}">DE<img src="./img/Toggle 1.png"
                     alt=""></button>
         </div>
-        <div class="burgerButton" (click)="toggleRespMenu()">
+        <div class="burgerButton" (click)="toggleRespMenu($event)">
             <img src="./img/menu.svg" alt="">
         </div>
     </div>
@@ -24,11 +24,11 @@
 
 
 
-<div class="menu-resp" [ngClass]="{'showRespMenu': showRespMenu()}">
+<div (click)="closeRespMenu()" class="menu-resp" [ngClass]="{'showRespMenu': showRespMenu()}">
     <div class="menu-resp-content">
         <div class="menubar-resp">
-            <p class="logo">JR</p>
-            <div class="closeButtonContainer" (click)="toggleRespMenu()">
+            <p (click)="reload()" class="logo">JR</p>
+            <div class="closeButtonContainer" (click)="closeRespMenu()">
                 <img class="closeRespMenu" src="./img/menuclose.svg" alt="">
             </div>
         </div>
