@@ -1,5 +1,5 @@
 section {
-    width: 100%;
+    width: calc(100% - 40px);
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -17,18 +17,19 @@ section {
 }
 
 .logo {
-width: 150px;
-cursor: pointer;
+    width: 150px;
+    cursor: pointer;
 
     >p {
-        width:40px ;
+        width: 40px;
         margin: 0 !important;
         font-size: 40px;
         font-weight: 600;
         color: var(--logo-color);
         letter-spacing: -6px;
         transition: color 0.5s ease-in-out;
-        &:hover{
+
+        &:hover {
             color: var(--main-color);
         }
     }
@@ -40,39 +41,41 @@ cursor: pointer;
 
 
 .footerlinks {
-   display: flex;
-   justify-content: space-between;
-   width: 80%;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
 }
 
-.legallink{
+.legallink {
 
     width: 108px;
     height: 42px;
->a{
-    position: relative;
-    display: flex !important;
-align-items: center !important;
-    width: 108px;
-    height: 42px;
-    &:hover{
-        >img{
-            display: block !important;
-    
+
+    >a {
+        position: relative;
+        display: flex !important;
+        align-items: center !important;
+        width: 108px;
+        height: 42px;
+
+        &:hover {
+            >img {
+                display: block !important;
+
+            }
         }
-    }
-     
-    >img{
-        position: absolute;
-        display: none;
-       width: 80px;
-        top: 0;
-        left: 0;
-  
+
+        >img {
+            position: absolute;
+            display: none;
+            width: 80px;
+            top: 0;
+            left: 0;
+
+        }
+
     }
 
-}
- 
 }
 
 
@@ -84,37 +87,40 @@ a {
     background-color: transparent;
     border: none;
     cursor: pointer;
- 
-   
-  
+
+
+
 
 }
 
-@media(max-width:780px){
-    section{
+@media(max-width:780px) {
+    section {
         flex-direction: column;
-        gap:0px
-    }
-    .legal{
-        width: 100%;
-    }
-    .logo{
-       display: flex;
-       justify-content: space-between;
-       align-items: center;
-       width: 100% !important;
+        gap: 0px
     }
 
-    .legallink{
+    .legal {
+        width: 100%;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100% !important;
+    }
+
+    .legallink {
         width: 100%;
         display: flex;
         justify-content: flex-end;
-      >a{
-        width: fit-content;
-      }
+
+        >a {
+            width: fit-content;
+        }
     }
 
-    .footerlinks{
+    .footerlinks {
         width: 100%;
     }
 }

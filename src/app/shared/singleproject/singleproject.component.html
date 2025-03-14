@@ -1,7 +1,7 @@
 <section>
     <div>
         <img [ngClass]="stickerClass" class="sticker" [src]="sticker" alt="">
-        <img [src]="imagePath" alt="" [ngClass]="className">
+        <img class="projectImage" [src]="imagePath" alt="" [ngClass]="className">
         <div class="imageCover" (mouseover)="toggleHover()" (mouseout)="toggleHover()" [ngClass]="{'cover': isHover()}">
             <div>
                 <app-buttons text="singleproject.button" [color]="'white'" (click)="openOverlay(param)"></app-buttons>
@@ -9,7 +9,10 @@
 
         </div>
     </div>
-    <h2>{{title}}</h2>
+    <div class="title">
+        <h2>{{title}}</h2>
+    </div>
+  
     <p>{{text | translate}}</p>
     <div class="respbutton">
         <app-buttons text="singleproject.button" [color]="'black'" (click)="openOverlay(param)"></app-buttons>

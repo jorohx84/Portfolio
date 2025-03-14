@@ -1,6 +1,9 @@
+:host{
+    width: 100%;
+}
 section {
-    width: 100vw;
-    max-width: 100%;
+   
+    width: 100%;
     min-height: 800px;
     height: fit-content;
     display: flex;
@@ -15,7 +18,7 @@ section {
 
 .content {
     position: relative;
-    width: 100%;
+    width: calc(100% - 60px);
     max-width: 1200px;
     height: 512px;
     display: flex;
@@ -84,7 +87,8 @@ width: 100%;
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
-
+box-sizing: border-box;
+padding: 20px;
     >p {
         margin: 0;
         font-size: 16px;
@@ -161,7 +165,7 @@ width: 100%;
     .headline {
         margin-top: 88px;
         flex-direction: column;
-        width: 640px;
+       
         height: fit-content;
         margin-bottom: 80px;
     }

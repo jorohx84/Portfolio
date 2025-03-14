@@ -1,6 +1,9 @@
 section {
-    width: 100%;
+    width: calc(100% - 40px);
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     >div {
         position: relative;
@@ -28,9 +31,17 @@ section {
         margin-bottom: 10px !important;
     }
 
+
     >p {
         font-weight: 100 !important;
     }
+}
+
+.title {
+    width: 100% !important;
+    height: 25px !important;
+    display: flex !important;
+    justify-content: flex-start !important;
 }
 
 .sticker {
@@ -79,7 +90,7 @@ section {
 
 .overlay {
     position: absolute;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-color: #000000;
     color: white;
@@ -111,16 +122,13 @@ section {
 
 @media(max-width:1280px) {
     section {
-        width: 320px;
+
 
         >div {
-            width: 320px;
+
             height: fit-content;
 
-            >img {
-                width: 320px;
-                height: 220px;
-            }
+           
         }
     }
 
@@ -128,6 +136,8 @@ section {
         width: 120px !important;
         height: 120px !important;
     }
+
+    
 }
 
 @media(min-width:650px) {
@@ -136,6 +146,18 @@ section {
     }
 
 }
+@media(max-width:750px) {
+section{
+    max-width: 400px;
+}
+.imageCover{
+    max-width: 400px;
+}
+.projectImage{
+    width: 360px !important;
+    height: 260px !important;
+}
+}
 
 @media(max-width:650px) {
     .imageCover {
@@ -143,10 +165,11 @@ section {
     }
 
     section {
-        width: 320px;
+
+        max-width: 280px;
 
         >div {
-            width: 320px;
+
             height: fit-content;
 
             >img {
@@ -167,21 +190,30 @@ section {
 
 }
 
-@media(max-width: 374px) {
+@media(max-width: 550px) {
+    .projectImage{
+       
+        width: 260px !important;
+        height: 220px !important;
+
+        
+}
+
+}
+@media(max-width: 400px) {
     section {
-        width: 300px;
+        max-width: 280px;
 
         >div {
-            width: 300px;
 
-            img {
-                width: 300px;
-                height: 220px;
-            }
+
+         
         }
     }
 
     .respbutton {
         width: 300px !important;
     }
+
+
 }

@@ -1,12 +1,12 @@
 section {
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .header-bg {
-    width: 100vw;
+    width: 100%;
     min-height: 80px;
     max-height: 80px;
     background-color: #000000;
@@ -24,10 +24,9 @@ section {
 
 .datenschutz {
     display: flex;
-
     justify-content: center;
     align-items: flex-start;
-    width: calc(100vw - 144px);
+    width: calc(100% - 144px);
     height: fit-content;
     max-width: 800px;
     padding: 56px 72px;
