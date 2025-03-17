@@ -40,7 +40,7 @@ export class HeaderComponent {
 
 
 
-  changeLanguage(lang: string) {
+  changeLanguage(lang: string, event:Event):void {
     this.languageService.changeLanguage(lang);
     this.currentLanguage = this.languageService.getCurrentLanguage();
     if (lang === 'en') {
@@ -54,6 +54,7 @@ export class HeaderComponent {
     }
     localStorage.setItem(this.LANGUAGE_STORAGE_KEY, this.activeLanguage);
     localStorage.setItem(this.DOTCLASS_STORAGE_KEY, this.dotClass);
+    event?.stopPropagation();
   }
 
 

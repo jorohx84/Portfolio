@@ -7,12 +7,12 @@
         <a href="#projects" [ngClass]="respColor">{{'header.projects'| translate}} <img src="./img/projects.png" alt=""></a>
         <a href="#contact" [ngClass]="respColor">{{'header.contact'| translate}} <img src="./img/contact.png" alt=""></a>
         <div class="toogleLanguage">
-            <button (click)="changeLanguage('en')" [ngClass]="{'active': isActive('en')}">EN <img
+            <button (click)="changeLanguage('en', $event)" [ngClass]="{'active': isActive('en')}">EN <img
                     src="./img/Toggle 1.png" alt=""></button>
             <div class="line">
                 <div class="dot" [ngClass]="dotClass"></div>
             </div>
-            <button (click)="changeLanguage('de')"  [ngClass]="{'active': isActive('de')}">DE<img src="./img/Toggle 1.png"
+            <button (click)="changeLanguage('de', $event)"  [ngClass]="{'active': isActive('de')}">DE<img src="./img/Toggle 1.png"
                     alt=""></button>
         </div>
         <div class="burgerButton" (click)="toggleRespMenu($event)">
@@ -39,12 +39,12 @@
             <a href="#projects">{{'header.projects'| translate}} <img src="./img/projects.png" alt=""></a>
             <a href="#contact">{{'header.contact'| translate}} <img src="./img/contact.png" alt=""></a>
             <div class="toogleLanguage">
-                <button (click)="changeLanguage('en')" [ngClass]="{'active': isActive('en')}">EN <img
+                <button (click)="changeLanguage('en', $event)" [ngClass]="{'active': isActive('en')}">EN <img
                         src="./img/Toggle 1.png" alt=""></button>
                 <div class="line">
                     <div class="dot" [ngClass]="dotClass"></div>
                 </div>
-                <button (click)="changeLanguage('de')" [ngClass]="{'active': isActive('de')}">DE<img
+                <button (click)="changeLanguage('de', $event)" [ngClass]="{'active': isActive('de')}">DE<img
                         src="./img/Toggle 1.png" alt=""></button>
             </div>
         </div>
