@@ -273,7 +273,7 @@ button {
 
     &:hover {
         >.portrait {
-            content: url(./../../../../public/img/photos/portrait-color-small.webp);
+            content: url(./../../../../public/img/photos/profilephoto.webp);
         }
 
         >.name {
@@ -290,11 +290,13 @@ button {
 
 .portrait {
     position: absolute;
-    top: 43px;
-    left: 20px;
+    top: 22px;
+    left: 34px;
     transform: rotate(8deg);
-    width: 200px;
+    width: 174px;
+    height: 190px;
     z-index: 0;
+    aspect-ratio: 1/1;
 
 }
 
